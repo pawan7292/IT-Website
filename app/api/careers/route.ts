@@ -23,8 +23,6 @@ function getTransporter() {
     host,
     port,
     secure: false,
-    pool: true,
-    maxConnections: 3,
     auth: { user, pass },
     tls: { rejectUnauthorized: false },
   })

@@ -30,8 +30,6 @@ function getTransporter() {
     host,
     port,
     secure: false,
-    pool: true,       // keep connection alive across sends
-    maxConnections: 3,
     auth: { user, pass },
     tls: { rejectUnauthorized: false },
   })
