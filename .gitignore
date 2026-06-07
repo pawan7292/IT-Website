@@ -8,3 +8,4 @@ dev-output.txt
 tsconfig.tsbuildinfo
 .vscode/
 *.mp4
+src/
