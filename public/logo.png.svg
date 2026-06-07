@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="white" rx="4"/>
+  <text x="10" y="38" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700">
+    <tspan fill="#1E73D8">DIGITAL</tspan><tspan fill="#1B2738"> MARMAT</tspan>
+  </text>
+  <text x="11" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#888" letter-spacing="2">IT SERVICE</text>
+</svg>

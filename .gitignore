@@ -1,0 +1,10 @@
+node_modules
+.next
+.env.local
+.env*.local
+*.log
+build.log
+dev-output.txt
+tsconfig.tsbuildinfo
+.vscode/
+*.mp4
