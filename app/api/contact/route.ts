@@ -12,7 +12,7 @@ const TO_EMAIL   = 'techdigitalmarmat@gmail.com'
 const FROM_NAME  = 'Digital Marmat Website'
 
 // Singleton — reuses the SMTP connection across warm requests
-let _transporter: ReturnType<typeof nodemailer.createTransport> | null = null
+let _transporter: nodemailer.Transporter | null = null
 
 function getTransporter() {
   if (_transporter) return _transporter
