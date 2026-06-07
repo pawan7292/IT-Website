@@ -237,158 +237,36 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      {/* ── Open Positions ── */}
+      {/* ── No Open Positions — Coming Soon ── */}
       <section id="open-positions" className="section-padding bg-white">
         <Container>
-          <SectionHeader
-            badge="Open Positions"
-            title="Find Your Role"
-            description="We're hiring across multiple departments. Find a role that matches your skills and passion."
-          />
-          <div className="grid md:grid-cols-2 gap-6">
-            {positions.map((p, i) => (
-              <motion.div
-                key={p.title}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.07 }}
-                className="bg-light-bg rounded-2xl p-7 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
-              >
-                <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-lg font-bold text-navy">{p.title}</h3>
-                  <span className="shrink-0 text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">
-                    {p.department}
-                  </span>
-                </div>
-                <p className="text-navy/60 text-sm leading-relaxed mb-5 flex-1">{p.description}</p>
-                <div className="flex flex-wrap items-center gap-4 text-xs text-navy/50 mb-5">
-                  <span className="flex items-center gap-1"><FiBriefcase size={13} /> {p.type}</span>
-                  <span className="flex items-center gap-1"><FiMapPin size={13} /> {p.location}</span>
-                  <span className="flex items-center gap-1"><FiClock size={13} /> Open now</span>
-                </div>
-                <button
-                  onClick={() => handleApply(p.title)}
-                  className="w-full bg-primary text-white py-2.5 rounded-xl font-semibold text-sm hover:bg-primary/90 transition"
-                >
-                  Apply for this Role
-                </button>
-              </motion.div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* ── Apply Form ── */}
-      <section id="apply-form" className="section-padding bg-light-bg">
-        <Container>
-          <div className="max-w-2xl mx-auto">
-            <SectionHeader
-              badge="Apply Now"
-              title="Send Us Your CV"
-              description="Fill in your details, select a position, and upload your CV. We'll get back to you within 3 business days."
-            />
-
-            {submitted ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="bg-white rounded-3xl p-12 border border-gray-100 text-center"
-              >
-                <div className="inline-flex p-5 rounded-full bg-green-50 text-green-600 mb-6">
-                  <FiCheckCircle size={40} />
-                </div>
-                <h3 className="text-2xl font-bold text-navy mb-3">Application Received!</h3>
-                <p className="text-navy/60">
-                  Thanks for applying. We've received your application and will be in touch within 3 business days.
-                </p>
-              </motion.div>
-            ) : (
-              <motion.form
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                onSubmit={handleSubmit}
-                className="bg-white rounded-3xl p-8 md:p-10 border border-gray-100 space-y-5"
-              >
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-semibold text-navy mb-2">Full Name *</label>
-                    <input
-                      required
-                      placeholder="Your full name"
-                      value={form.name}
-                      onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-navy mb-2">Email Address *</label>
-                    <input
-                      required
-                      type="email"
-                      placeholder="you@example.com"
-                      value={form.email}
-                      onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-navy mb-2">Position Applying For *</label>
-                  <select
-                    required
-                    value={form.position}
-                    onChange={e => setForm(f => ({ ...f, position: e.target.value }))}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-navy focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition bg-white"
-                  >
-                    <option value="">Select a position</option>
-                    {positions.map(p => (
-                      <option key={p.title} value={p.title}>{p.title}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-navy mb-2">Why do you want to join? (optional)</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Tell us a bit about yourself and why you'd like to work at Digital Marmat..."
-                    value={form.message}
-                    onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-navy placeholder:text-navy/40 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition resize-none"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-navy mb-2">Upload Your CV *</label>
-                  <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-200 rounded-xl cursor-pointer hover:border-primary hover:bg-primary/5 transition group">
-                    <FiUpload size={24} className="text-navy/30 group-hover:text-primary transition mb-2" />
-                    <span className="text-sm text-navy/50 group-hover:text-primary transition">
-                      {file ? file.name : 'Click to upload PDF or Word doc'}
-                    </span>
-                    <input
-                      type="file"
-                      accept=".pdf,.doc,.docx"
-                      className="hidden"
-                      onChange={e => setFile(e.target.files?.[0] ?? null)}
-                      required
-                    />
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-primary text-white py-3.5 rounded-xl font-semibold hover:bg-primary/90 transition disabled:opacity-60 disabled:cursor-not-allowed"
-                >
-                  {loading ? 'Submitting…' : 'Submit Application'}
-                </button>
-              </motion.form>
-            )}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-2xl mx-auto text-center py-16"
+          >
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 text-primary mb-8">
+              <FiBriefcase size={36} />
+            </div>
+            <span className="inline-block bg-secondary/15 text-secondary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+              Open Positions
+            </span>
+            <h2 className="text-navy font-bold mb-5">Positions Will Be Updated Soon</h2>
+            <p className="text-navy/60 text-lg leading-relaxed mb-8">
+              We are not actively hiring right now, but great talent is always welcome. Drop us your CV and we'll reach out when the right opportunity opens up.
+            </p>
+            <a
+              href="mailto:info@digitalmarmat.com?subject=Career Enquiry — Digital Marmat"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded-full font-semibold hover:bg-primary/90 transition"
+            >
+              Send Your CV Anyway
+            </a>
+            <p className="mt-5 text-navy/40 text-sm">
+              We'll keep your profile on file and contact you when a matching role opens.
+            </p>
+          </motion.div>
         </Container>
       </section>
     </>
