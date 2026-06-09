@@ -4,6 +4,7 @@ import ClientLayout from '@/components/layout/ClientLayout'
 import { FloatingWhatsApp } from '@/components/ui/FloatingWhatsApp'
 import { LocalBusinessSchema } from '@/components/seo/LocalBusinessSchema'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import ClarityScript from '@/components/ClarityScript'
 
 export const metadata: Metadata = {
   title: {
@@ -121,6 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-sans">
         <GoogleAnalytics />
+        <ClarityScript />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
