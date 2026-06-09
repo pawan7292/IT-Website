@@ -499,37 +499,18 @@ export default function ContactPage() {
               </a>
             </div>
 
-            {/* Styled map placeholder — links to Google Maps */}
-            <a
-              href="https://maps.google.com/?q=Kathmandu,Nepal"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block relative h-56 rounded-2xl overflow-hidden border border-gray-200 shadow-sm group"
-              aria-label="Open Kathmandu on Google Maps"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-green-50 to-blue-50 group-hover:brightness-95 transition" />
-              {/* Decorative map-like lines */}
-              <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 400 240" preserveAspectRatio="none">
-                <path d="M0 80 Q100 60 200 80 T400 80" stroke="#1E73D8" strokeWidth="2" fill="none" />
-                <path d="M0 120 Q100 100 200 120 T400 120" stroke="#1E73D8" strokeWidth="1.5" fill="none" />
-                <path d="M0 160 Q100 140 200 160 T400 160" stroke="#1E73D8" strokeWidth="1" fill="none" />
-                <path d="M80 0 Q100 120 80 240" stroke="#1E73D8" strokeWidth="2" fill="none" />
-                <path d="M200 0 Q220 120 200 240" stroke="#1E73D8" strokeWidth="2" fill="none" />
-                <path d="M320 0 Q340 120 320 240" stroke="#1E73D8" strokeWidth="1.5" fill="none" />
-              </svg>
-              {/* Pin */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white rounded-2xl shadow-xl px-5 py-3 flex items-center gap-3 group-hover:scale-105 transition-transform">
-                  <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                    <FiMapPin size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-navy text-sm">Digital Marmat</p>
-                    <p className="text-navy/50 text-xs">Kathmandu, Nepal</p>
-                  </div>
-                </div>
-              </div>
-            </a>
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm h-56">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625952296!2d85.28493!3d27.70169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Digital Marmat location in Kathmandu, Nepal"
+              />
+            </div>
           </div>
         </Container>
       </section>

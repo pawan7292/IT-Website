@@ -11,40 +11,16 @@ export const metadata: Metadata = {
     default: 'Digital Marmat IT Services | Web Development & Digital Marketing Nepal',
     template: '%s | Digital Marmat IT Services',
   },
-  description: 'Nepal\'s trusted IT company in Kathmandu. Expert website development, SEO, digital marketing, mobile apps, UI/UX design & AI automation — 50+ projects delivered, 99.9% client satisfaction.',
-  keywords: [
-    // Core service + location
-    'IT company Nepal', 'IT company Kathmandu', 'digital agency Nepal',
-    'web development Nepal', 'website development Nepal', 'website design Nepal',
-    'website development Kathmandu', 'web design Kathmandu',
-    'website development Pokhara', 'website development Lalitpur',
-    // SEO
-    'SEO services Nepal', 'SEO company Nepal', 'SEO agency Kathmandu',
-    'Google ranking Nepal', 'local SEO Nepal', 'SEO expert Nepal',
-    // Marketing
-    'digital marketing Nepal', 'digital marketing Kathmandu',
-    'Google Ads Nepal', 'Facebook Ads Nepal', 'online marketing Nepal',
-    // Apps & software
-    'mobile app development Nepal', 'app development Nepal',
-    'software development Nepal', 'software company Nepal',
-    // Design & e-commerce
-    'UI UX design Nepal', 'logo design Nepal', 'branding Nepal',
-    'ecommerce website Nepal', 'online store Nepal', 'Shopify Nepal',
-    // AI
-    'AI automation Nepal', 'chatbot Nepal',
-    // Trust / brand
-    'best IT company Nepal', 'affordable website Nepal',
-    'digital marmat', 'Digital Marmat IT Services',
-  ],
-  authors: [{ name: 'Digital Marmat IT Services', url: 'https://digitalmarmat.com' }],
+  description: "Nepal's trusted IT company in Kathmandu. Web development, SEO & digital marketing experts. 50+ projects delivered. Get a free consultation today.",
+  authors: [{ name: 'Digital Marmat IT Services', url: 'https://www.digitalmarmat.com.np' }],
   creator: 'Digital Marmat IT Services',
   publisher: 'Digital Marmat IT Services',
-  metadataBase: new URL('https://digitalmarmat.com'),
-  alternates: { canonical: 'https://digitalmarmat.com' },
+  metadataBase: new URL('https://www.digitalmarmat.com.np'),
+  alternates: { canonical: 'https://www.digitalmarmat.com.np' },
   openGraph: {
     title: 'Digital Marmat IT Services | Web Development & Digital Marketing Nepal',
     description: 'Top-rated IT company in Nepal delivering world-class websites, SEO, digital marketing & AI automation solutions.',
-    url: 'https://digitalmarmat.com',
+    url: 'https://www.digitalmarmat.com.np',
     siteName: 'Digital Marmat IT Services',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Digital Marmat IT Services' }],
     locale: 'en_US',
@@ -83,19 +59,19 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Digital Marmat IT Services',
-  url: 'https://digitalmarmat.com',
+  url: 'https://www.digitalmarmat.com.np',
   description: 'Top-rated IT company in Kathmandu, Nepal — web development, SEO, digital marketing & AI automation.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: { '@type': 'EntryPoint', urlTemplate: 'https://digitalmarmat.com/blog?q={search_term_string}' },
+    target: { '@type': 'EntryPoint', urlTemplate: 'https://www.digitalmarmat.com.np/blog?q={search_term_string}' },
     'query-input': 'required name=search_term_string',
   },
   publisher: {
     '@type': 'Organization',
-    '@id': 'https://digitalmarmat.com/#organization',
+    '@id': 'https://www.digitalmarmat.com.np/#organization',
     name: 'Digital Marmat IT Services',
-    url: 'https://digitalmarmat.com',
-    logo: { '@type': 'ImageObject', url: 'https://digitalmarmat.com/logo.png' },
+    url: 'https://www.digitalmarmat.com.np',
+    logo: { '@type': 'ImageObject', url: 'https://www.digitalmarmat.com.np/logo.png' },
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Kathmandu',
@@ -116,9 +92,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="alternate" hrefLang="en-NP" href="https://digitalmarmat.com" />
-        <link rel="alternate" hrefLang="en"    href="https://digitalmarmat.com" />
-        <link rel="alternate" hrefLang="x-default" href="https://digitalmarmat.com" />
+        <link rel="alternate" hrefLang="en-NP" href="https://www.digitalmarmat.com.np" />
+        <link rel="alternate" hrefLang="en"    href="https://www.digitalmarmat.com.np" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.digitalmarmat.com.np" />
       </head>
       <body className="font-sans">
         <GoogleAnalytics />

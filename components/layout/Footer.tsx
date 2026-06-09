@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaFacebook, FaInstagram } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 import { FiMail, FiPhone, FiMapPin, FiMessageCircle } from 'react-icons/fi'
 
 const services = [
@@ -30,8 +30,9 @@ const quickLinks: QuickLink[] = [
 ]
 
 const socials = [
-  { icon: FaFacebook,  label: 'Facebook',  href: 'https://www.facebook.com/digitalmarmatit'       },
-  { icon: FaInstagram, label: 'Instagram',  href: 'https://www.instagram.com/digitalmarmat.tech/' },
+  { icon: FaFacebook,  label: 'Facebook',  href: 'https://www.facebook.com/digitalmarmatit'          },
+  { icon: FaInstagram, label: 'Instagram',  href: 'https://www.instagram.com/digitalmarmat.tech/'    },
+  { icon: FaLinkedin,  label: 'LinkedIn',   href: 'https://www.linkedin.com/company/digital-marmat/' },
 ]
 
 const contact = [

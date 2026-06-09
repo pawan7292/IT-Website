@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
@@ -31,22 +31,6 @@ const PROCESS_STEPS = [
   { step: '03', title: 'You Get the Report',  desc: 'A detailed PDF report + a free 15-minute consultation call to walk you through it.' },
 ]
 
-const VISITORS = [
-  'Less than 100/month',
-  '100 – 500/month',
-  '500 – 2,000/month',
-  '2,000 – 10,000/month',
-  'More than 10,000/month',
-  'Not sure',
-]
-
-const GOALS = [
-  'Rank higher on Google',
-  'Get more website leads',
-  'Improve site speed',
-  'Beat local competitors',
-  'All of the above',
-]
 
 const FAQS = [
   { q: 'Is the SEO audit really free?',                     a: 'Yes, 100% free. No credit card, no hidden charges. We offer this because we believe in earning your trust before your business.' },
@@ -60,8 +44,11 @@ const FAQS = [
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 interface FormData {
-  name: string; email: string; phone: string; website: string
-  business: string; visitors: string; goal: string
+  name: string
+  email: string
+  website: string
+  phone?: string
+  business?: string
 }
 
 const inputClass = (err?: boolean) =>
@@ -85,6 +72,7 @@ function Field({ label, error, required, children }: {
 
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false)
+  useEffect(() => { setOpen(window.innerWidth >= 768) }, [])
   return (
     <div className={`rounded-2xl border transition-colors ${open ? 'border-primary/30 bg-white' : 'border-gray-100 bg-white'}`}>
       <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between p-6 text-left gap-4">
@@ -139,15 +127,14 @@ function SuccessView({ name, onReset }: { name: string; onReset: () => void }) {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function FreeSeoAuditPage() {
-  const [submitted, setSubmitted]   = useState(false)
-  const [submitting, setSubmitting] = useState(false)
-  const [serverErr, setServerErr]   = useState<string | null>(null)
+  const [submitted, setSubmitted]         = useState(false)
+  const [submitting, setSubmitting]       = useState(false)
+  const [serverErr, setServerErr]         = useState<string | null>(null)
+  const [showOptional, setShowOptional]   = useState(false)
 
-  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm<FormData>({
-    defaultValues: { visitors: VISITORS[5], goal: GOALS[4] },
-  })
+  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm<FormData>()
 
-  const submittedName = watch('name')
+  const submittedName = watch('name') ?? ''
 
   const onSubmit = async (data: FormData) => {
     setSubmitting(true); setServerErr(null)
@@ -296,7 +283,8 @@ export default function FreeSeoAuditPage() {
                   ) : (
                     <motion.form key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                       onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
-                      {/* Row 1 */}
+
+                      {/* Required: Name + Email */}
                       <div className="grid sm:grid-cols-2 gap-5">
                         <Field label="Full Name" required error={errors.name?.message}>
                           <input type="text" placeholder="Ramesh Thapa" className={inputClass(!!errors.name)}
@@ -311,19 +299,7 @@ export default function FreeSeoAuditPage() {
                         </Field>
                       </div>
 
-                      {/* Row 2 */}
-                      <div className="grid sm:grid-cols-2 gap-5">
-                        <Field label="Phone Number" required error={errors.phone?.message}>
-                          <input type="tel" placeholder="+977 9800000000" className={inputClass(!!errors.phone)}
-                            {...register('phone', { required: 'Phone number is required' })} />
-                        </Field>
-                        <Field label="Business Name" error={errors.business?.message}>
-                          <input type="text" placeholder="My Business Nepal" className={inputClass(!!errors.business)}
-                            {...register('business')} />
-                        </Field>
-                      </div>
-
-                      {/* Website URL */}
+                      {/* Required: Website URL */}
                       <Field label="Website URL" required error={errors.website?.message}>
                         <input type="url" placeholder="https://yourbusiness.com.np"
                           className={inputClass(!!errors.website)}
@@ -333,25 +309,38 @@ export default function FreeSeoAuditPage() {
                           })} />
                       </Field>
 
-                      {/* Visitors */}
-                      <Field label="Current Monthly Visitors (approx.)">
-                        <div className="relative">
-                          <select className={`${inputClass()} appearance-none pr-10`} {...register('visitors')}>
-                            {VISITORS.map((v) => <option key={v}>{v}</option>)}
-                          </select>
-                          <FiChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-navy/40 pointer-events-none" size={18} />
-                        </div>
-                      </Field>
+                      {/* Optional details toggle */}
+                      <button
+                        type="button"
+                        onClick={() => setShowOptional(!showOptional)}
+                        className="text-sm text-primary font-semibold hover:underline flex items-center gap-1"
+                      >
+                        <FiChevronDown size={16} className={`transition-transform duration-200 ${showOptional ? 'rotate-180' : ''}`} />
+                        {showOptional ? '− Hide optional details' : '+ Add optional details'}
+                      </button>
 
-                      {/* Goal */}
-                      <Field label="Main Goal for Your Website">
-                        <div className="relative">
-                          <select className={`${inputClass()} appearance-none pr-10`} {...register('goal')}>
-                            {GOALS.map((g) => <option key={g}>{g}</option>)}
-                          </select>
-                          <FiChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-navy/40 pointer-events-none" size={18} />
-                        </div>
-                      </Field>
+                      <AnimatePresence initial={false}>
+                        {showOptional && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.22 }}
+                            className="overflow-hidden"
+                          >
+                            <div className="grid sm:grid-cols-2 gap-5 pt-1">
+                              <Field label="Phone Number" error={errors.phone?.message}>
+                                <input type="tel" placeholder="+977 9800000000" className={inputClass(!!errors.phone)}
+                                  {...register('phone')} />
+                              </Field>
+                              <Field label="Business Name" error={errors.business?.message}>
+                                <input type="text" placeholder="My Business Nepal" className={inputClass(!!errors.business)}
+                                  {...register('business')} />
+                              </Field>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
 
                       {serverErr && (
                         <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">
@@ -372,6 +361,17 @@ export default function FreeSeoAuditPage() {
                       </button>
                       <p className="text-center text-navy/40 text-xs">
                         Free. No obligation. Your data is safe with us.
+                      </p>
+                      <p className="text-sm text-center text-gray-500">
+                        Prefer WhatsApp?{' '}
+                        <a
+                          href="https://wa.me/9779802362213?text=Hi%20Digital%20Marmat%2C%20I%20would%20like%20a%20free%20SEO%20audit%20for%20my%20website"
+                          className="text-green-600 font-semibold underline hover:text-green-700"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Chat with us directly on WhatsApp →
+                        </a>
                       </p>
                     </motion.form>
                   )}
@@ -425,7 +425,7 @@ export default function FreeSeoAuditPage() {
               <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
                 <p className="font-bold text-amber-800 text-sm mb-2">⚡ Limited Capacity</p>
                 <p className="text-amber-700 text-sm leading-relaxed">
-                  We manually review each audit to ensure quality. We process a limited number each week — submit yours now to secure your spot.
+                  We process only <strong>5 audits</strong> per week. Spots fill quickly — claim yours now.
                 </p>
               </div>
             </motion.div>

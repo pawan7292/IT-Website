@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getServiceBySlug, getAllServices } from '@/data/services'
 import { ServicePageContent } from '@/components/services/ServicePageContent'
+import { RelatedServices } from '@/components/RelatedServices'
 import type { Metadata } from 'next'
 
 export async function generateStaticParams() {
@@ -16,12 +17,11 @@ export async function generateMetadata(
   return {
     title: service.metaTitle,
     description: service.metaDescription,
-    keywords: service.keywords.join(', '),
-    alternates: { canonical: `https://digitalmarmat.com/services/${slug}` },
+    alternates: { canonical: `https://www.digitalmarmat.com.np/services/${slug}` },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://digitalmarmat.com/services/${slug}`,
+      url: `https://www.digitalmarmat.com.np/services/${slug}`,
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     },
     twitter: {
@@ -53,9 +53,9 @@ export default async function ServicePage(
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home',     item: 'https://digitalmarmat.com' },
-      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://digitalmarmat.com/services' },
-      { '@type': 'ListItem', position: 3, name: service.name, item: `https://digitalmarmat.com/services/${slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home',     item: 'https://www.digitalmarmat.com.np' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.digitalmarmat.com.np/services' },
+      { '@type': 'ListItem', position: 3, name: service.name, item: `https://www.digitalmarmat.com.np/services/${slug}` },
     ],
   }
 
@@ -64,11 +64,11 @@ export default async function ServicePage(
     '@type': 'Service',
     name: service.name,
     description: service.metaDescription,
-    url: `https://digitalmarmat.com/services/${slug}`,
+    url: `https://www.digitalmarmat.com.np/services/${slug}`,
     provider: {
       '@type': 'Organization',
       name: 'Digital Marmat IT Services',
-      url: 'https://digitalmarmat.com',
+      url: 'https://www.digitalmarmat.com.np',
     },
     areaServed: { '@type': 'Country', name: 'Nepal' },
   }
@@ -79,6 +79,7 @@ export default async function ServicePage(
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <ServicePageContent service={service} />
+      <RelatedServices slug={slug} />
     </>
   )
 }

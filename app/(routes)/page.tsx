@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fi'
 import { Container } from '@/components/ui/Container'
 import { SectionHeader } from '@/components/ui/SectionHeader'
+import { HomeBlogSection } from '@/components/HomeBlogSection'
 
 // ─── Animated counter ─────────────────────────────────────────────────────────
 
@@ -18,19 +19,20 @@ function CounterStat({
 }: {
   end: number; suffix: string; label: string; index: number; isDecimal?: boolean
 }) {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(end)
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true })
 
   useEffect(() => {
     if (!inView) return
     if (isDecimal) { setCount(end); return }
+    const startValue = Math.max(0, end - 5)
     const duration = 1800
     const t0 = performance.now()
     const tick = (now: number) => {
       const p = Math.min((now - t0) / duration, 1)
       const eased = 1 - Math.pow(1 - p, 3)
-      setCount(Math.floor(eased * end))
+      setCount(Math.floor(startValue + eased * (end - startValue)))
       if (p < 1) requestAnimationFrame(tick)
       else setCount(end)
     }
@@ -57,12 +59,12 @@ function CounterStat({
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const featuredServices = [
-  { icon: FiCode,         name: 'Website Development',   desc: 'Custom, fast, and responsive websites built with modern technologies.',          slug: 'website-development'   },
-  { icon: FiTrendingUp,   name: 'SEO Services',           desc: 'Data-driven SEO strategies that push your site to the top of Google.',           slug: 'seo-services'          },
-  { icon: FiBarChart2,    name: 'Digital Marketing',      desc: 'Full-funnel campaigns that turn visitors into paying customers.',                 slug: 'digital-marketing'     },
-  { icon: FiShare2,       name: 'Social Media Marketing', desc: 'Grow your audience and brand presence across every major platform.',             slug: 'social-media-marketing'},
-  { icon: FiLayers,       name: 'UI/UX Design',           desc: 'Intuitive, beautiful interfaces designed around your users.',                    slug: 'ui-ux-design'          },
-  { icon: FiShoppingCart, name: 'E-Commerce Development', desc: 'High-converting online stores built to sell around the clock.',                  slug: 'ecommerce-development' },
+  { icon: FiCode,         name: 'Website Development',   desc: 'Custom, fast, and responsive websites built with React and Next.js. We develop business websites, portfolios, and web apps for companies across Nepal — built to rank on Google and convert visitors.',       slug: 'website-development'   },
+  { icon: FiTrendingUp,   name: 'SEO Services',           desc: "Data-driven SEO strategies tailored for Nepal's market. We improve your Google rankings through technical SEO, content optimization, and local SEO — helping Kathmandu businesses get found online.",        slug: 'seo-services'          },
+  { icon: FiBarChart2,    name: 'Digital Marketing',      desc: 'Full-funnel digital marketing campaigns across Google Ads, Facebook, and Instagram. We help Nepal businesses generate leads and grow revenue through paid and organic channels.',                           slug: 'digital-marketing'     },
+  { icon: FiShare2,       name: 'Social Media Marketing', desc: 'Strategic social media management for Facebook, Instagram, TikTok, and LinkedIn. We create content, run paid campaigns, and grow engaged audiences for businesses across Nepal.',                           slug: 'social-media-marketing'},
+  { icon: FiLayers,       name: 'UI/UX Design',           desc: "User-centered design that turns visitors into customers. We create wireframes, prototypes, and polished interfaces for websites and mobile apps — beautiful, functional, and built for Nepal's market.",      slug: 'ui-ux-design'          },
+  { icon: FiShoppingCart, name: 'E-Commerce Development', desc: 'High-converting online stores built on Shopify, WooCommerce, or custom platforms. From product listings to payment gateways — we build e-commerce businesses across Nepal to sell 24/7.',                    slug: 'ecommerce-development' },
 ]
 
 const processSteps = [
@@ -114,9 +116,9 @@ export default function HomePage() {
               </motion.div>
 
               <h1 className="text-white font-bold leading-[1.08] mb-6">
-                We Build Websites<br />
+                Nepal's IT Company for<br />
                 <span className="bg-gradient-to-r from-secondary to-blue-300 bg-clip-text text-transparent">
-                  That Actually Work
+                  Website Development, SEO & Digital Marketing
                 </span>
               </h1>
 
@@ -395,6 +397,9 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
+
+      {/* ══ BLOG ═══════════════════════════════════════════════════════════ */}
+      <HomeBlogSection />
 
       {/* ══ CTA ════════════════════════════════════════════════════════════ */}
       <section className="py-28 bg-gradient-to-r from-navy to-primary relative overflow-hidden">
