@@ -26,7 +26,7 @@ const quickLinks: QuickLink[] = [
   { href: '/blog',      label: 'Blog'      },
   { href: '/careers',   label: 'Careers'   },
   { href: '/contact',   label: 'Contact'   },
-  { href: 'https://dashboardmarmat.netlify.app/', label: 'Admin', external: true },
+  { href: 'https://dashboard-bfo0vtvno-infodmsservicenepal-gmailcoms-projects.vercel.app/dashboard', label: 'Admin', external: true },
 ]
 
 const socials = [
