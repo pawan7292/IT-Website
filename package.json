@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.102.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.0",
-    "next": "^16.2.7",
+    "next": "^15.2.3",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.10.1",
     "react": "^18.3.0",
