@@ -3,6 +3,7 @@ import './globals.css'
 import ClientLayout from '@/components/layout/ClientLayout'
 import { FloatingWhatsApp } from '@/components/ui/FloatingWhatsApp'
 import { LocalBusinessSchema } from '@/components/seo/LocalBusinessSchema'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: {
@@ -119,6 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="alternate" hrefLang="x-default" href="https://digitalmarmat.com" />
       </head>
       <body className="font-sans">
+        <GoogleAnalytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
