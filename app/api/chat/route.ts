@@ -1,30 +1,54 @@
 import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
+import { servicesData } from '@/data/services'
+import { blogPosts } from '@/data/blog'
 
-const TO_EMAIL     = 'techdigitalmarmat@gmail.com'
-const FROM_NAME    = 'Digital Marmat Website'
-const GEMINI_MODEL = 'gemini-2.5-flash'
+const TO_EMAIL  = 'techdigitalmarmat@gmail.com'
+const FROM_NAME = 'Digital Marmat Website'
 
-const SYSTEM_PROMPT = `You are "Marmat AI", the friendly virtual assistant on the Digital Marmat website — a Nepal-based IT company in Kathmandu that has delivered 50+ projects.
+// Tried in order — if one is overloaded/rate-limited/empty, the next is used.
+const GEMINI_MODELS = ['gemini-2.5-flash', 'gemini-2.5-flash-lite', 'gemini-flash-lite-latest']
 
-SERVICES WE OFFER:
-1. Website Development — custom, scalable, high-performance websites (Next.js, React, Tailwind)
-2. SEO Services — data-driven SEO to boost search rankings and organic traffic
-3. Digital Marketing — full-funnel campaigns (Google Ads, Meta Ads, email marketing)
-4. Social Media Marketing — building brand presence and growing audiences
-5. UI/UX Design — intuitive, conversion-focused interfaces designed in Figma
-6. E-Commerce Development — online stores on Shopify, WooCommerce, or custom stacks
-7. Software Development — custom backend systems and APIs
-8. Mobile App Development — iOS & Android apps (React Native / Flutter)
-9. Branding & Design — logos, brand identity, marketing materials
-10. AI Automation Solutions — AI-powered workflows and business automation
+function buildServicesKnowledge(): string {
+  return servicesData
+    .map((s) => {
+      const benefits = s.benefits.map((b) => `  - ${b.title}: ${b.description}`).join('\n')
+      const features = s.features.map((f) => `  - ${f.title}: ${f.description}`).join('\n')
+      const faqs = s.faqs.map((f) => `  Q: ${f.question}\n  A: ${f.answer}`).join('\n')
+      return `### ${s.name} (page: /services/${s.slug})\n${s.heroDescription}\n\nKey benefits:\n${benefits}\n\nWhat's included:\n${features}\n\nTechnologies used: ${s.technologies.join(', ')}\n\nFAQs:\n${faqs}`
+    })
+    .join('\n\n')
+}
+
+function buildBlogKnowledge(): string {
+  return blogPosts
+    .map((p) => `- "${p.title}" (${p.category}): ${p.excerpt} — /blog/${p.slug}`)
+    .join('\n')
+}
+
+const SYSTEM_PROMPT = `You are "Marmat AI", the friendly virtual assistant on the Digital Marmat website (digitalmarmat.com.np).
+
+ABOUT DIGITAL MARMAT:
+- A Nepal-based IT company headquartered in Kathmandu.
+- 3+ years of experience, 50+ projects delivered, 99.9% client satisfaction, 100+ happy clients.
+- Team: Pawan Thapa (CEO / Founder), Sabina Phuyal (Co-Founder), Rajan Khadka (Co-Founder), Aayush Mainali (IT Head).
+- Why clients choose us: 100% custom solutions (never templates), proven track record, diverse expertise (web, software, marketing, design, AI) all under one roof, client-centric approach, on-time delivery, and dedicated ongoing support.
+
+SERVICES — full details (benefits, what's included, FAQs):
+${buildServicesKnowledge()}
 
 PRICING (NPR, starting prices — final quote depends on project scope):
 - Website Development: Starter NPR 15,000 | Business NPR 35,000 | Enterprise — custom quote
 - Digital Marketing: Basic NPR 8,000/mo | Growth NPR 18,000/mo | Pro — custom quote
 - SEO: Local SEO NPR 6,000/mo | Growth SEO NPR 14,000/mo | Authority SEO — custom quote
 - Branding: Basic Brand NPR 10,000 | Full Brand NPR 25,000 | Brand Strategy — custom quote
-- For Mobile Apps, Software Development, E-Commerce, and AI Automation, pricing depends on project scope — recommend a free consultation.
+- Mobile Apps: Simple apps from NPR 80,000 | Mid-complexity with backend NPR 1,50,000-4,00,000 | Enterprise — custom quote
+- AI Automation: Simple workflow automations from NPR 15,000 | Custom AI chatbots/data pipelines NPR 50,000-2,00,000+
+- For Software Development and E-Commerce, pricing depends on project scope — recommend a free consultation.
+- Full pricing details: /pricing
+
+BLOG ARTICLES (recommend the most relevant one if it helps answer the user's question):
+${buildBlogKnowledge()}
 
 CONTACT & LINKS:
 - WhatsApp / Phone: +977 9802362213
@@ -33,10 +57,13 @@ CONTACT & LINKS:
 - Free SEO audit: /free-seo-audit
 - Full pricing: /pricing
 - Contact form: /contact
+- Careers: /careers
+- About us: /about
 
 YOUR ROLE:
 - Be warm, concise, and helpful. Keep replies short (2-4 sentences) unless the user asks for more detail.
-- Only use the information above. If you don't know something, say so honestly and suggest WhatsApp or the contact form.
+- Use the information above to answer questions about services, pricing, process, FAQs, the company, and blog content as accurately as possible.
+- If you don't know something or it isn't covered above, say so honestly and suggest WhatsApp or the contact form.
 - Never invent prices, services, or facts not listed here.
 
 LEAD CAPTURE:
@@ -134,6 +161,47 @@ function buildLeadEmail(data: { name: string; email: string; interest: string; c
 
 type ChatMessage = { role: 'user' | 'model'; text: string }
 
+async function callGemini(contents: { role: string; parts: { text: string }[] }[], apiKey: string): Promise<string> {
+  let lastError = 'Unknown error'
+
+  for (const model of GEMINI_MODELS) {
+    try {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-goog-api-key': apiKey },
+          body: JSON.stringify({
+            contents,
+            systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+            generationConfig: { temperature: 0.4, maxOutputTokens: 400 },
+          }),
+        }
+      )
+
+      if (!res.ok) {
+        lastError = await res.text()
+        console.error(`[Chat API] ${model} error:`, lastError)
+        continue
+      }
+
+      const data = await res.json()
+      const reply: string = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? ''
+      if (!reply) {
+        lastError = `${model} returned an empty reply`
+        continue
+      }
+
+      return reply
+    } catch (err) {
+      lastError = err instanceof Error ? err.message : String(err)
+      console.error(`[Chat API] ${model} network error:`, err)
+    }
+  }
+
+  throw new Error(lastError)
+}
+
 export async function POST(req: Request) {
   const { message, history } = (await req.json()) as { message?: string; history?: ChatMessage[] }
 
@@ -151,34 +219,11 @@ export async function POST(req: Request) {
     { role: 'user', parts: [{ text: message }] },
   ]
 
-  let geminiRes: Response
+  let reply: string
   try {
-    geminiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-goog-api-key': apiKey },
-        body: JSON.stringify({
-          contents,
-          systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-          generationConfig: { temperature: 0.4, maxOutputTokens: 400 },
-        }),
-      }
-    )
+    reply = await callGemini(contents, apiKey)
   } catch (err) {
-    console.error('[Chat API] Network error calling Gemini:', err)
-    return NextResponse.json({ error: 'AI is temporarily unavailable. Please try WhatsApp instead.' }, { status: 502 })
-  }
-
-  if (!geminiRes.ok) {
-    console.error('[Chat API] Gemini error:', await geminiRes.text())
-    return NextResponse.json({ error: 'AI is temporarily unavailable. Please try WhatsApp instead.' }, { status: 502 })
-  }
-
-  const data = await geminiRes.json()
-  let reply: string = data?.candidates?.[0]?.content?.parts?.[0]?.text ?? ''
-
-  if (!reply) {
+    console.error('[Chat API] All Gemini models failed:', err)
     return NextResponse.json({ error: 'AI is temporarily unavailable. Please try WhatsApp instead.' }, { status: 502 })
   }
 
