@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import ClientLayout from '@/components/layout/ClientLayout'
 import { FloatingWhatsApp } from '@/components/ui/FloatingWhatsApp'
+import { ChatWidget } from '@/components/ui/ChatWidget'
 import { LocalBusinessSchema } from '@/components/seo/LocalBusinessSchema'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import ClarityScript from '@/components/ClarityScript'
@@ -107,6 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </ClientLayout>
         <FloatingWhatsApp />
+        <ChatWidget />
         <LocalBusinessSchema />
       </body>
     </html>
