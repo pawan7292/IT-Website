@@ -105,9 +105,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <ClientLayout>
           {children}
-          <FloatingWhatsApp />
-          <LocalBusinessSchema />
         </ClientLayout>
+        <FloatingWhatsApp />
+        <LocalBusinessSchema />
       </body>
     </html>
   )
