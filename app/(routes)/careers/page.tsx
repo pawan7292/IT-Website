@@ -28,74 +28,20 @@ const services = [
 
 const positions = [
   {
-    title: 'Web Developer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Development',
-    description: 'Build fast, responsive websites and web applications using modern technologies like Next.js, React, and Tailwind CSS.',
-  },
-  {
-    title: 'SEO Specialist',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'SEO & Growth',
-    description: 'Drive organic growth through on-page, off-page, and technical SEO strategies. Experience with Google Search Console and analytics tools required.',
-  },
-  {
-    title: 'Digital Marketing Executive',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
+    title: 'Content Creator Intern',
+    type: 'Internship',
+    location: 'In-house — Kathmandu',
+    hours: '10:00 AM – 5:00 PM',
     department: 'Marketing',
-    description: 'Plan and execute digital campaigns across multiple channels. Hands-on experience with Google Ads, Meta Ads, and email marketing is a plus.',
-  },
-  {
-    title: 'Social Media Manager',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Marketing',
-    description: 'Create engaging content, manage brand presence across social platforms, and grow our clients\' audiences with data-driven strategies.',
-  },
-  {
-    title: 'UI/UX Designer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Design',
-    description: 'Design intuitive, user-centered interfaces using Figma. Strong portfolio showcasing web and mobile UI design is essential.',
-  },
-  {
-    title: 'E-Commerce Developer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Development',
-    description: 'Build and optimize e-commerce platforms on Shopify, WooCommerce, or custom stacks. Experience with payment gateways and product management required.',
-  },
-  {
-    title: 'Software Developer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Development',
-    description: 'Develop scalable backend systems and APIs. Proficiency in Node.js, Python, or similar technologies with strong database knowledge.',
-  },
-  {
-    title: 'Mobile App Developer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Development',
-    description: 'Build cross-platform mobile applications using React Native or Flutter. Experience shipping apps to the App Store and Google Play is preferred.',
-  },
-  {
-    title: 'Brand & Graphic Designer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Design',
-    description: 'Create compelling brand identities, logos, and marketing materials. Proficiency in Adobe Creative Suite and a strong portfolio are required.',
-  },
-  {
-    title: 'AI / Automation Engineer',
-    type: 'Full-time',
-    location: 'Kathmandu / Remote',
-    department: 'Technology',
-    description: 'Design and implement AI-powered workflows and automation solutions for clients. Experience with LLMs, APIs, and tools like Make or Zapier is a plus.',
+    description: 'Help us create engaging written, visual, and video content for our website, blog, and social media channels. You\'ll work closely with our marketing team to plan, write, design, and publish content that grows our brand and connects with our audience.',
+    requirements: [
+      'Currently pursuing or recently completed a degree/diploma in Marketing, Mass Communication, Journalism, or a related field',
+      'Strong written and verbal communication skills in English',
+      'Basic understanding of social media platforms (Instagram, Facebook, LinkedIn, TikTok)',
+      'Familiarity with content tools like Canva, CapCut, or Adobe Express is a plus',
+      'Creative mindset, eager to learn, and open to feedback',
+      'Able to work in-house at our Kathmandu office, 10:00 AM – 5:00 PM, Sunday to Friday',
+    ],
   },
 ]
 
@@ -237,35 +183,149 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      {/* ── No Open Positions — Coming Soon ── */}
+      {/* ── Open Positions ── */}
       <section id="open-positions" className="section-padding bg-white">
         <Container>
+          <SectionHeader
+            badge="Open Positions"
+            title="Join Our Team"
+            description="We're hiring! Take a look at our current opening below."
+          />
+          <div className="max-w-3xl mx-auto space-y-6">
+            {positions.map((p, i) => (
+              <motion.div
+                key={p.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-white rounded-2xl p-7 border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-navy mb-2">{p.title}</h3>
+                    <div className="flex flex-wrap gap-3 text-sm text-navy/60">
+                      <span className="inline-flex items-center gap-1.5"><FiBriefcase size={14} /> {p.type}</span>
+                      <span className="inline-flex items-center gap-1.5"><FiMapPin size={14} /> {p.location}</span>
+                      <span className="inline-flex items-center gap-1.5"><FiClock size={14} /> {p.hours}</span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => handleApply(p.title)}
+                    className="shrink-0 bg-primary text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary/90 transition"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+                <p className="text-navy/70 text-sm leading-relaxed mb-5">{p.description}</p>
+                <div>
+                  <p className="text-sm font-semibold text-navy mb-3">Requirements & Qualifications</p>
+                  <ul className="space-y-2">
+                    {p.requirements.map((r) => (
+                      <li key={r} className="flex items-start gap-2.5 text-sm text-navy/60">
+                        <FiCheckCircle className="text-primary shrink-0 mt-0.5" size={15} />
+                        <span>{r}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-center text-navy/50 text-sm mt-10">
+            Don't see a role for you?{' '}
+            <a href="mailto:info@digitalmarmat.com?subject=Career Enquiry — Digital Marmat" className="text-primary font-semibold hover:underline">
+              Send us your CV anyway
+            </a>
+            {' '}— we'll keep your profile on file and contact you when a matching role opens.
+          </p>
+        </Container>
+      </section>
+
+      {/* ── Apply Form ── */}
+      <section id="apply-form" className="section-padding bg-light-bg">
+        <Container>
+          <SectionHeader
+            badge="Apply Now"
+            title="Submit Your Application"
+            description="Fill out the form below and attach your CV — we'll get back to you within 3 business days."
+          />
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-2xl mx-auto text-center py-16"
+            transition={{ duration: 0.5 }}
+            className="max-w-xl mx-auto bg-white rounded-2xl p-8 border border-gray-100"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 text-primary mb-8">
-              <FiBriefcase size={36} />
-            </div>
-            <span className="inline-block bg-secondary/15 text-secondary text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-              Open Positions
-            </span>
-            <h2 className="text-navy font-bold mb-5">Positions Will Be Updated Soon</h2>
-            <p className="text-navy/60 text-lg leading-relaxed mb-8">
-              We are not actively hiring right now, but great talent is always welcome. Drop us your CV and we'll reach out when the right opportunity opens up.
-            </p>
-            <a
-              href="mailto:info@digitalmarmat.com?subject=Career Enquiry — Digital Marmat"
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded-full font-semibold hover:bg-primary/90 transition"
-            >
-              Send Your CV Anyway
-            </a>
-            <p className="mt-5 text-navy/40 text-sm">
-              We'll keep your profile on file and contact you when a matching role opens.
-            </p>
+            {submitted ? (
+              <div className="text-center py-10">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-50 text-green-600 mb-5">
+                  <FiCheckCircle size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-navy mb-2">Application Sent!</h3>
+                <p className="text-navy/60 text-sm">Thanks for applying — we'll review your application and get back to you soon.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <label className="block text-sm font-semibold text-navy mb-1.5">Full Name</label>
+                  <input
+                    type="text" required value={form.name}
+                    onChange={(e) => setForm(f => ({ ...f, name: e.target.value }))}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-navy mb-1.5">Email</label>
+                  <input
+                    type="email" required value={form.email}
+                    onChange={(e) => setForm(f => ({ ...f, email: e.target.value }))}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-navy mb-1.5">Position</label>
+                  <select
+                    required value={form.position}
+                    onChange={(e) => setForm(f => ({ ...f, position: e.target.value }))}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm bg-white"
+                  >
+                    <option value="">Select a position</option>
+                    {positions.map((p) => (
+                      <option key={p.title} value={p.title}>{p.title}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-navy mb-1.5">Cover Note (optional)</label>
+                  <textarea
+                    rows={4} value={form.message}
+                    onChange={(e) => setForm(f => ({ ...f, message: e.target.value }))}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm resize-none"
+                    placeholder="Tell us why you're a great fit..."
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-navy mb-1.5">CV / Resume</label>
+                  <label className="flex items-center gap-3 px-4 py-3 rounded-xl border border-dashed border-gray-300 hover:border-primary cursor-pointer transition-colors text-sm text-navy/60">
+                    <FiUpload size={16} />
+                    {file ? file.name : 'Upload your CV (PDF, DOC)'}
+                    <input
+                      type="file" accept=".pdf,.doc,.docx" className="hidden"
+                      onChange={(e) => setFile(e.target.files?.[0] ?? null)}
+                    />
+                  </label>
+                </div>
+                <button
+                  type="submit" disabled={loading}
+                  className="w-full bg-primary text-white py-3.5 rounded-full font-semibold hover:bg-primary/90 transition disabled:opacity-60"
+                >
+                  {loading ? 'Submitting...' : 'Submit Application'}
+                </button>
+              </form>
+            )}
           </motion.div>
         </Container>
       </section>
