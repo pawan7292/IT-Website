@@ -47,11 +47,11 @@ const positions = [
 
 const perks = [
   { emoji: '💰', title: 'Competitive Pay',      body: 'Fair, market-aligned salaries reviewed regularly.' },
-  { emoji: '🏡', title: 'Remote Friendly',      body: 'Work from anywhere — we care about results, not location.' },
+  { emoji: '🏢', title: 'Great Workspace',      body: 'A modern, collaborative office in the heart of Kathmandu.' },
   { emoji: '📚', title: 'Learning Budget',      body: 'Grow your skills with courses, tools, and conferences.' },
   { emoji: '🚀', title: 'Career Growth',        body: 'Fast-growing company means fast-growing opportunities.' },
   { emoji: '🤝', title: 'Great Culture',        body: 'Collaborative, supportive team that celebrates wins together.' },
-  { emoji: '⏰', title: 'Flexible Hours',       body: 'We trust you to manage your time and deliver great work.' },
+  { emoji: '🎉', title: 'Team Outings',         body: 'Regular team lunches, outings, and celebrations.' },
 ]
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
