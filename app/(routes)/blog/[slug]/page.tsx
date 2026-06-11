@@ -236,7 +236,7 @@ export default async function BlogPostPage(
               {/* Conclusion */}
               <div className="mt-12 p-7 bg-light-bg rounded-2xl border border-gray-100">
                 <h3 className="font-bold text-navy text-lg mb-3">Conclusion</h3>
-                <p className="text-navy/70 leading-relaxed">{post.conclusion}</p>
+                <p className="text-navy/70 leading-relaxed">{renderWithLinks(post.conclusion)}</p>
               </div>
 
               {/* Back link */}

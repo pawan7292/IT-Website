@@ -154,12 +154,26 @@ const SERVICE_HIGHLIGHTS: Record<string, { icon: string; label: string; desc: st
   ],
 }
 
+// ─── Related blog guide per service ──────────────────────────────────────────
+
+const SERVICE_BLOG_LINKS: Record<string, { href: string; label: string }> = {
+  'website-development': {
+    href: '/blog/website-development-services-nepal',
+    label: 'Read our full guide: Website Development Services in Nepal',
+  },
+  'seo-services': {
+    href: '/blog/seo-services-nepal-guide',
+    label: 'Read our full guide: SEO Services in Nepal',
+  },
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export function ServicePageContent({ service }: { service: ServiceData }) {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
   const processCols = PROCESS_COLS[service.process.length] ?? 'md:grid-cols-4'
   const highlights = SERVICE_HIGHLIGHTS[service.slug] ?? null
+  const relatedBlog = SERVICE_BLOG_LINKS[service.slug] ?? null
 
   return (
     <>
@@ -490,6 +504,15 @@ export function ServicePageContent({ service }: { service: ServiceData }) {
               >
                 Ask Us Anything <FiArrowRight size={17} />
               </Link>
+
+              {relatedBlog && (
+                <Link
+                  href={relatedBlog.href}
+                  className="mt-5 flex items-center gap-2 text-navy/60 text-sm font-medium hover:text-primary transition-colors"
+                >
+                  📖 {relatedBlog.label} <FiArrowRight size={14} />
+                </Link>
+              )}
             </motion.div>
 
             {/* Right: accordion */}
