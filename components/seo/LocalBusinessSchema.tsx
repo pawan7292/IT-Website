@@ -17,7 +17,7 @@ export function LocalBusinessSchema() {
     description: 'Nepal\'s trusted IT company providing website development, SEO, digital marketing, UI/UX design, mobile app development, e-commerce, branding, and AI automation solutions. Based in Kathmandu, serving clients across Nepal and globally since 2021.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Kathmandu',
+      streetAddress: 'Balaju',
       addressLocality: 'Kathmandu',
       addressRegion: 'Bagmati Province',
       postalCode: '44600',
@@ -25,10 +25,10 @@ export function LocalBusinessSchema() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 27.7172,
-      longitude: 85.3240,
+      latitude: 27.7360989,
+      longitude: 85.3048607,
     },
-    hasMap: 'https://maps.google.com/?q=P8P3%2BCW+Kathmandu',
+    hasMap: 'https://www.google.com/maps/place/Digital+Marmat.+Tech/@27.7360989,85.3048607,17z',
     telephone: '+977-9802362213',
     email: 'info@digitalmarmat.com',
     // Nepal work week: Sunday–Friday (Saturday half-day)
