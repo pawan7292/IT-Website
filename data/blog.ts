@@ -779,6 +779,256 @@ export const blogPosts: BlogPost[] = [
       'AI guide Nepal',
     ],
   },
+
+  // ── 11. Website Development Services ──────────────────────────────────────
+  {
+    slug: 'website-development-services-nepal',
+    title: 'Website Development Services in Nepal – Build a Professional Website for Your Business',
+    excerpt: 'What does website development really involve, and why does your business need it? A complete guide to website types, custom vs template websites, and how Digital Marmat builds professional websites in Nepal.',
+    coverImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
+    category: 'Development',
+    tags: ['Website Development', 'Web Design Nepal', 'Custom Website', 'Business Website'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Web Development Experts',
+    date: '2026-06-10',
+    dateFormatted: 'June 10, 2026',
+    readTime: '8 min',
+    intro: 'Every business today needs a place online that represents who they are, what they offer, and why customers should choose them — and that place is a website. But not all websites are built the same, and choosing the right approach can make the difference between a site that just exists and one that actively grows your business. In this guide, we\'ll break down what website development really involves, the different types of websites available, and how a professional, custom-built website can transform your business in Nepal\'s competitive digital market.',
+    sections: [
+      {
+        heading: 'What Is Website Development?',
+        body: 'Website development is the process of creating, building, and maintaining websites that are accessible on the internet. It includes everything from designing how a website looks to coding how it works behind the scenes. A website is built using different technologies — HTML, CSS, and JavaScript on the front end, along with backend systems that manage data, user accounts, and interactions. In simple terms, website development is what turns an idea into a live website that people can visit anytime, from anywhere in the world. Today, every business needs a website to establish an online presence, build credibility, and connect with customers 24/7 — whether they\'re [based in Kathmandu](/contact) or anywhere else.',
+      },
+      {
+        heading: 'Types of Website Development',
+        body: 'There are different types of websites depending on your business needs, and choosing the right type is the first step toward a website that actually works for you:',
+        items: [
+          'Static websites – simple websites with fixed content, best for basic information',
+          'Dynamic websites – websites where content changes through an admin panel or user interaction',
+          'E-commerce websites – online stores with product listings, carts, and payment systems',
+          'Business websites – company websites for branding, services, and lead generation',
+          'Custom web applications – advanced systems built for specific business requirements',
+        ],
+      },
+      {
+        heading: 'Why Your Business Needs a Website',
+        body: 'A website is no longer optional for businesses — it is a necessity in today\'s digital world. A professionally built website helps your business in several ways:',
+        items: [
+          'Build a 24/7 online presence so customers can find you anytime',
+          'Establish trust and professional credibility with potential customers',
+          'Reach customers beyond your physical location — across Nepal and globally',
+          'Compete with other businesses in the digital market on a level playing field',
+          'Act as a central hub for marketing, branding, and communication',
+        ],
+      },
+      {
+        heading: 'Website Templates vs Custom Website Development',
+        body: 'Many businesses start with website templates because they\'re quick and affordable — these are pre-designed layouts that can be customized slightly to fit your brand. However, templates come with real limitations: limited design flexibility, a look and feel that\'s similar to thousands of other websites, and lower performance in both speed and SEO. Custom website development, on the other hand, is built from scratch based on your specific business needs. A custom website gives you a fully SEO-friendly structure, faster loading speed, a better user experience, the ability to scale as your business grows, and complete control over design and features — none of which a generic template can offer.',
+      },
+      {
+        heading: 'Benefits of Professional Website Development',
+        body: 'Investing in professional website development provides long-term advantages that templates and DIY builders simply cannot match:',
+        items: [
+          'Mobile-responsive design that works flawlessly on all devices',
+          'SEO-optimized structure for better Google ranking from day one',
+          'Faster loading speed for a better user experience and lower bounce rates',
+          'Clean UI/UX design that improves engagement and conversions',
+          'Strong security to protect your business and customer data',
+        ],
+      },
+      {
+        heading: 'Website Development Services by Digital Marmat',
+        body: 'At [Digital Marmat](/services/website-development), we provide complete website development solutions tailored to businesses of every size in Nepal:',
+        items: [
+          'Business website development for companies and startups',
+          'E-commerce website development with secure eSewa, Khalti, and Fonepay payment integration',
+          'Custom website development tailored to unique business needs',
+          'Website redesign services to modernize and improve outdated websites',
+          'Website maintenance and support for long-term performance',
+        ],
+      },
+      {
+        heading: 'Why Choose Digital Marmat',
+        body: 'Choosing the right development team is one of the most important decisions for your business\'s online success. Here\'s what sets us apart:',
+        items: [
+          'Experienced developers with modern technical expertise across React, Next.js, and WordPress',
+          'Affordable website development services in Nepal without compromising on quality',
+          'SEO-friendly websites built for ranking and visibility from the first day they go live',
+          'Clean, modern, and user-focused design approach for every project',
+          'Continuous support and maintenance to keep your website growing alongside your business',
+        ],
+      },
+      {
+        heading: 'Our Website Development Process',
+        body: 'We follow a structured, transparent process to ensure every project delivers real results:',
+        items: [
+          'Requirement analysis to understand your business goals and target audience',
+          'UI/UX design creation based on your brand identity and industry',
+          'Website development using modern, scalable technologies',
+          'Testing for speed, performance, security, and cross-device compatibility',
+          'Launch and ongoing support after deployment',
+        ],
+      },
+    ],
+    conclusion: 'If you want to grow your business online, a professional website is the first step. At Digital Marmat, we build websites that are not only visually appealing but also designed to bring real results — more visibility, more leads, and more customers. [Get in touch](/contact) for a free consultation, or [explore our website development services](/services/website-development) to see how we can help.',
+    metaTitle: 'Website Development Services in Nepal | Digital Marmat',
+    metaDescription: 'Looking for professional website development services in Nepal? Digital Marmat builds custom, SEO-friendly, mobile-responsive websites that help your business grow online.',
+    keywords: [
+      'website development services Nepal', 'website development Nepal', 'professional website Nepal',
+      'custom website development Nepal', 'business website development Nepal',
+      'ecommerce website development Nepal', 'web design company Nepal',
+      'affordable website development Nepal', 'website development company Kathmandu',
+    ],
+    faqs: [
+      {
+        question: 'How much does website development cost in Nepal?',
+        answer: 'The cost depends on the type of website, features, and complexity. Basic websites are more affordable, while custom websites with advanced features cost more. Check our [pricing page](/pricing) for starting prices, or use our [website cost calculator](/website-cost-calculator) to get an instant estimate.',
+      },
+      {
+        question: 'How long does it take to build a website?',
+        answer: 'A basic website may take just a few days to build, while complex websites — such as e-commerce stores or custom web applications — can take several weeks depending on the features and content required.',
+      },
+      {
+        question: 'Do I need a website for my small business?',
+        answer: 'Yes — a website helps build trust, attract customers, and grow your business online, even if you already have a strong presence on social media. It gives you a professional space that you fully own and control.',
+      },
+      {
+        question: 'Is SEO included in website development?',
+        answer: 'A basic SEO-friendly structure — clean code, fast loading, mobile responsiveness, and proper meta tags — is included with every website we build. Advanced SEO, such as ongoing keyword targeting and link building, is usually offered as a separate [SEO service](/services/seo-services).',
+      },
+      {
+        question: 'Can I update my website later?',
+        answer: 'Yes — modern websites are built with content management in mind, so you can easily update text, images, and pages yourself anytime, without needing to touch any code.',
+      },
+    ],
+  },
+
+  // ── 12. SEO Services ─────────────────────────────────────────────────────
+  {
+    slug: 'seo-services-nepal-guide',
+    title: 'SEO Services in Nepal: A Complete Guide to Growing Your Business Online',
+    excerpt: 'What does an SEO agency actually do, and why does your business need one? Discover the types of SEO services available in Nepal, what professional SEO includes, and how it can grow your business on Google.',
+    coverImage: 'https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&w=1200&q=80',
+    category: 'SEO',
+    tags: ['SEO Services', 'SEO Nepal', 'Digital Marketing', 'Google Ranking'],
+    author: 'Digital Marmat Team',
+    authorRole: 'SEO Specialists',
+    date: '2026-06-11',
+    dateFormatted: 'June 11, 2026',
+    readTime: '9 min',
+    intro: 'If your business doesn\'t show up when customers search on Google, it\'s invisible to a huge share of your potential market. SEO services in Nepal help businesses fix exactly that — by improving how easily customers can find you on search engines and turning that visibility into real enquiries and sales. In this guide, we\'ll explain what SEO services actually involve, the different types available, and how professional SEO can transform your business\'s online growth.',
+    sections: [
+      {
+        heading: 'What Are SEO Services?',
+        body: 'SEO (Search Engine Optimization) services are a set of strategies and techniques used to improve a website\'s visibility on search engines like Google. The goal is simple: when someone searches for products or services you offer, your website should appear as high as possible in the results — ideally on page one. Professional SEO services in Nepal cover everything from technical website fixes and content optimization to building authority through backlinks and improving local visibility on Google Maps. Unlike paid ads, the results of good SEO compound over time, meaning the traffic you earn keeps growing without paying for every single click.',
+      },
+      {
+        heading: 'Types of SEO Services',
+        body: 'A complete SEO strategy combines several different types of SEO working together. Understanding each one helps you know exactly what you\'re paying for:',
+        items: [
+          'On-page SEO – optimizing titles, meta descriptions, headings, content, and internal links on your website',
+          'Off-page SEO – building backlinks and online authority through outreach, guest posts, and partnerships',
+          'Technical SEO – improving site speed, mobile-friendliness, indexing, and overall site health',
+          'Local SEO – optimizing your Google Business Profile and citations to rank in local searches',
+          'Content SEO – creating blog posts and landing pages that target keywords your customers are searching for',
+        ],
+      },
+      {
+        heading: 'Why Your Business Needs SEO',
+        body: 'Most customers in Nepal start their buying journey with a Google search — whether they\'re looking for a product, a service, or simply "near me." Investing in SEO services means your business shows up at exactly that moment:',
+        items: [
+          'Get found by customers actively searching for what you offer',
+          'Build long-term, sustainable traffic that doesn\'t disappear when you stop paying for ads',
+          'Outrank competitors who haven\'t invested in SEO yet',
+          'Improve credibility — users trust businesses that Google ranks highly',
+          'Generate consistent leads with one of the best cost-per-lead ratios in digital marketing',
+        ],
+      },
+      {
+        heading: 'DIY SEO vs Professional SEO Services',
+        body: 'Many business owners try to handle SEO themselves using free tools and online tutorials. While basic improvements — like adding keywords to a page title — are achievable on your own, SEO is a constantly evolving field with hundreds of ranking factors. DIY SEO often leads to slow, inconsistent results, or worse, penalties from incorrect technical changes. Professional SEO services bring structured strategy, ongoing monitoring, and the technical expertise needed to compete for the Google ranking SEO services Nepal businesses are chasing — saving you time while delivering measurably better results.',
+      },
+      {
+        heading: 'Benefits of Professional SEO Optimization Services',
+        body: 'Affordable SEO optimization services from an experienced agency deliver advantages that go far beyond just rankings:',
+        items: [
+          'Higher Google rankings for keywords your customers are actively searching',
+          'More organic traffic without paying for every single click',
+          'Long-term growth — unlike paid ads, good SEO compounds and holds over time',
+          'Stronger brand authority, since users trust the businesses Google ranks first',
+          'Full transparency with monthly reports on rankings, traffic, and conversions',
+        ],
+      },
+      {
+        heading: 'SEO Services by Digital Marmat',
+        body: 'As a leading [SEO agency in Nepal](/services/seo-services), Digital Marmat offers complete, result-driven SEO solutions for businesses of every size:',
+        items: [
+          'Keyword research and strategy to target high-intent, low-competition keywords',
+          'On-page SEO optimization across titles, meta descriptions, headings, and content',
+          'Technical SEO audits and fixes to improve speed, indexing, and Core Web Vitals',
+          'Local SEO services for businesses in Nepal — Google Business Profile, citations, and reviews',
+          'Off-page SEO and ethical link building to grow your site\'s authority',
+          'Monthly reporting so you always know exactly what\'s working',
+        ],
+      },
+      {
+        heading: 'Why Choose Digital Marmat for SEO',
+        body: 'There are many SEO agencies in Nepal — here\'s what makes our approach different:',
+        items: [
+          'Proven, ethical SEO strategies that follow Google\'s guidelines — no shortcuts that risk penalties',
+          'Deep understanding of the Nepal market, local search behaviour, and Nepal-specific keywords',
+          'Affordable SEO packages designed for small and growing businesses',
+          'Combined expertise across SEO, content, web development, and design under one roof',
+          'Transparent, measurable reporting every step of the way',
+        ],
+      },
+      {
+        heading: 'Our SEO Process',
+        body: 'Every SEO project starts with a clear, structured process:',
+        items: [
+          'Free SEO audit to identify technical issues, keyword opportunities, and competitor gaps',
+          'Strategy and keyword mapping based on your business goals and target audience',
+          'On-page and technical optimization across your entire website',
+          'Content creation and local SEO setup, including Google Business Profile optimization',
+          'Ongoing link building, monitoring, and monthly reporting',
+        ],
+      },
+    ],
+    conclusion: 'SEO is one of the highest-return investments your business can make online — but only when it\'s done correctly and consistently. Whether you need on-page fixes, a complete local SEO overhaul, or a long-term growth strategy, Digital Marmat\'s SEO team is ready to help. [Get a free SEO audit](/free-seo-audit) today and see exactly where your website stands, or read our [Local SEO Nepal guide](/blog/local-seo-nepal-guide-2025) for an in-depth look at ranking in local search.',
+    metaTitle: 'SEO Services in Nepal | Grow Your Business Online',
+    metaDescription: 'Boost your Google ranking with expert SEO services in Nepal. We provide on-page, off-page, and local SEO to grow your business online.',
+    keywords: [
+      'SEO services in Nepal', 'professional SEO services Nepal', 'SEO agency in Nepal for business growth',
+      'affordable SEO optimization services', 'local SEO services for businesses in Nepal',
+      'Google ranking SEO services Nepal', 'SEO company Nepal', 'SEO Kathmandu',
+    ],
+    faqs: [
+      {
+        question: 'What is included in professional SEO services?',
+        answer: 'Professional SEO services typically include on-page optimization, technical SEO fixes, content creation, local SEO (Google Business Profile and citations), and off-page link building — along with regular reporting on rankings and traffic.',
+      },
+      {
+        question: 'How long does it take to see results from SEO?',
+        answer: 'Most businesses start seeing measurable improvements within 2–3 months, with significant ranking gains typically appearing between 4–6 months. SEO is a long-term strategy that compounds — results in month six are usually far stronger than month one.',
+      },
+      {
+        question: 'How much do SEO services cost in Nepal?',
+        answer: 'SEO pricing depends on your industry, competition, and how much work your website currently needs. Affordable SEO optimization services are available for small businesses, while larger or more competitive industries require bigger ongoing investments. Check our [pricing page](/pricing) for package details.',
+      },
+      {
+        question: 'What is the difference between SEO and Google Ads?',
+        answer: 'Google Ads delivers instant visibility but stops the moment you stop paying. SEO takes longer to build but delivers sustainable, long-term traffic without an ongoing cost per click — making it one of the best long-term investments for any business.',
+      },
+      {
+        question: 'Do I need local SEO if I already have a website?',
+        answer: 'Yes — having a website doesn\'t automatically mean you\'ll rank in local searches. Local SEO services for businesses in Nepal specifically optimize your Google Business Profile, citations, and on-site content so you appear in the Map Pack when nearby customers search for your services.',
+      },
+      {
+        question: 'Can SEO guarantee a #1 ranking on Google?',
+        answer: 'No ethical SEO agency can guarantee a specific ranking position, since Google\'s algorithm considers hundreds of factors and changes constantly. What we can guarantee is a structured, proven process that consistently improves visibility, traffic, and rankings over time.',
+      },
+    ],
+  },
 ]
 
 export const getAllPosts = () => blogPosts
