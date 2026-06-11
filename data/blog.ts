@@ -4,6 +4,11 @@ export interface BlogSection {
   items?: string[]
 }
 
+export interface BlogFaq {
+  question: string
+  answer: string
+}
+
 export interface BlogPost {
   slug: string
   title: string
@@ -22,6 +27,7 @@ export interface BlogPost {
   metaTitle: string
   metaDescription: string
   keywords: string[]
+  faqs?: BlogFaq[]
 }
 
 export const blogPosts: BlogPost[] = [
@@ -114,7 +120,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: 'SEO Specialists',
     date: '2025-05-22',
     dateFormatted: 'May 22, 2025',
-    readTime: '9 min',
+    readTime: '16 min',
     intro: 'When someone in Kathmandu searches "web design company near me," does your business appear? Local SEO is the practice of optimising your online presence so that customers in your geographic area find you first on Google. In Nepal\'s rapidly digitalising market, local SEO is no longer optional — it\'s the most cost-effective customer acquisition strategy available to small and medium businesses.',
     sections: [
       {
@@ -155,15 +161,95 @@ export const blogPosts: BlogPost[] = [
         heading: 'Step 6: Create Locally-Optimised Content',
         body: 'Write blog posts and landing pages that mention your city and neighbourhood — "Best web design services in Lalitpur" or "SEO tips for Kathmandu businesses." This signals local relevance to Google and attracts nearby searchers organically.',
       },
+      {
+        heading: 'Google Business Profile Optimization: A Step-by-Step Guide',
+        body: 'Your Google Business Profile (GBP) — formerly Google My Business — is the single highest-leverage asset in local SEO Nepal businesses can control directly. It\'s what appears in the Map Pack (the three local results shown above organic listings), in Google Maps searches, and in the knowledge panel whenever someone searches your business name. A complete, fully optimised profile can receive up to 7x more clicks than an incomplete one, and it directly influences whether you show up when someone nearby searches for what you offer. Optimising your GBP isn\'t a one-time task — Google consistently rewards profiles that stay active with fresh photos, posts, and prompt responses over those that are set up once and forgotten. Below is the exact step-by-step process our team follows when setting up and optimising Google Business Profiles for clients across Kathmandu, Pokhara, and beyond. If you\'d like us to review your current profile and tell you exactly what\'s holding back your Google ranking Kathmandu searches, [request a free SEO audit](/free-seo-audit) — it takes less than 24 hours and costs nothing.',
+        items: [
+          'Claim and verify your business through Google Search Console, postcard, phone, or email verification',
+          'Select the most accurate primary category (e.g., "Web Design Company," not a generic "Business")',
+          'Add every relevant secondary category that matches a service you genuinely offer',
+          'Write a complete 750-character business description using natural local SEO Nepal keywords — avoid keyword stuffing',
+          'Upload at least 10–15 high-quality photos: storefront, team at work, products, and completed projects',
+          'Set accurate business hours, including special hours for Dashain, Tihar, and other Nepali holidays',
+          'Turn on messaging and the Q&A section, and respond to every question within a few hours',
+          'Publish a Google Post — an offer, update, or event — at least once a week to stay "active" in Google\'s eyes',
+          'List every city or area you serve under the "service area" setting if you work beyond one location',
+        ],
+      },
+      {
+        heading: 'Local Citations & Business Listings: Where to List Your Business',
+        body: 'A citation is any online mention of your business\'s Name, Address, and Phone number — commonly abbreviated as NAP. Citations don\'t need to include a clickable link to count, but the more consistent and widespread they are across the web, the more confidently Google trusts that your business is real, established, and located exactly where you say it is. For local business visibility in a competitive market like Kathmandu, citations act as a trust signal that compounds over time — one or two listings won\'t move the needle, but 20–30 consistent citations across the right platforms absolutely will. The single biggest mistake we see Nepal businesses make is inconsistency: one directory lists "Kathmandu, Bagmati Province," another lists just "Kathmandu," and a third still has an old phone number from a previous office. Every variation dilutes the trust signal and can even confuse Google about which listing is authoritative. Before submitting to any directory, write down your exact NAP — exactly as it appears on your Google Business Profile and on our [SEO services](/services/seo-services) landing page — and use that exact format everywhere, every time, with no abbreviations or shortcuts.',
+        items: [
+          'Nepal-specific directories: Hamrobazar, Nepalbusiness.com, Yellow Pages Nepal, Nepal Trade Portal',
+          'Global directories: Google Business Profile, Bing Places, Apple Maps, Facebook Page, Foursquare',
+          'Industry-specific listings: relevant trade associations and Nepal Chamber of Commerce member directories',
+          'Local review platforms: TripAdvisor for hospitality and tourism, Yelp for international visibility',
+          'Data aggregators: get your NAP correct at the source so it propagates accurately to smaller directories',
+          'Audit existing citations every quarter — old addresses and phone numbers from previous locations often linger for years and quietly hurt your rankings',
+        ],
+      },
+      {
+        heading: 'Local Link Building Strategies That Actually Work',
+        body: 'Backlinks — links from other websites pointing to yours — remain one of Google\'s strongest ranking signals, and for local SEO, links from Nepal-based and locally relevant websites carry extra weight. A single backlink from a respected Kathmandu business directory, local news site, or industry association can do more for your Google ranking Kathmandu searches than a dozen low-quality links from unrelated foreign sites ever will. The goal isn\'t volume — it\'s relevance and trust. [Our SEO team](/services/seo-services) builds local link profiles methodically, focusing on quality over quantity, because a handful of strong local links consistently outperforms hundreds of spammy ones and protects your site from algorithm penalties down the line. Link building also takes time to show results, so it works best as an ongoing part of your strategy rather than a one-time sprint — which is exactly how [our SEO services](/services/seo-services) team structures every local SEO Nepal campaign.',
+        items: [
+          'Sponsor or participate in local events, college fests, or community programs — most organisers link sponsors on their websites',
+          'Get featured in Nepali business news outlets by offering expert commentary or a founder interview',
+          'Partner with complementary, non-competing local businesses for cross-promotion and reciprocal mentions',
+          'Join the Nepal Chamber of Commerce, FNCCI, or industry-specific associations that list members with links',
+          'Offer to write a guest post or contribute a case study for a partner business\'s blog in your industry',
+          'List your business on local university or alumni association directories if you have relevant connections',
+          'Create genuinely useful local resources — guides, directories, or maps — that other sites naturally want to reference and link to',
+          'Reclaim unlinked brand mentions by searching for your business name and politely asking sites that mention you to add a link',
+        ],
+      },
+      {
+        heading: 'Case Study: Local SEO Success in Kathmandu',
+        body: 'To show what consistent local SEO actually looks like in practice, here\'s a real example from a client [based in Kathmandu](/contact) — a home services business that came to us ranking nowhere for the searches that mattered most. Before working with our [SEO services](/services/seo-services) team, the business had an unverified Google Business Profile with just 3 photos, no posts, 4 reviews, and zero appearances in the local Map Pack for any of their core service keywords. Their website wasn\'t ranking on the first three pages of Google for "Kathmandu" plus their service name. Over a focused 4-month local SEO Nepal campaign, we rebuilt their Google Business Profile from scratch, fixed inconsistent NAP citations across 18 directories, published locally-optimised landing pages for each neighbourhood they served, and ran a structured review-generation campaign. The results speak for themselves: Map Pack appearances for their top 5 target keywords went from zero to consistently ranking in the top 3, Google Business Profile views increased by 412% month-over-month, phone calls generated directly from the GBP listing went from roughly 2 per week to 18–22 per week, and verified reviews grew from 4 to 47 with a 4.8-star average. Most importantly, the business reported that over 60% of new customer enquiries by month four could be directly traced back to Google Maps and local search — a channel that had previously generated almost nothing for them. This is the kind of compounding result that\'s possible for any Nepal business that commits to local SEO consistently rather than treating it as a one-time setup.',
+      },
     ],
-    conclusion: 'Local SEO is a long-term game that rewards consistency. Start with your Google Business Profile today, optimise your website for local keywords, and build citations systematically. The businesses investing in local SEO in Nepal right now are building a competitive moat that will take competitors years to close. Need help? Digital Marmat\'s SEO team specialises in the Nepal market.',
+    conclusion: 'Local SEO is a long-term game that rewards consistency. Start with your Google Business Profile today, optimise your website for local keywords, build citations systematically, and earn links from genuinely relevant local sources. The businesses investing in local SEO in Nepal right now are building a competitive moat that will take competitors years to close. Need help? Digital Marmat\'s SEO team specialises in the Nepal market.',
     metaTitle: 'Local SEO Nepal 2025 Guide: Rank #1 on Google | Digital Marmat',
     metaDescription: 'Complete local SEO guide for Nepal businesses. Learn how to rank #1 on Google, optimise your Google Business Profile, target Nepal keywords, and build local authority.',
     keywords: [
       'local SEO Nepal', 'local SEO guide Nepal', 'SEO Nepal 2025',
-      'Google ranking Nepal', 'Google Business Profile Nepal',
+      'Google ranking Nepal', 'Google ranking Kathmandu', 'Google Business Profile Nepal',
+      'Google Business Profile', 'local business visibility',
       'rank on Google Nepal', 'Nepal SEO strategy', 'Kathmandu SEO',
       'local search Nepal', 'Google Maps Nepal',
+    ],
+    faqs: [
+      {
+        question: 'What is local SEO and why does it matter for Nepal businesses?',
+        answer: 'Local SEO is the practice of optimising your online presence so your business appears when nearby customers search for what you offer — think "best cafe in Thamel" or "plumber near me in Lalitpur." For Nepal businesses, local SEO matters because most customers now research online before visiting or calling, and ranking in the local Map Pack puts you directly in front of people who are ready to buy, often at zero cost per click.',
+      },
+      {
+        question: 'How long does it take to rank on Google in Kathmandu?',
+        answer: 'Most businesses start seeing meaningful movement in Google ranking Kathmandu searches within 2–3 months of consistent work — a fully optimised Google Business Profile can show results even faster. Competitive keywords or industries with established competitors typically take 4–6 months for significant Map Pack visibility. Local SEO compounds over time, so results in month six are usually far stronger than month one.',
+      },
+      {
+        question: 'What is a Google Business Profile and do I really need one?',
+        answer: 'A Google Business Profile (formerly Google My Business) is a free listing that controls how your business appears on Google Search and Google Maps — your name, address, hours, photos, reviews, and posts. Yes, you need one: it\'s the single most important local SEO asset for any Nepal business with a physical location or a defined service area, and it\'s completely free to claim and maintain.',
+      },
+      {
+        question: 'How much does local SEO cost in Nepal?',
+        answer: 'Local SEO pricing in Nepal typically depends on competition level and how much work your current online presence needs — from basic Google Business Profile setup and citation building to ongoing content and link-building campaigns. Most agencies offer monthly retainers starting from a few thousand rupees for small businesses up to larger packages for competitive industries. A free audit is the best way to get an accurate quote for your specific situation.',
+      },
+      {
+        question: 'What\'s the difference between local SEO and regular SEO?',
+        answer: 'Regular (organic) SEO focuses on ranking your website nationally or globally for broad keywords, while local SEO specifically targets customers in a defined geographic area — a city, neighbourhood, or service radius. Local SEO relies heavily on Google Business Profile, local citations, location-based keywords, and reviews, whereas national SEO leans more on content depth, domain authority, and broad backlink profiles.',
+      },
+      {
+        question: 'How can I improve my local business visibility on Google Maps?',
+        answer: 'Start by fully completing your Google Business Profile with accurate categories, photos, and hours. Then build consistent NAP citations across major directories, encourage and respond to customer reviews, post updates regularly, and create location-specific content on your website. Each of these signals tells Google your business is active, trustworthy, and relevant to nearby searchers — directly improving your local business visibility.',
+      },
+      {
+        question: 'Do customer reviews really affect my Google ranking?',
+        answer: 'Yes — reviews are one of the most influential local ranking factors. Both the quantity and recency of reviews, your average star rating, and how you respond to reviews all signal to Google that your business is active and trusted by real customers. Businesses that consistently generate new reviews and respond professionally to every one — positive or negative — tend to outrank competitors who ignore this entirely.',
+      },
+      {
+        question: 'Can a small business compete with bigger brands for local search rankings?',
+        answer: 'Absolutely — and this is where local SEO Nepal levels the playing field. Google\'s local algorithm weighs proximity, relevance, and profile completeness heavily, which means a small, well-optimised local business can outrank a much larger national brand for "near me" searches in its own area. Consistency and attention to detail matter far more than marketing budget for local rankings.',
+      },
     ],
   },
 

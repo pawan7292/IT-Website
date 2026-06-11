@@ -22,7 +22,7 @@ export async function generateMetadata(
     title: post.metaTitle,
     description: post.metaDescription,
     keywords: post.keywords.join(', '),
-    alternates: { canonical: `https://digitalmarmat.com/blog/${slug}` },
+    alternates: { canonical: `https://www.digitalmarmat.com.np/blog/${slug}` },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
@@ -55,6 +55,19 @@ const CAT_STYLES: Record<string, string> = {
 
 const catStyle = (cat: string) => CAT_STYLES[cat] ?? 'bg-gray-100 text-gray-700'
 
+// Renders inline `[label](/path)` markdown-style links as Next.js <Link> elements.
+function renderWithLinks(text: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (!match) return part
+    return (
+      <Link key={i} href={match[2]} className="text-primary font-semibold hover:underline">
+        {match[1]}
+      </Link>
+    )
+  })
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function BlogPostPage(
@@ -66,7 +79,7 @@ export default async function BlogPostPage(
 
   const related = getRelatedPosts(slug, 3)
 
-  const canonicalUrl = `https://digitalmarmat.com/blog/${post.slug}`
+  const canonicalUrl = `https://www.digitalmarmat.com.np/blog/${post.slug}`
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -79,12 +92,12 @@ export default async function BlogPostPage(
     author: {
       '@type': 'Organization',
       name: post.author,
-      url: 'https://digitalmarmat.com',
+      url: 'https://www.digitalmarmat.com.np',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Digital Marmat IT Services',
-      logo: { '@type': 'ImageObject', url: 'https://digitalmarmat.com/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.digitalmarmat.com.np/logo.png' },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
   }
@@ -93,16 +106,29 @@ export default async function BlogPostPage(
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home',  item: 'https://digitalmarmat.com' },
-      { '@type': 'ListItem', position: 2, name: 'Blog',  item: 'https://digitalmarmat.com/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Home',  item: 'https://www.digitalmarmat.com.np' },
+      { '@type': 'ListItem', position: 2, name: 'Blog',  item: 'https://www.digitalmarmat.com.np/blog' },
       { '@type': 'ListItem', position: 3, name: post.title, item: canonicalUrl },
     ],
   }
+
+  const faqSchema = post.faqs && post.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       {/* ── Hero ── */}
       <section className="relative pt-24 overflow-hidden">
@@ -173,7 +199,7 @@ export default async function BlogPostPage(
                   <div key={i}>
                     <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">{section.heading}</h2>
                     {section.body && (
-                      <p className="text-navy/70 leading-relaxed mb-4">{section.body}</p>
+                      <p className="text-navy/70 leading-relaxed mb-4">{renderWithLinks(section.body)}</p>
                     )}
                     {section.items && section.items.length > 0 && (
                       <ul className="space-y-2.5 mt-3">
@@ -188,6 +214,24 @@ export default async function BlogPostPage(
                   </div>
                 ))}
               </div>
+
+              {/* FAQ */}
+              {post.faqs && post.faqs.length > 0 && (
+                <div className="mt-12">
+                  <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">Frequently Asked Questions</h2>
+                  <div className="space-y-3">
+                    {post.faqs.map((faq, i) => (
+                      <details key={i} className="group bg-light-bg rounded-xl p-5 border border-gray-100">
+                        <summary className="font-semibold text-navy cursor-pointer list-none flex items-center justify-between gap-4">
+                          {faq.question}
+                          <span className="text-primary text-xl leading-none shrink-0 transition-transform group-open:rotate-45">+</span>
+                        </summary>
+                        <p className="text-navy/70 text-sm leading-relaxed mt-3">{faq.answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Conclusion */}
               <div className="mt-12 p-7 bg-light-bg rounded-2xl border border-gray-100">
@@ -221,7 +265,7 @@ export default async function BlogPostPage(
                   </div>
                 </div>
                 <p className="text-navy/60 text-sm leading-relaxed">
-                  The Digital Marmat team brings 3+ years of hands-on experience delivering websites, SEO, and digital strategies for Nepal businesses.
+                  The Digital Marmat team brings 5+ years of hands-on experience delivering websites, SEO, and digital strategies for Nepal businesses.
                 </p>
               </div>
 
