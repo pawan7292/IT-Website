@@ -86,7 +86,7 @@ function buildLeadEmail(d: {
   <!-- Footer -->
   <div style="background:#F8FAFC;padding:20px 40px;border-top:1px solid #EFEFEF;">
     <p style="margin:0;color:#aaa;font-size:12px;text-align:center;">
-      Free SEO Audit request via <strong style="color:#888;">digitalmarmat.com</strong> &nbsp;·&nbsp; ${receivedAt} (NPT)
+      Free SEO Audit request via <strong style="color:#888;">digitalmarmat.com.np</strong> &nbsp;·&nbsp; ${receivedAt} (NPT)
     </p>
   </div>
 </div>
@@ -136,7 +136,7 @@ function buildConfirmationEmail(name: string, website: string) {
       <p style="margin:0;color:#1B2738;font-size:14px;">✉️ <strong>info@digitalmarmat.com</strong></p>
     </div>
     <div style="text-align:center;">
-      <a href="https://digitalmarmat.com/services/seo-services"
+      <a href="https://www.digitalmarmat.com.np/services/seo-services"
          style="display:inline-block;background:linear-gradient(135deg,#1B2738,#1E73D8);color:#fff;padding:14px 36px;border-radius:50px;text-decoration:none;font-weight:700;font-size:14px;">
         Learn About Our SEO Services →
       </a>
@@ -145,7 +145,7 @@ function buildConfirmationEmail(name: string, website: string) {
   <!-- Footer -->
   <div style="background:#F8FAFC;padding:24px 40px;border-top:1px solid #EFEFEF;text-align:center;">
     <p style="margin:0 0 6px;color:#888;font-size:13px;font-weight:600;">Digital Marmat · IT Service</p>
-    <p style="margin:0;color:#aaa;font-size:12px;">Kathmandu, Nepal &nbsp;·&nbsp; digitalmarmat.com</p>
+    <p style="margin:0;color:#aaa;font-size:12px;">Kathmandu, Nepal &nbsp;·&nbsp; digitalmarmat.com.np</p>
   </div>
 </div>
 </body></html>`

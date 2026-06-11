@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/data/blog'
 
-const base = 'https://digitalmarmat.com'
+const base = 'https://www.digitalmarmat.com.np'
 
 const serviceSlugs = [
   'website-development',

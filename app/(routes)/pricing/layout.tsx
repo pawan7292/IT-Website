@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pricing Plans — Digital Marmat Nepal',
     description: 'Simple, transparent plans for web development, SEO, digital marketing and branding in Nepal. No hidden costs. NPR & USD pricing.',
-    url: 'https://digitalmarmat.com/pricing',
+    url: 'https://www.digitalmarmat.com.np/pricing',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Digital Marmat Pricing — Nepal IT Services' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/pricing' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/pricing' },
 }
 
 export default function PricingLayout({ children }: { children: React.ReactNode }) {

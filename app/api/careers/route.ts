@@ -89,7 +89,7 @@ function buildApplicationEmail(data: {
 
     <div style="background:#F8FAFC;padding:20px 40px;border-top:1px solid #EFEFEF;">
       <p style="margin:0;color:#aaa;font-size:12px;text-align:center;">
-        Received via <strong style="color:#888;">digitalmarmat.com</strong> careers page &nbsp;·&nbsp; ${receivedAt} (NPT)
+        Received via <strong style="color:#888;">digitalmarmat.com.np</strong> careers page &nbsp;·&nbsp; ${receivedAt} (NPT)
       </p>
     </div>
   </div>
@@ -130,7 +130,7 @@ function buildApplicantConfirmation(name: string, position: string) {
       </p>
 
       <div style="margin-top:32px;text-align:center;">
-        <a href="https://digitalmarmat.com/about"
+        <a href="https://www.digitalmarmat.com.np/about"
            style="display:inline-block;background:linear-gradient(135deg,#1B2738,#1E73D8);color:#fff;padding:14px 36px;border-radius:50px;text-decoration:none;font-weight:700;font-size:14px;">
           Learn About Our Team →
         </a>
@@ -139,7 +139,7 @@ function buildApplicantConfirmation(name: string, position: string) {
 
     <div style="background:#F8FAFC;padding:24px 40px;border-top:1px solid #EFEFEF;text-align:center;">
       <p style="margin:0 0 6px;color:#888;font-size:13px;font-weight:600;">Digital Marmat · IT Services</p>
-      <p style="margin:0;color:#aaa;font-size:12px;">Kathmandu, Nepal &nbsp;·&nbsp; digitalmarmat.com</p>
+      <p style="margin:0;color:#aaa;font-size:12px;">Kathmandu, Nepal &nbsp;·&nbsp; digitalmarmat.com.np</p>
     </div>
   </div>
 </body>

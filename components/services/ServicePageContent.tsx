@@ -389,7 +389,7 @@ export function ServicePageContent({ service }: { service: ServiceData }) {
                   'Post-launch support included in every project',
                   'Transparent pricing — zero surprise invoices',
                   'SEO and performance baked in from the very start',
-                  '3+ years of real, hands-on delivery experience',
+                  '5+ years of real, hands-on delivery experience',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <FiCheck className="text-green-500 mt-0.5 shrink-0" size={17} />

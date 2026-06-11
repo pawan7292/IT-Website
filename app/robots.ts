@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://digitalmarmat.com/sitemap.xml',
-    host: 'https://digitalmarmat.com',
+    sitemap: 'https://www.digitalmarmat.com.np/sitemap.xml',
+    host: 'https://www.digitalmarmat.com.np',
   }
 }

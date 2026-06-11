@@ -34,7 +34,7 @@ export default function OGImage() {
           Web Development · SEO · Digital Marketing · AI Automation
         </div>
         <div style={{ position: 'absolute', bottom: 32, fontSize: 16, color: 'rgba(255,255,255,0.4)' }}>
-          digitalmarmat.com · Kathmandu, Nepal
+          digitalmarmat.com.np · Kathmandu, Nepal
         </div>
       </div>
     ),

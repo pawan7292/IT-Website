@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Digital Marmat — Kathmandu, Nepal',
     description: 'Reach out for web development, SEO, digital marketing and IT service inquiries. Based in Kathmandu, Nepal. Free consultation, 24-hour reply.',
-    url: 'https://digitalmarmat.com/contact',
+    url: 'https://www.digitalmarmat.com.np/contact',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Contact Digital Marmat — Kathmandu, Nepal' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/contact' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/contact' },
 }
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

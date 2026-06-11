@@ -5,11 +5,11 @@ import { Container } from '@/components/ui/Container'
 export const metadata: Metadata = {
   title: 'Privacy Policy | Digital Marmat IT Services',
   description: 'Read the Privacy Policy of Digital Marmat IT Services. Learn how we collect, use, and protect your personal data in accordance with applicable laws.',
-  alternates: { canonical: 'https://digitalmarmat.com/privacy-policy' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/privacy-policy' },
   openGraph: {
     title: 'Privacy Policy — Digital Marmat IT Services',
     description: 'How Digital Marmat collects, uses, and protects your personal information.',
-    url: 'https://digitalmarmat.com/privacy-policy',
+    url: 'https://www.digitalmarmat.com.np/privacy-policy',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Privacy Policy — Digital Marmat' }],
   },
   robots: { index: true, follow: true },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const LAST_UPDATED = 'June 5, 2025'
 const COMPANY      = 'Digital Marmat IT Services'
-const WEBSITE      = 'https://digitalmarmat.com'
+const WEBSITE      = 'https://www.digitalmarmat.com.np'
 const EMAIL        = 'techdigitalmarmat@gmail.com'
 const PHONE        = '+977 9802362213'
 const ADDRESS      = 'Kathmandu, Bagmati Province, Nepal'

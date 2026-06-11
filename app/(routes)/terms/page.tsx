@@ -5,11 +5,11 @@ import { Container } from '@/components/ui/Container'
 export const metadata: Metadata = {
   title: 'Terms of Service | Digital Marmat IT Services',
   description: 'Read the Terms of Service for Digital Marmat IT Services. Understand the terms governing use of our website and professional IT services in Nepal.',
-  alternates: { canonical: 'https://digitalmarmat.com/terms' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/terms' },
   openGraph: {
     title: 'Terms of Service — Digital Marmat IT Services',
     description: 'Terms and conditions governing the use of Digital Marmat IT Services website and professional services.',
-    url: 'https://digitalmarmat.com/terms',
+    url: 'https://www.digitalmarmat.com.np/terms',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Terms of Service — Digital Marmat' }],
   },
   robots: { index: true, follow: true },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const LAST_UPDATED = 'June 5, 2025'
 const COMPANY      = 'Digital Marmat IT Services'
-const WEBSITE      = 'https://digitalmarmat.com'
+const WEBSITE      = 'https://www.digitalmarmat.com.np'
 const EMAIL        = 'techdigitalmarmat@gmail.com'
 const PHONE        = '+977 9802362213'
 const ADDRESS      = 'Kathmandu, Bagmati Province, Nepal'

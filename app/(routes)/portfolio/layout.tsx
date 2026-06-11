@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Work — Digital Marmat Portfolio | 50+ Projects Nepal',
     description: '50+ successful projects across web development, e-commerce, mobile apps, branding and digital marketing for Nepal businesses.',
-    url: 'https://digitalmarmat.com/portfolio',
+    url: 'https://www.digitalmarmat.com.np/portfolio',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Digital Marmat Portfolio — 50+ Projects Nepal' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/portfolio' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/portfolio' },
 }
 
 export default function PortfolioLayout({ children }: { children: React.ReactNode }) {

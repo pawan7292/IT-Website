@@ -166,7 +166,7 @@ export default function HomePage() {
                     <div className="w-3 h-3 rounded-full bg-yellow-400" />
                     <div className="w-3 h-3 rounded-full bg-green-400" />
                     <div className="flex-1 bg-gray-100 rounded-full h-5 ml-2 flex items-center px-3">
-                      <span className="text-xs text-gray-400 truncate">digitalmarmat.tech</span>
+                      <span className="text-xs text-gray-400 truncate">digitalmarmat.com.np</span>
                     </div>
                   </div>
                   {/* Skeleton blocks */}
@@ -235,7 +235,7 @@ export default function HomePage() {
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             {([
-              { end: 3,    suffix: '+',  label: 'Years of Experience', isDecimal: false },
+              { end: 5,    suffix: '+',  label: 'Years of Experience', isDecimal: false },
               { end: 50,   suffix: '+',  label: 'Projects Delivered',  isDecimal: false },
               { end: 99.9, suffix: '%',  label: 'Client Satisfaction', isDecimal: true  },
               { end: 100,  suffix: '+',  label: 'Happy Clients',       isDecimal: false },
@@ -338,7 +338,7 @@ export default function HomePage() {
             {[
               { icon: '🎯', title: 'Customized for You',   body: 'Every project is built from scratch around your brand, goals, and audience.' },
               { icon: '⏰', title: 'On-Time Delivery',     body: 'We plan precisely and execute reliably. Deadlines are commitments, not suggestions.' },
-              { icon: '💡', title: 'Hands-On Experience',  body: '3+ years of real project delivery across e-commerce, corporate, NGOs, and startups.' },
+              { icon: '💡', title: 'Hands-On Experience',  body: '5+ years of real project delivery across e-commerce, corporate, NGOs, and startups.' },
               { icon: '📈', title: 'Results Focused',      body: 'We measure success by your results — traffic, conversions, and revenue, not just pixels.' },
               { icon: '🤝', title: 'Client-First Always',  body: "Your vision leads every decision. We're transparent, honest, and always responsive." },
               { icon: '🛡️', title: 'Post-Launch Support', body: "We don't disappear after launch. Ongoing maintenance and support keep you covered." },

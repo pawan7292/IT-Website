@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blog — Digital Marmat | SEO, Web Dev & Marketing Insights Nepal',
     description: 'Expert tips on web development, SEO, digital marketing and AI automation from Nepal\'s leading IT team. Updated regularly.',
-    url: 'https://digitalmarmat.com/blog',
+    url: 'https://www.digitalmarmat.com.np/blog',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Digital Marmat Blog — SEO & Web Dev Insights Nepal' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/blog' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/blog' },
 }
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {

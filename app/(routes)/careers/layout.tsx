@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Careers at Digital Marmat — IT Jobs Nepal',
     description: 'Open roles in web development, digital marketing, SEO, UI/UX and more. Build the future of digital Nepal with us in Kathmandu.',
-    url: 'https://digitalmarmat.com/careers',
+    url: 'https://www.digitalmarmat.com.np/careers',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Careers at Digital Marmat — IT Jobs Nepal' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/careers' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/careers' },
 }
 
 export default function CareersLayout({ children }: { children: React.ReactNode }) {

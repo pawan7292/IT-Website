@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Website Cost Calculator — Digital Marmat Nepal',
     description: 'Instantly estimate your website development cost in Nepal (NPR). Transparent pricing, no hidden fees, no commitment.',
-    url: 'https://digitalmarmat.com/website-cost-calculator',
+    url: 'https://www.digitalmarmat.com.np/website-cost-calculator',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Website Cost Calculator Nepal — Digital Marmat' }],
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://digitalmarmat.com/website-cost-calculator' },
+  alternates: { canonical: 'https://www.digitalmarmat.com.np/website-cost-calculator' },
 }
 
 export default function CalculatorLayout({ children }: { children: React.ReactNode }) {

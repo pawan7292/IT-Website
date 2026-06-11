@@ -64,7 +64,7 @@ function CounterStat({
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const stats = [
-  { end: 3,    suffix: '+',  label: 'Years of Experience',  icon: FiClock },
+  { end: 5,    suffix: '+',  label: 'Years of Experience',  icon: FiClock },
   { end: 50,   suffix: '+',  label: 'Projects Delivered',   icon: FiTrendingUp },
   { end: 99.9, suffix: '%',  label: 'Client Satisfaction',  icon: FiStar,  isDecimal: true },
   { end: 100,  suffix: '+',  label: 'Happy Clients',        icon: FiAward },
@@ -244,7 +244,7 @@ export default function AboutPage() {
                   Founded in 2021, Digital Marmat is a Nepal-based IT company specializing in building powerful digital solutions for businesses of all sizes. We combine creativity, technology, and strategy to deliver websites that don't just look great — they perform.
                 </p>
                 <p>
-                  In just over 3 years we've delivered 50+ projects across e-commerce, corporate, startups, and NGOs, earning a near-perfect satisfaction rate of 99.9%. That track record is built on genuine care for every client we work with.
+                  In just over 5 years we've delivered 50+ projects across e-commerce, corporate, startups, and NGOs, earning a near-perfect satisfaction rate of 99.9%. That track record is built on genuine care for every client we work with.
                 </p>
                 <p>
                   Every business deserves a strong digital presence. Whether you're launching a new brand or scaling an existing one, Digital Marmat is the partner that gets it done.

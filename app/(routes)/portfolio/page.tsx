@@ -28,7 +28,7 @@ const PROJECTS = [
     category: 'Website Design',
     description: 'Full-featured IT company website with 10 service pages, animated hero, blog system, contact form with email automation, SEO setup, and sitemap.',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    url: 'https://digitalmarmat.com',
+    url: 'https://www.digitalmarmat.com.np',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Nodemailer'],
     featured: true,
     client: 'Digital Marmat',
