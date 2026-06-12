@@ -51,6 +51,7 @@ const CAT_STYLES: Record<string, string> = {
   'E-Commerce':     'bg-teal-100 text-teal-700',
   'Branding':       'bg-yellow-100 text-yellow-800',
   'AI & Automation':'bg-violet-100 text-violet-700',
+  'Company':        'bg-cyan-100 text-cyan-700',
 }
 
 const catStyle = (cat: string) => CAT_STYLES[cat] ?? 'bg-gray-100 text-gray-700'
@@ -226,7 +227,7 @@ export default async function BlogPostPage(
                           {faq.question}
                           <span className="text-primary text-xl leading-none shrink-0 transition-transform group-open:rotate-45">+</span>
                         </summary>
-                        <p className="text-navy/70 text-sm leading-relaxed mt-3">{faq.answer}</p>
+                        <p className="text-navy/70 text-sm leading-relaxed mt-3">{renderWithLinks(faq.answer)}</p>
                       </details>
                     ))}
                   </div>

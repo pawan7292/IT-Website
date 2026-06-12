@@ -24,11 +24,12 @@ const CAT_STYLES: Record<string, string> = {
   'E-Commerce':     'bg-teal-100 text-teal-700',
   'Branding':       'bg-yellow-100 text-yellow-800',
   'AI & Automation':'bg-violet-100 text-violet-700',
+  'Company':        'bg-cyan-100 text-cyan-700',
 }
 
 const catStyle = (cat: string) => CAT_STYLES[cat] ?? 'bg-gray-100 text-gray-700'
 
-const CATEGORIES = ['All', 'Development', 'SEO', 'Marketing', 'Social Media', 'Design', 'E-Commerce', 'Branding', 'AI & Automation']
+const CATEGORIES = ['All', 'Development', 'SEO', 'Marketing', 'Social Media', 'Design', 'E-Commerce', 'Branding', 'AI & Automation', 'Company']
 
 // ─── Blog card ───────────────────────────────────────────────────────────────
 

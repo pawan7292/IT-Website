@@ -521,6 +521,15 @@ export function ServicePageContent({ service }: { service: ServiceData }) {
                   📖 {relatedBlog.label} <FiArrowRight size={14} />
                 </Link>
               )}
+
+              {(service.slug === 'digital-marketing' || service.slug === 'social-media-marketing' || service.slug === 'seo-services' || service.slug === 'website-development') && (
+                <Link
+                  href="/digital-marketing-score"
+                  className="mt-3 flex items-center gap-2 text-navy/60 text-sm font-medium hover:text-primary transition-colors"
+                >
+                  🎯 Take the free Digital Marketing Score Checker <FiArrowRight size={14} />
+                </Link>
+              )}
             </motion.div>
 
             {/* Right: accordion */}

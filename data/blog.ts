@@ -848,14 +848,14 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'Why Choose Digital Marmat',
-        body: 'Choosing the right development team is one of the most important decisions for your business\'s online success. Here\'s what sets us apart:',
+        heading: 'What to Look for in a Website Development Partner',
+        body: 'Choosing the right development team is one of the most important decisions for your business\'s online success. Whichever agency you work with, here\'s what genuinely matters:',
         items: [
-          'Experienced developers with modern technical expertise across React, Next.js, and WordPress',
-          'Affordable website development services in Nepal without compromising on quality',
-          'SEO-friendly websites built for ranking and visibility from the first day they go live',
-          'Clean, modern, and user-focused design approach for every project',
-          'Continuous support and maintenance to keep your website growing alongside your business',
+          'Real experience with modern frameworks like React and Next.js — not just drag-and-drop templates',
+          'Pricing that\'s transparent and realistic for the Nepal market — compare options on our [pricing page](/pricing)',
+          'SEO-friendly foundations built in from day one — fast loading, clean code, proper structure',
+          'A design process that starts with your brand and customers, not a one-size-fits-all theme',
+          'Ongoing support after launch, since a website needs updates as your business grows',
         ],
       },
       {
@@ -972,14 +972,14 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'Why Choose Digital Marmat for SEO',
-        body: 'There are many SEO agencies in Nepal — here\'s what makes our approach different:',
+        heading: 'What to Look for in an SEO Partner in Nepal',
+        body: 'There\'s no shortage of agencies offering "SEO" in Nepal — but results vary wildly. Here\'s what separates SEO that actually works from SEO that just sounds good:',
         items: [
-          'Proven, ethical SEO strategies that follow Google\'s guidelines — no shortcuts that risk penalties',
-          'Deep understanding of the Nepal market, local search behaviour, and Nepal-specific keywords',
-          'Affordable SEO packages designed for small and growing businesses',
-          'Combined expertise across SEO, content, web development, and design under one roof',
-          'Transparent, measurable reporting every step of the way',
+          'Ethical, white-hat strategies that follow Google\'s guidelines — shortcuts that promise fast rankings often lead to penalties later',
+          'A real understanding of how people in Nepal search, including local and Nepali-language keyword patterns',
+          'Pricing that fits small and growing businesses, not just enterprise-level retainers',
+          'Combined expertise across SEO, content, and web development — technical issues on your site can quietly undo good SEO work',
+          'Clear, regular reporting so you can see what\'s actually changing, not just a log of activity',
         ],
       },
       {
@@ -1097,15 +1097,14 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'Why Choose Digital Marmat for Digital Marketing',
-        body: 'Choosing the right digital marketing agency is one of the most important decisions for your business\'s growth. Here\'s what sets us apart:',
+        heading: 'What to Look for in a Digital Marketing Partner',
+        body: 'Digital marketing covers a lot of ground — SEO, ads, social media, content — and the right partner should connect all of it into one strategy. Here\'s what to look for:',
         items: [
-          'Experienced marketing professionals across SEO, ads, and social media',
-          'Affordable digital marketing services in Nepal without compromising quality',
-          'Data-driven strategies built around real results, not vanity metrics',
-          'Customized marketing plans tailored to each business and industry',
-          'Transparent reporting so you always know what\'s working',
-          'A relentless focus on leads, traffic, and conversions',
+          'Experience across multiple channels (SEO, ads, social) rather than a single specialism stretched too thin',
+          'Pricing that makes sense for your budget — explore typical ranges on our [pricing page](/pricing)',
+          'A focus on metrics that matter to your business — leads and sales, not just likes and impressions',
+          'Marketing plans built around your specific business and audience, not a recycled template',
+          'Reporting that\'s clear enough to understand without a marketing background',
         ],
       },
       {
@@ -1229,14 +1228,14 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'Why Choose Digital Marmat for Social Media Marketing',
-        body: 'Here\'s what makes our approach to social media marketing different:',
+        heading: 'What to Look for in a Social Media Marketing Partner',
+        body: 'Social media marketing in Nepal ranges from a single freelancer posting occasionally to full teams running paid campaigns with reporting. Here\'s what tends to separate the two:',
         items: [
-          'Deep understanding of Nepal\'s social media landscape and audience behaviour',
-          'Affordable, scalable packages for businesses of every size',
-          'In-house design and video team for high-quality content every time',
-          'Strategies built around measurable goals — leads, traffic, and sales',
-          'Combined expertise across SEO, ads, and branding for a unified online presence',
+          'An understanding of how Nepali audiences actually behave on Facebook and Instagram — not assumptions copied from international playbooks',
+          'Packages that scale with your business size and budget, rather than one-size-fits-all retainers',
+          'In-house design and video capability, since visual quality directly affects engagement',
+          'Goals tied to leads, traffic, and sales — not just follower counts',
+          'Social media that works alongside your SEO and branding, not in isolation',
         ],
       },
       {
@@ -1284,6 +1283,163 @@ export const blogPosts: BlogPost[] = [
       {
         question: 'Is social media marketing part of digital marketing?',
         answer: 'Yes — social media marketing is one of the core pillars of digital marketing, working alongside SEO, content marketing, and paid advertising. Learn more in our [digital marketing services guide](/blog/digital-marketing-services-nepal).',
+      },
+    ],
+  },
+
+  // ── 15. Our Story (Brand / Culture) ───────────────────────────────────────
+  {
+    slug: 'our-story-why-we-started-digital-marmat',
+    title: 'Our Story: Why We Started Digital Marmat — and What We Believe',
+    excerpt: 'A behind-the-scenes look at how four friends with a shared frustration started Digital Marmat, the lessons our early mistakes taught us, and what we still believe in today.',
+    coverImage: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
+    category: 'Company',
+    tags: ['Our Story', 'Company Culture', 'Digital Marmat Team', 'Behind the Scenes'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Founders & Team',
+    date: '2026-06-12',
+    dateFormatted: 'June 12, 2026',
+    readTime: '6 min',
+    intro: 'Most "About Us" pages read like a press release. This one doesn\'t. This is the real story of why Digital Marmat exists — the frustration that started it, the first client who almost made us quit, the mistakes we\'ve made along the way, and what we\'ve learned about building a digital agency in Nepal that actually cares about the businesses it works with.',
+    sections: [
+      {
+        heading: 'Where It Started: One Shared Frustration',
+        body: 'Before Digital Marmat existed, we were just a small group of friends working on freelance projects — websites here, a Facebook ad campaign there, the occasional logo design. Over and over, we kept hearing the same story from small business owners across Nepal: they had paid someone for a website or a "marketing package," and months later, nothing had changed. No new customers, no clear results, sometimes not even a working contact form. Not because these business owners didn\'t care — but because most of what they\'d been sold was a template with their logo pasted on it, not a strategy built around their business. That gap — between what was being sold and what businesses actually needed — is the reason Digital Marmat exists.',
+      },
+      {
+        heading: 'The First Project (and the Lesson It Taught Us)',
+        body: 'Our first real client was a small retail business in Kathmandu. We were excited, underprepared, and — looking back — wildly underpriced. We built their website, set up their Google Business Profile, and helped them post on social media for the first time. It worked. Foot traffic increased, and the owner started getting calls from customers who said "I found you on Google." But here\'s the part we didn\'t expect: the project took nearly three times longer than we\'d planned, because we kept discovering things the business actually needed that weren\'t in our original scope — proper product photography, a simple way to take orders via WhatsApp, basic staff training on responding to messages. That project taught us something that still shapes how we work today: a website or a marketing campaign is never really the end goal. The end goal is a business owner who can say "this helped me get more customers" — and getting there sometimes means doing more than what was on the invoice.',
+      },
+      {
+        heading: 'What We Believe: No Jargon, No Generic Templates',
+        body: 'A lot of agencies sell confusion — complicated reports, vague metrics, and packages that sound impressive but mean very little to a business owner trying to make rent. We\'ve tried to build Digital Marmat around the opposite idea. When we explain SEO, we explain it the way we\'d explain it to a family member, not in a way designed to sound impressive. When we recommend a service, it\'s because we believe it will genuinely move the needle for that specific business — not because it\'s the package we\'re trying to upsell that month. We\'d rather tell a client honestly that their budget is better spent on Google Business Profile optimisation than on a big-budget ad campaign they\'re not ready for, even if that means a smaller invoice for us.',
+      },
+      {
+        heading: 'Building a Team That Actually Cares',
+        body: 'Today, Digital Marmat is a small team, and we\'ve been deliberate about keeping it that way for as long as it makes sense. Every person on our team — from our founders to our developers, designers, and marketers — has worked directly with clients at some point. Nobody on our team is several layers removed from the actual work. That matters, because it means the person writing your website copy or setting up your ad campaign understands your business, not just a brief that\'s been passed down three times. You can read more about who we are on our [About page](/about) — and if you think you\'d be a good fit for how we work, we\'re always interested in meeting people through our [careers page](/careers).',
+      },
+      {
+        heading: 'The Mistakes We\'ve Made (and What They Taught Us)',
+        body: 'We don\'t think a "story" page is honest if it only talks about wins, so here are a few of the mistakes that shaped us:',
+        items: [
+          'Early on, we took on too many small projects at once, which meant some clients didn\'t get the attention they deserved — we now work with a limited number of clients at a time so quality doesn\'t slip.',
+          'We used to price purely based on "what felt fair" rather than the actual time and value involved, which wasn\'t sustainable — our [pricing](/pricing) today is more transparent and realistic for both sides.',
+          'We once recommended a paid ad campaign to a client before their website was ready to convert visitors — the ads worked, but the website couldn\'t turn that traffic into customers. Now we always check the full funnel, not just one piece of it.',
+          'We assumed every business needed a presence on every social platform — in reality, a shop in Pokhara might get far more value from one well-run Facebook page than five half-managed accounts.',
+        ],
+      },
+      {
+        heading: 'Where We\'re Headed Next',
+        body: 'We\'re still a young company, and we\'re still learning — but a few things are becoming clearer every year. Nepal\'s digital landscape is changing fast, and the businesses that adapt early have a real advantage over those that wait. We\'re investing in tools that help business owners understand where they stand before they spend a single rupee with us — like our free [Digital Marketing Score Checker](/digital-marketing-score), which takes two minutes and gives you an honest snapshot of your website, SEO, social media, content, and strategy. We\'re also writing more openly about what we\'re seeing across Nepal\'s market — including our latest look at where [digital marketing in Nepal is heading in 2026](/blog/digital-marketing-trends-nepal-2026).',
+      },
+    ],
+    conclusion: 'If there\'s one thing we hope you take from our story, it\'s this: Digital Marmat wasn\'t started to "do marketing." It was started because we saw too many Nepal businesses being underserved by an industry that often prioritises invoices over outcomes. We\'re not perfect, and we\'re still growing — but everything we build, from our services to our free tools, comes from that same place. If you\'d like to know more about who we are, visit our [About page](/about), or if you\'d simply like to say hello, [get in touch](/contact) — we read every message ourselves.',
+    metaTitle: 'Our Story: Why We Started Digital Marmat | Digital Marmat Nepal',
+    metaDescription: 'Go behind the scenes at Digital Marmat — the real story of how we started, the mistakes that shaped us, and what we believe about helping Nepal businesses grow online.',
+    keywords: [
+      'Digital Marmat story', 'about Digital Marmat', 'Nepal digital agency story',
+      'Digital Marmat team Nepal', 'why we started Digital Marmat', 'Digital Marmat culture',
+    ],
+    faqs: [
+      {
+        question: 'When was Digital Marmat founded?',
+        answer: 'Digital Marmat was founded in 2021 by a small group of friends who saw a gap between what Nepal businesses were being sold by agencies and what they actually needed to grow online.',
+      },
+      {
+        question: 'Where is Digital Marmat based?',
+        answer: 'We\'re based in Kathmandu, Nepal, and work with businesses across the country — as well as a growing number of clients internationally.',
+      },
+      {
+        question: 'Does Digital Marmat work with businesses outside Nepal?',
+        answer: 'Yes. While most of our work is with Nepal-based businesses, we also take on international clients for web development, branding, and digital marketing projects.',
+      },
+      {
+        question: 'How can I join the Digital Marmat team?',
+        answer: 'We\'re a small team that grows carefully. Check our [careers page](/careers) for current openings, or feel free to reach out through our [contact page](/contact) if you think you\'d be a great fit.',
+      },
+    ],
+  },
+
+  // ── 16. Digital Marketing Trends (Nepal-specific research/insight) ────────
+  {
+    slug: 'digital-marketing-trends-nepal-2026',
+    title: 'Digital Marketing Trends in Nepal: What to Expect in 2026',
+    excerpt: 'From mobile-first design to AI-powered tools and social commerce — here\'s how Nepal\'s digital marketing landscape is shifting in 2026, and what it means for local businesses.',
+    coverImage: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
+    category: 'Marketing',
+    tags: ['Digital Marketing Trends', 'Nepal 2026', 'Marketing Strategy', 'Social Media'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Digital Marketing Strategists',
+    date: '2026-06-12',
+    dateFormatted: 'June 12, 2026',
+    readTime: '8 min',
+    intro: 'Nepal\'s digital landscape has changed more in the last few years than in the decade before it. More businesses are online, more customers are searching, scrolling, and shopping from their phones, and the gap between businesses that adapt quickly and those that don\'t is widening. Based on what we\'re seeing across the projects and campaigns we work on, here are the trends shaping digital marketing in Nepal through 2026 — and what they mean for your business.',
+    sections: [
+      {
+        heading: '1. Mobile-First Isn\'t a Trend Anymore — It\'s the Baseline',
+        body: 'For years, "mobile-friendly" was treated as a nice-to-have. In 2026, it\'s simply the default expectation. The overwhelming majority of Nepal\'s internet users browse, search, and shop primarily on smartphones — often on mobile data rather than home broadband. A website or ad experience that feels clunky on a phone doesn\'t just perform worse; for most visitors, it\'s the only experience that matters at all.',
+        items: [
+          'Websites that load slowly on mobile data lose visitors before the page even finishes loading',
+          'Forms, buttons, and WhatsApp chat links need to be easy to tap on a small screen — not just visible',
+          'Mobile-first design is no longer a checkbox; it\'s the starting point of the design process, not an afterthought',
+        ],
+      },
+      {
+        heading: '2. Short-Form Video Keeps Growing — and So Does Its Reach',
+        body: 'Reels-style short-form video continues to dominate attention on Facebook and Instagram in Nepal, and businesses that lean into it are seeing far more reach than those relying only on static posts. The shift isn\'t just about entertainment — product demos, behind-the-scenes clips, customer testimonials, and quick "how it works" videos are increasingly outperforming traditional photo posts, especially for service-based and retail businesses.',
+      },
+      {
+        heading: '3. "Near Me" and Local Search Are Becoming Make-or-Break',
+        body: 'As more Nepali consumers search for services with phrases like "near me" or include their city/area in searches, local SEO has gone from a nice add-on to a core part of being discoverable. A well-optimised Google Business Profile — complete with photos, accurate hours, and recent reviews — is often the deciding factor in whether a nearby customer chooses your business or a competitor\'s. We\'ve covered this in depth in our [Local SEO guide for Nepal](/blog/local-seo-nepal-guide-2025).',
+      },
+      {
+        heading: '4. AI Tools Are Quietly Becoming Part of Everyday Marketing',
+        body: 'AI is no longer just a buzzword in Nepal\'s digital space — it\'s showing up in practical, everyday ways. Businesses are using AI-assisted tools to draft social media captions, generate first versions of product descriptions, and set up simple chatbots that answer common customer questions on Messenger or WhatsApp outside business hours. The businesses getting the most value aren\'t necessarily the most "techy" — they\'re the ones using AI to handle repetitive tasks so their team can focus on customers. If this is new territory for your business, our [AI automation services](/services/ai-automation) are a good starting point.',
+      },
+      {
+        heading: '5. Social Commerce and E-Commerce Are Converging',
+        body: 'The line between "social media" and "online store" is blurring fast. More Nepal businesses are enabling customers to browse catalogues, ask questions, and complete orders directly through Facebook and Instagram — without ever needing a separate e-commerce website. For businesses ready to scale beyond that, a proper online store adds the ability to accept payments, manage inventory, and build a customer base that isn\'t dependent on a single platform\'s algorithm. We explored this shift in our guide to [launching an e-commerce business in Nepal](/blog/launch-ecommerce-business-nepal-2025).',
+      },
+      {
+        heading: '6. Authenticity Is Outperforming Polish',
+        body: 'One of the more interesting shifts we\'ve seen: highly polished, ad-style content is increasingly being scrolled past, while raw, authentic content — a shop owner talking directly to the camera, behind-the-scenes footage, real customer reactions — tends to get more engagement and trust. For Nepal businesses, this is actually good news. You don\'t need a big production budget to compete; you need a willingness to show the real people and process behind your business.',
+      },
+      {
+        heading: '7. Paid Advertising Is Getting More Competitive — and More Data-Driven',
+        body: 'As more businesses move budgets into Facebook and Google ads, costs per click and per result are rising in many categories. The businesses that continue to see strong returns are the ones treating ads as part of a measured strategy — tracking which campaigns actually lead to enquiries or sales, rather than judging success by likes and reach alone. This is where a connected [digital marketing strategy](/services/digital-marketing) — combining website, SEO, content, and ads — matters more than ever; each piece makes the others more effective.',
+      },
+      {
+        heading: '8. What This Means for Your Business in 2026',
+        body: 'None of these trends require a complete overhaul overnight. The businesses that do well are usually the ones that pick one or two gaps and close them properly, rather than trying to do everything at once. If you\'re not sure where your business currently stands across website, SEO, social media, content, and strategy, our free [Digital Marketing Score Checker](/digital-marketing-score) takes about two minutes and gives you a clear, honest breakdown — with specific recommendations based on your answers.',
+      },
+    ],
+    conclusion: 'Nepal\'s digital landscape will keep evolving — that\'s certain. What matters is making sure your business evolves with it, even gradually. Start by understanding where you stand today: take our free [Digital Marketing Score Checker](/digital-marketing-score) for an honest snapshot of your website, SEO, social media, and strategy. And if you\'d like help turning that snapshot into a plan, [get in touch with our team](/contact) — we\'re happy to talk through what would make the biggest difference for your business specifically.',
+    metaTitle: 'Digital Marketing Trends in Nepal: What to Expect in 2026',
+    metaDescription: 'Discover the digital marketing trends shaping Nepal in 2026 — from mobile-first design and short-form video to AI tools, local SEO, and social commerce.',
+    keywords: [
+      'digital marketing trends Nepal 2026', 'digital marketing Nepal 2026', 'social media trends Nepal',
+      'mobile marketing Nepal', 'AI marketing Nepal', 'ecommerce trends Nepal 2026',
+    ],
+    faqs: [
+      {
+        question: 'Is digital marketing growing in Nepal?',
+        answer: 'Yes — more Nepal businesses are investing in websites, SEO, and social media marketing every year as more customers research and shop online, particularly via mobile devices.',
+      },
+      {
+        question: 'What is the biggest digital marketing trend in Nepal right now?',
+        answer: 'Mobile-first experiences and short-form video are currently having the biggest impact, since the vast majority of Nepali internet users browse and shop primarily from smartphones.',
+      },
+      {
+        question: 'Should small businesses in Nepal invest in video content?',
+        answer: 'Yes, where possible — short-form video on Facebook and Instagram is currently getting strong organic reach, and it doesn\'t require a large production budget to get started.',
+      },
+      {
+        question: 'How do I know if my business is keeping up with these trends?',
+        answer: 'Try our free [Digital Marketing Score Checker](/digital-marketing-score) — it takes about two minutes and gives you a breakdown across website, SEO, social media, content, and strategy with personalised recommendations.',
+      },
+      {
+        question: 'Where can I get help implementing these trends for my business?',
+        answer: 'Our team works across [website development](/services/website-development), [SEO](/services/seo-services), [digital marketing](/services/digital-marketing), and [social media marketing](/services/social-media-marketing) — [contact us](/contact) for a free consultation on where to start.',
       },
     ],
   },

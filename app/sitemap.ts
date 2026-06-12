@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contact`,                 lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/careers`,                 lastModified: now, priority: 0.7, changeFrequency: 'weekly'  },
     { url: `${base}/free-seo-audit`,          lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${base}/digital-marketing-score`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/website-cost-calculator`, lastModified: now, priority: 0.75, changeFrequency: 'monthly' },
     { url: `${base}/privacy-policy`,          lastModified: now, priority: 0.3, changeFrequency: 'yearly'  },
     { url: `${base}/terms`,                   lastModified: now, priority: 0.3, changeFrequency: 'yearly'  },
