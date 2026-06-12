@@ -1029,6 +1029,264 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ── 13. Digital Marketing Services ───────────────────────────────────────
+  {
+    slug: 'digital-marketing-services-nepal',
+    title: 'Digital Marketing Services in Nepal for Business Growth',
+    excerpt: 'What is digital marketing, and how can it help your business grow online? A complete guide to digital marketing types, benefits, and the full-service digital marketing solutions Digital Marmat provides for businesses in Nepal.',
+    coverImage: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1200&q=80',
+    category: 'Marketing',
+    tags: ['Digital Marketing', 'Digital Marketing Nepal', 'Online Marketing', 'SEO'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Digital Marketing Strategists',
+    date: '2026-06-12',
+    dateFormatted: 'June 12, 2026',
+    readTime: '8 min',
+    intro: 'Digital marketing is the process of promoting products or services using online platforms such as Google, social media, websites, and email. It helps businesses reach the right audience, increase visibility, and generate more sales through internet-based strategies. Unlike traditional marketing, digital marketing allows you to target specific audiences, track results in real time, and improve campaigns for better performance — and today it\'s essential for every business that wants to grow online and stay competitive.',
+    sections: [
+      {
+        heading: 'What Is Digital Marketing?',
+        body: 'Digital marketing covers every strategy used to promote a business through the internet — from showing up in Google search results to running ads on Facebook and Instagram, publishing helpful content, and emailing your customer list. The biggest advantage over traditional marketing is precision: you can target a specific audience by location, age, interests, and behaviour, track exactly how your campaigns perform in real time, and adjust them instantly for better results. Whether your customers are [based in Kathmandu](/contact) or spread across Nepal, digital marketing puts your business directly in front of the people most likely to buy.',
+      },
+      {
+        heading: 'Types of Digital Marketing',
+        body: 'A complete digital marketing strategy combines several channels working together, each playing a different role in attracting, engaging, and converting customers:',
+        items: [
+          'Search Engine Optimization (SEO) – helps your website rank higher on Google and bring organic traffic without paying for ads',
+          'Social Media Marketing (SMM) – promotes your business on platforms like Facebook, Instagram, and TikTok to build brand awareness and engagement',
+          'Search Engine Marketing (Google Ads) – paid advertising that puts your business at the top of Google search results instantly',
+          'Content Marketing – creating valuable blogs, videos, and posts that attract, educate, and engage your audience',
+          'Email Marketing – using targeted email campaigns to nurture leads and stay connected with existing customers',
+        ],
+      },
+      {
+        heading: 'Why Digital Marketing Is Important for Your Business',
+        body: 'In a market where most customers research online before making a decision, digital marketing isn\'t optional — it\'s the foundation of sustainable growth. Without it, businesses struggle to compete in today\'s online-driven market. For a deeper breakdown of channels, budgets, and strategy, read our [complete digital marketing guide for small businesses in Nepal](/blog/digital-marketing-guide-nepal-small-business).',
+        items: [
+          'Increases your online visibility across Google, social media, and search results',
+          'Helps you reach targeted customers based on location, interests, and behaviour',
+          'Generates more qualified leads and sales for your business',
+          'Builds strong brand awareness and recognition over time',
+          'Provides measurable, trackable results for every rupee spent',
+          'Is far more cost-effective than traditional marketing like print or radio',
+        ],
+      },
+      {
+        heading: 'Benefits of Digital Marketing',
+        body: 'Professional digital marketing isn\'t a one-time campaign — it builds long-term advantages that compound over time:',
+        items: [
+          'Higher website traffic from search engines and social platforms',
+          'Better brand recognition across your target market',
+          'Increased customer engagement and loyalty',
+          'Improved conversion rates from visitors to paying customers',
+          'A strong, consistent online presence across every channel',
+          'Business growth at a lower cost than traditional advertising',
+        ],
+      },
+      {
+        heading: 'Digital Marketing Services by Digital Marmat',
+        body: 'At [Digital Marmat](/services/digital-marketing), we provide complete digital marketing solutions designed to grow your business from every angle. If social media is your main focus, explore our [social media marketing services](/services/social-media-marketing) or read [how social media marketing helps businesses grow in Nepal](/blog/social-media-marketing-business-growth-nepal).',
+        items: [
+          'SEO services to improve your Google rankings and organic visibility',
+          'Social media marketing for brand engagement and community growth',
+          'Google Ads management for instant, high-intent traffic',
+          'Content marketing to attract and educate your target audience',
+          'Website optimization for better speed, UX, and conversions',
+          'Complete digital strategy tailored to your business goals',
+        ],
+      },
+      {
+        heading: 'Why Choose Digital Marmat for Digital Marketing',
+        body: 'Choosing the right digital marketing agency is one of the most important decisions for your business\'s growth. Here\'s what sets us apart:',
+        items: [
+          'Experienced marketing professionals across SEO, ads, and social media',
+          'Affordable digital marketing services in Nepal without compromising quality',
+          'Data-driven strategies built around real results, not vanity metrics',
+          'Customized marketing plans tailored to each business and industry',
+          'Transparent reporting so you always know what\'s working',
+          'A relentless focus on leads, traffic, and conversions',
+        ],
+      },
+      {
+        heading: 'Our Digital Marketing Process',
+        body: 'We follow a structured, proven approach for every client:',
+        items: [
+          'Business analysis and goal setting to understand your market and objectives',
+          'Competitor research and market study to find opportunities',
+          'Strategy development across SEO, ads, social media, and content',
+          'Campaign execution with continuous monitoring',
+          'Performance tracking and optimization based on real data',
+          'Continuous improvement to drive better results month over month',
+        ],
+      },
+    ],
+    conclusion: 'Digital marketing is not just about promotion — it is about building a strong online presence that drives real business growth. At Digital Marmat, we combine SEO, social media, content, and advertising strategies to help your business reach the right audience and generate consistent results. [Get in touch](/contact) for a free consultation, or [explore our digital marketing services](/services/digital-marketing) to see how we can help your business grow.',
+    metaTitle: 'Digital Marketing Services in Nepal | Digital Marmat',
+    metaDescription: 'Looking for digital marketing services in Nepal? Digital Marmat offers SEO, social media marketing, Google Ads, and content strategies to grow your business online.',
+    keywords: [
+      'digital marketing services Nepal', 'digital marketing agency Nepal', 'online marketing services Nepal',
+      'affordable digital marketing Nepal', 'digital marketing company Kathmandu',
+      'SEO and social media marketing Nepal', 'digital marketing for small business Nepal', 'best digital marketing agency Nepal',
+    ],
+    faqs: [
+      {
+        question: 'What is digital marketing in simple words?',
+        answer: 'Digital marketing is promoting products or services using the internet — including search engines, social media, websites, and email — to reach and engage your target audience.',
+      },
+      {
+        question: 'Why is digital marketing important for business?',
+        answer: 'It helps businesses reach more customers, increase sales, and build a strong, measurable online presence — something traditional marketing can\'t match.',
+      },
+      {
+        question: 'How much does digital marketing cost in Nepal?',
+        answer: 'Cost depends on the services required, your business size, and your marketing goals. Check our [pricing page](/pricing) for package details, or [contact us](/contact) for a custom quote.',
+      },
+      {
+        question: 'Is SEO part of digital marketing?',
+        answer: 'Yes — SEO is one of the most important parts of digital marketing, helping your website rank higher on Google and bring in free, long-term traffic. Learn more in our [SEO services guide](/blog/seo-services-nepal-guide).',
+      },
+      {
+        question: 'Can small businesses use digital marketing?',
+        answer: 'Yes — digital marketing is highly effective for small businesses, allowing them to compete with larger companies by targeting the right audience at a fraction of the cost of traditional advertising.',
+      },
+    ],
+  },
+
+  // ── 14. Social Media Marketing for Business Growth ───────────────────────
+  {
+    slug: 'social-media-marketing-business-growth-nepal',
+    title: 'How Social Media Marketing Helps Businesses Grow in Nepal',
+    excerpt: 'How does social media marketing actually drive business growth in Nepal? Discover the best platforms, proven strategies, and the professional social media services that turn followers into paying customers.',
+    coverImage: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=1200&q=80',
+    category: 'Social Media',
+    tags: ['Social Media Marketing', 'Facebook Marketing Nepal', 'Instagram Marketing', 'Online Branding'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Social Media Strategists',
+    date: '2026-06-13',
+    dateFormatted: 'June 13, 2026',
+    readTime: '8 min',
+    intro: 'Social media isn\'t just where people scroll for entertainment — for businesses in Nepal, it\'s one of the most powerful tools for building brand awareness, connecting with customers, and driving real, measurable growth. With millions of active users on Facebook, Instagram, and TikTok across Nepal, the businesses that show up consistently and strategically are the ones winning new customers every day. In this guide, we\'ll explore how social media marketing helps businesses grow in Nepal, the platforms that matter most, and how professional social media management can turn your social presence into a genuine growth engine.',
+    sections: [
+      {
+        heading: 'What Is Social Media Marketing?',
+        body: 'Social media marketing is the use of platforms like Facebook, Instagram, TikTok, and LinkedIn to promote your brand, connect with your audience, and drive traffic, leads, and sales. It goes beyond simply posting updates — it includes content planning, community management, paid advertising, and performance tracking, all working together to build a brand that customers recognize, trust, and choose. For businesses in Nepal, where a huge share of the population is active on social media every day, it\'s often the first place potential customers discover — and judge — a brand.',
+      },
+      {
+        heading: 'Why Social Media Marketing Matters for Businesses in Nepal',
+        body: 'Nepal has one of the highest social media adoption rates in South Asia, with millions of active users on Facebook and Instagram and a rapidly growing TikTok audience. For businesses, this represents a direct line to customers who are already online, scrolling, and ready to discover new brands:',
+        items: [
+          'Build brand awareness among a highly active local audience',
+          'Engage directly with customers through comments, messages, and stories',
+          'Drive website traffic, calls, and store visits from social platforms',
+          'Run highly targeted, affordable ad campaigns by location, age, and interest',
+          'Build trust through reviews, testimonials, and social proof',
+        ],
+      },
+      {
+        heading: 'Best Social Media Platforms for Business Growth',
+        body: 'Choosing the right platforms is the foundation of a successful social media strategy — not every platform fits every business:',
+        items: [
+          'Facebook – ideal for community building, local businesses, and B2C brands across all age groups',
+          'Instagram – best for visually-driven brands like fashion, food, beauty, and travel',
+          'TikTok – Nepal\'s fastest-growing platform, perfect for reaching younger audiences with short-form video',
+          'LinkedIn – essential for B2B services, professional branding, and recruitment',
+          'YouTube – powerful for tutorials, brand storytelling, and long-form content that builds authority',
+        ],
+      },
+      {
+        heading: 'Social Media Marketing Strategies That Work',
+        body: 'A strong social media presence isn\'t about posting more — it\'s about posting with purpose. For a deeper, platform-by-platform breakdown, see our [complete social media marketing guide for Nepal businesses](/blog/social-media-marketing-grow-business-nepal).',
+        items: [
+          'Consistent content calendar mixing educational, entertaining, and promotional posts',
+          'Short-form video content (Reels and TikToks) for maximum organic reach',
+          'Active community management — replying to comments and messages quickly builds trust',
+          'Paid social ads to extend reach beyond your existing followers',
+          'Influencer and local partnership collaborations to tap into new audiences',
+        ],
+      },
+      {
+        heading: 'Benefits of Professional Social Media Management',
+        body: 'Managing social media in-house often means inconsistent posting, missed messages, and no clear strategy. Professional social media management changes that:',
+        items: [
+          'Consistent, on-brand content published on a regular schedule',
+          'Faster response times that turn inquiries into customers',
+          'Data-driven ad campaigns that lower your cost per lead over time',
+          'Professional graphics, captions, and video editing for every post',
+          'Monthly performance reports so you always know what\'s working',
+        ],
+      },
+      {
+        heading: 'Social Media Marketing Services by Digital Marmat',
+        body: 'At [Digital Marmat](/services/social-media-marketing), we offer complete social media management for businesses across Nepal:',
+        items: [
+          'Content strategy and monthly content calendars',
+          'Graphic design, video editing, and reels production',
+          'Facebook and Instagram ad campaign management',
+          'Community management and customer response handling',
+          'Influencer outreach and local partnership coordination',
+          'Monthly analytics reports tracking growth, engagement, and leads',
+        ],
+      },
+      {
+        heading: 'Why Choose Digital Marmat for Social Media Marketing',
+        body: 'Here\'s what makes our approach to social media marketing different:',
+        items: [
+          'Deep understanding of Nepal\'s social media landscape and audience behaviour',
+          'Affordable, scalable packages for businesses of every size',
+          'In-house design and video team for high-quality content every time',
+          'Strategies built around measurable goals — leads, traffic, and sales',
+          'Combined expertise across SEO, ads, and branding for a unified online presence',
+        ],
+      },
+      {
+        heading: 'Our Social Media Marketing Process',
+        body: 'Every project follows a clear, structured process:',
+        items: [
+          'Audit of your current social media presence and competitors',
+          'Strategy development based on your goals and target audience',
+          'Content planning, design, and a monthly posting calendar',
+          'Paid ad campaign setup and audience targeting',
+          'Ongoing community management and engagement',
+          'Monthly reporting and strategy refinement based on results',
+        ],
+      },
+    ],
+    conclusion: 'Social media marketing in Nepal isn\'t about being everywhere — it\'s about showing up consistently, with the right content, on the platforms where your customers already are. At Digital Marmat, we help businesses turn social media from a side project into a genuine growth channel. [Get in touch](/contact) for a free consultation, or [explore our social media marketing services](/services/social-media-marketing) to see how we can help your brand grow.',
+    metaTitle: 'How Social Media Marketing Helps Businesses Grow in Nepal',
+    metaDescription: 'Learn how social media marketing helps businesses in Nepal build brand awareness, engage customers, and drive growth. Discover proven strategies and expert insights.',
+    keywords: [
+      'social media marketing for business growth in Nepal', 'social media marketing agency Nepal',
+      'Facebook and Instagram marketing Nepal', 'social media management services Nepal',
+      'affordable digital marketing Nepal', 'online branding and promotion Nepal',
+    ],
+    faqs: [
+      {
+        question: 'How does social media marketing help businesses grow in Nepal?',
+        answer: 'It builds brand awareness, drives engagement, and turns followers into customers through consistent content, community management, and targeted advertising — reaching audiences that are already active on platforms like Facebook and Instagram every day.',
+      },
+      {
+        question: 'Which social media platform is best for my business?',
+        answer: 'It depends on your audience and industry — Facebook works well for most local businesses, Instagram suits visually-driven brands, TikTok reaches younger audiences, and LinkedIn is best for B2B services.',
+      },
+      {
+        question: 'How much does social media management cost in Nepal?',
+        answer: 'Cost depends on the number of platforms, content volume, and whether paid ads are included. Check our [pricing page](/pricing) for package details, or [contact us](/contact) for a custom quote.',
+      },
+      {
+        question: 'How often should a business post on social media?',
+        answer: 'Consistency matters more than frequency — posting 3-4 times a week reliably with quality content outperforms posting daily without a clear strategy.',
+      },
+      {
+        question: 'Can social media marketing work for small businesses?',
+        answer: 'Yes — social media is one of the most affordable and effective channels for small businesses in Nepal, allowing them to build a local following and run highly targeted ad campaigns on a modest budget.',
+      },
+      {
+        question: 'Is social media marketing part of digital marketing?',
+        answer: 'Yes — social media marketing is one of the core pillars of digital marketing, working alongside SEO, content marketing, and paid advertising. Learn more in our [digital marketing services guide](/blog/digital-marketing-services-nepal).',
+      },
+    ],
+  },
 ]
 
 export const getAllPosts = () => blogPosts

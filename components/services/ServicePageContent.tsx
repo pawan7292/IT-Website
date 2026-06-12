@@ -165,6 +165,14 @@ const SERVICE_BLOG_LINKS: Record<string, { href: string; label: string }> = {
     href: '/blog/seo-services-nepal-guide',
     label: 'Read our full guide: SEO Services in Nepal',
   },
+  'digital-marketing': {
+    href: '/blog/digital-marketing-services-nepal',
+    label: 'Read our full guide: Digital Marketing Services in Nepal',
+  },
+  'social-media-marketing': {
+    href: '/blog/social-media-marketing-business-growth-nepal',
+    label: 'Read our full guide: How Social Media Marketing Helps Businesses Grow',
+  },
 }
 
 // ─── Main component ───────────────────────────────────────────────────────────
