@@ -26,7 +26,6 @@ const quickLinks: QuickLink[] = [
   { href: '/blog',      label: 'Blog'      },
   { href: '/careers',   label: 'Careers'   },
   { href: '/contact',   label: 'Contact'   },
-  { href: 'https://dashboard-six-inky-68.vercel.app/', label: 'Admin', external: true },
 ]
 
 const socials = [
