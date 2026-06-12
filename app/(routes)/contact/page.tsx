@@ -72,8 +72,8 @@ const CONTACT_INFO = [
   {
     icon: FiMapPin,
     label: 'Visit Us',
-    value: 'Kathmandu, Nepal',
-    href: 'https://maps.google.com/?q=Kathmandu,Nepal',
+    value: 'Balaju, Kathmandu',
+    href: 'https://share.google/5r59EfOdEUfNjF6Dp',
     color: 'bg-orange-50 text-orange-600',
   },
 ]
@@ -485,12 +485,12 @@ export default function ContactPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="font-bold text-navy text-xl mb-3">Find Us in Kathmandu</h3>
+              <h3 className="font-bold text-navy text-xl mb-3">Find Us in Balaju, Kathmandu</h3>
               <p className="text-navy/60 leading-relaxed mb-5">
-                We're based in Kathmandu, Nepal and work with clients locally and across the globe. Remote collaboration is seamless — we're available on WhatsApp, Zoom, and email.
+                We're based in Balaju, Kathmandu, Nepal and work with clients locally and across the globe. Remote collaboration is seamless — we're available on WhatsApp, Zoom, and email.
               </p>
               <a
-                href="https://maps.google.com/?q=Kathmandu,Nepal"
+                href="https://share.google/5r59EfOdEUfNjF6Dp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline"
@@ -501,14 +501,14 @@ export default function ContactPage() {
 
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm h-56">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625952296!2d85.28493!3d27.70169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1234567890"
+                src="https://maps.google.com/maps?q=Digital+Marmat.+Tech,Balaju,Kathmandu&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Digital Marmat location in Kathmandu, Nepal"
+                title="Digital Marmat location in Balaju, Kathmandu, Nepal"
               />
             </div>
           </div>

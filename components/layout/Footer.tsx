@@ -39,7 +39,7 @@ const contact = [
   { icon: FiPhone,         text: '+977 9802362213',        href: 'tel:+9779802362213'                   },
   { icon: FiMessageCircle, text: 'WhatsApp Us',            href: 'https://wa.me/9779802362213'          },
   { icon: FiMail,          text: 'info@digitalmarmat.com', href: 'mailto:info@digitalmarmat.com'        },
-  { icon: FiMapPin,        text: 'Kathmandu, Nepal',       href: 'https://maps.google.com/?q=Kathmandu' },
+  { icon: FiMapPin,        text: 'Balaju, Kathmandu',       href: 'https://share.google/5r59EfOdEUfNjF6Dp' },
 ]
 
 export function Footer() {
