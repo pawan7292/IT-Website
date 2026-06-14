@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/data/blog'
+import { getAllIndustries } from '@/data/industries'
+import { getAllProjects } from '@/data/portfolio'
 
 const base = 'https://www.digitalmarmat.com.np'
 
@@ -25,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services`,                lastModified: now, priority: 0.9, changeFrequency: 'weekly'  },
     { url: `${base}/pricing`,                 lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/portfolio`,               lastModified: now, priority: 0.8, changeFrequency: 'weekly'  },
+    { url: `${base}/industries`,              lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/blog`,                    lastModified: now, priority: 0.8, changeFrequency: 'daily'   },
     { url: `${base}/contact`,                 lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/careers`,                 lastModified: now, priority: 0.7, changeFrequency: 'weekly'  },
@@ -42,6 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
   }))
 
+  const industryPages: MetadataRoute.Sitemap = getAllIndustries().map((industry) => ({
+    url: `${base}/industries/${industry.slug}`,
+    lastModified: now,
+    priority: 0.8,
+    changeFrequency: 'monthly',
+  }))
+
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${base}/blog/${post.slug}`,
     lastModified: new Date(post.date),
@@ -49,5 +59,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
   }))
 
-  return [...staticPages, ...servicePages, ...blogPages]
+  const portfolioPages: MetadataRoute.Sitemap = getAllProjects().map((project) => ({
+    url: `${base}/portfolio/${project.slug}`,
+    lastModified: now,
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  }))
+
+  return [...staticPages, ...servicePages, ...industryPages, ...blogPages, ...portfolioPages]
 }

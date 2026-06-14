@@ -23,6 +23,7 @@ const quickLinks: QuickLink[] = [
   { href: '/about',     label: 'About Us'  },
   { href: '/pricing',   label: 'Pricing'   },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/industries', label: 'Industries' },
   { href: '/blog',      label: 'Blog'      },
   { href: '/careers',   label: 'Careers'   },
   { href: '/contact',   label: 'Contact'   },

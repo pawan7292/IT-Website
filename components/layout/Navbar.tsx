@@ -179,13 +179,20 @@ export function Navbar() {
                         </span>
                       </Link>
                     ))}
-                    <div className="col-span-2 mt-1 pt-3 border-t border-gray-100 flex justify-center">
+                    <div className="col-span-2 mt-1 pt-3 border-t border-gray-100 flex justify-center gap-5">
                       <Link
                         href="/services"
                         onClick={() => setServicesOpen(false)}
                         className="text-sm text-primary font-semibold hover:underline"
                       >
                         View All Services →
+                      </Link>
+                      <Link
+                        href="/industries"
+                        onClick={() => setServicesOpen(false)}
+                        className="text-sm text-primary font-semibold hover:underline"
+                      >
+                        Browse by Industry →
                       </Link>
                     </div>
                   </motion.div>
@@ -315,6 +322,12 @@ export function Navbar() {
                       className="block px-2 py-2.5 text-sm text-primary font-semibold hover:bg-primary/5 rounded-lg"
                     >
                       All Services →
+                    </Link>
+                    <Link
+                      href="/industries"
+                      className="block px-2 py-2.5 text-sm text-primary font-semibold hover:bg-primary/5 rounded-lg"
+                    >
+                      Browse by Industry →
                     </Link>
                   </motion.div>
                 )}

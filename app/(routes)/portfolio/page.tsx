@@ -7,143 +7,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FiExternalLink, FiArrowRight } from 'react-icons/fi'
 import { Container } from '@/components/ui/Container'
 import { SectionHeader } from '@/components/ui/SectionHeader'
+import { getAllProjects, type PortfolioProject } from '@/data/portfolio'
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const PROJECTS = [
-  {
-    id: 1,
-    title: 'Shivanta Interior & Furnishing',
-    category: 'Website Design',
-    description: 'Premium interior design studio website for Kathmandu\'s leading furnishing company — elegant gallery showcase, project portfolio, service pages, and consultation booking.',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
-    url: 'https://shivanta.com.np',
-    tech: ['Next.js', 'Tailwind CSS', 'SEO', 'Responsive Design'],
-    featured: true,
-    client: 'Shivanta Interior & Furnishing Pvt. Ltd.',
-  },
-  {
-    id: 2,
-    title: 'Digital Marmat IT Service',
-    category: 'Website Design',
-    description: 'Full-featured IT company website with 10 service pages, animated hero, blog system, contact form with email automation, SEO setup, and sitemap.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-    url: 'https://www.digitalmarmat.com.np',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Nodemailer'],
-    featured: true,
-    client: 'Digital Marmat',
-  },
-  {
-    id: 3,
-    title: 'TrekNepal Adventures',
-    category: 'Website Design',
-    description: 'Travel and trekking company website with itinerary pages, online inquiry forms, photo gallery, and local SEO optimisation targeting international trekkers.',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['WordPress', 'Custom Theme', 'SEO', 'Gallery'],
-    featured: false,
-    client: 'TrekNepal Adventures',
-  },
-  {
-    id: 4,
-    title: 'SwiftMart Nepal',
-    category: 'E-Commerce',
-    description: 'High-converting fashion and lifestyle e-commerce store with eSewa & Khalti payment integration, product catalogue management, order tracking, and discount engine.',
-    image: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['Shopify', 'Custom Theme', 'eSewa', 'Khalti'],
-    featured: false,
-    client: 'SwiftMart Nepal',
-  },
-  {
-    id: 5,
-    title: 'Himalayan Clinic',
-    category: 'Website Design',
-    description: 'Professional medical clinic website with doctor profiles, department pages, appointment booking system, and patient information resources.',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['WordPress', 'Appointment Booking', 'SEO', 'Mobile-First'],
-    featured: false,
-    client: 'Himalayan Clinic',
-  },
-  {
-    id: 6,
-    title: 'NamasteEats Restaurant',
-    category: 'Website Design',
-    description: 'Modern restaurant website with interactive menu, table reservation system, food gallery, delivery integration, and Google Maps embed.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['Next.js', 'Online Ordering', 'Google Maps', 'Tailwind'],
-    featured: false,
-    client: 'NamasteEats',
-  },
-  {
-    id: 7,
-    title: 'GreenBuild Foundation',
-    category: 'Branding',
-    description: 'Complete brand identity and website for an environmental NGO — logo design, brand guidelines, color system, social media kit, and a donation-focused website.',
-    image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['Logo Design', 'Brand Identity', 'WordPress', 'Donation System'],
-    featured: false,
-    client: 'GreenBuild Foundation Nepal',
-  },
-  {
-    id: 8,
-    title: 'NepaliCraft Store',
-    category: 'E-Commerce',
-    description: 'Online marketplace for authentic Nepali handicrafts and handmade products — multi-vendor setup, artisan profiles, global shipping integration, and product SEO.',
-    image: 'https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['WooCommerce', 'Multi-vendor', 'PayPal', 'International Shipping'],
-    featured: false,
-    client: 'NepaliCraft',
-  },
-  {
-    id: 9,
-    title: 'PropertyHub Nepal',
-    category: 'Software',
-    description: 'Custom real estate listing platform with property search by location/type/price, agent dashboards, enquiry management, map integration, and SEO-optimised listing pages.',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Google Maps API'],
-    featured: false,
-    client: 'PropertyHub Nepal',
-  },
-  {
-    id: 10,
-    title: 'AcademyPro Learning',
-    category: 'Software',
-    description: 'Online learning management system with course creation, student enrollment, video hosting, assignment submission, progress tracking, and certificate generation.',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['Next.js', 'Supabase', 'Video Hosting', 'Auth System'],
-    featured: false,
-    client: 'AcademyPro',
-  },
-  {
-    id: 11,
-    title: 'Vertex Financial Services',
-    category: 'Website Design',
-    description: 'Corporate financial services website with service pages, team profiles, calculator tools, compliance documents, and a lead capture system integrated with CRM.',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['WordPress', 'ACF Pro', 'CRM Integration', 'SEO'],
-    featured: false,
-    client: 'Vertex Financial',
-  },
-  {
-    id: 12,
-    title: 'SunRise Organic Foods',
-    category: 'E-Commerce',
-    description: 'Organic food and grocery e-commerce store with subscription delivery model, recipe blog, loyalty rewards program, and eSewa / Khalti payment integration.',
-    image: 'https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80',
-    url: null,
-    tech: ['Shopify', 'Subscriptions', 'eSewa', 'Email Marketing'],
-    featured: false,
-    client: 'SunRise Organic',
-  },
-]
+const PROJECTS = getAllProjects()
 
 const CATEGORIES = ['All', 'Website Design', 'E-Commerce', 'Branding', 'Software']
 
@@ -157,7 +25,7 @@ const catStyle = (c: string) => CAT_STYLE[c] ?? 'bg-gray-100 text-gray-700'
 
 // ─── Project card ─────────────────────────────────────────────────────────────
 
-function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: number }) {
+function ProjectCard({ project, index }: { project: PortfolioProject; index: number }) {
   return (
     <motion.div
       layout
@@ -222,18 +90,23 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
         </div>
 
         {/* CTA */}
-        <div className="mt-5 pt-4 border-t border-gray-100">
-          {project.url ? (
+        <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between gap-3">
+          <Link
+            href={`/portfolio/${project.slug}`}
+            className="inline-flex items-center gap-1.5 text-primary text-sm font-semibold hover:gap-2.5 transition-all"
+          >
+            View Case Study <FiArrowRight size={14} />
+          </Link>
+          {project.url && (
             <a
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-primary text-sm font-semibold hover:gap-2.5 transition-all"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 text-navy/40 text-xs font-medium hover:text-primary transition-colors"
             >
-              <FiExternalLink size={14} /> Visit Live Site
+              <FiExternalLink size={13} /> Live Site
             </a>
-          ) : (
-            <span className="text-navy/35 text-sm font-medium">Completed Project</span>
           )}
         </div>
       </div>

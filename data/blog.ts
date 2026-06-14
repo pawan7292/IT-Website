@@ -1443,6 +1443,366 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ── 17. SEO ────────────────────────────────────────────────────────────────
+  {
+    slug: 'why-website-not-ranking-on-google-nepal',
+    title: "Why Isn't Your Website Showing Up on Google? 10 Common Reasons (and How to Fix Them)",
+    excerpt: 'Built a website but nobody can find it on Google? Here are the 10 most common reasons Nepali business websites fail to rank — and exactly how to fix each one.',
+    coverImage: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1200&q=80',
+    category: 'SEO',
+    tags: ['SEO', 'Google Ranking', 'Local SEO', 'Website Troubleshooting'],
+    author: 'Digital Marmat Team',
+    authorRole: 'SEO Specialists',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '9 min',
+    intro: "You paid for a website. It looks great. But when you search for your own business name — or worse, the services you offer — on Google, you're nowhere to be found. Meanwhile, your competitors show up on page one. If this sounds familiar, you're not alone. Here are the 10 most common reasons Nepali business websites don't rank, and what to do about each one.",
+    sections: [
+      {
+        heading: "1. Google Doesn't Know Your Website Exists",
+        body: "Having a website live on the internet doesn't mean Google has found it yet. If you've never submitted your sitemap to Google Search Console, Google may not have crawled or indexed your pages at all — which means you simply can't appear in results, no matter how good your content is.",
+        items: [
+          'Verify your site in Google Search Console',
+          'Submit your XML sitemap (e.g. yoursite.com/sitemap.xml)',
+          'Use the URL Inspection tool to request indexing for key pages',
+        ],
+      },
+      {
+        heading: '2. Your Website Has No SEO Foundation',
+        body: 'Every page needs a unique title tag, meta description, and properly structured headings (H1, H2, H3) that include the keywords your customers actually search for. Many websites — especially older or template-based ones — were never set up with this basic on-page SEO, which makes it nearly impossible for Google to understand what each page is about.',
+      },
+      {
+        heading: '3. Your Website Is Too Slow',
+        body: "Page speed is a confirmed Google ranking factor — and a major reason Nepali websites underperform, since many are built on slow shared hosting with unoptimized images. If your homepage takes more than 3-4 seconds to load, you're likely losing both rankings and visitors. We cover this in detail in [why your website is loading so slowly](/blog/why-is-your-website-loading-slowly).",
+      },
+      {
+        heading: "4. You're Targeting the Wrong Keywords (or None at All)",
+        body: 'Many websites are written with generic language like "Welcome to our company" instead of the actual phrases customers type into Google — like "best web development company in Kathmandu" or "affordable SEO services Nepal." Without keyword-focused content, your pages have nothing to rank for.',
+      },
+      {
+        heading: '5. Your Google Business Profile Is Missing or Incomplete',
+        body: "For local searches — which make up the majority of searches in Nepal — your Google Business Profile matters as much as your website. If it's missing, unverified, or has inconsistent business information (name, address, phone), you'll lose out on the local map pack entirely, even if your website itself is solid.",
+      },
+      {
+        heading: "6. There Isn't Enough Content to Rank",
+        body: 'A 5-page website with a sentence or two per page gives Google very little to work with. Businesses that publish helpful, keyword-rich content — blog posts, service pages, FAQs — consistently outrank competitors with thin websites, because they answer more of the questions people are actually searching for.',
+      },
+      {
+        heading: "7. Your Website Isn't Mobile-Friendly",
+        body: 'Over 70% of searches in Nepal happen on mobile devices, and Google primarily uses the mobile version of your site for ranking (mobile-first indexing). If your site is hard to navigate, has tiny text, or buttons that overlap on a phone screen, it will struggle to rank — regardless of how it looks on desktop.',
+      },
+      {
+        heading: '8. You Have Zero (or Low-Quality) Backlinks',
+        body: "Backlinks — other websites linking to yours — are one of Google's strongest trust signals. If no other website ever references yours, Google has little reason to trust it over competitors who've earned mentions from directories, news sites, or partner businesses.",
+      },
+      {
+        heading: '9. Technical Errors Are Blocking Google',
+        body: 'Sometimes the cause is purely technical: a robots.txt file accidentally blocking Google from crawling your site, broken internal links, duplicate pages, or a missing SSL certificate (no HTTPS). These issues are invisible to visitors but can silently prevent your pages from ever appearing in search results.',
+      },
+      {
+        heading: '10. Your Website Is Simply New',
+        body: "If your website launched recently, it may just need time. Google typically takes weeks to months to fully crawl, index, and build trust ('authority') for a new domain — especially in competitive industries. Patience combined with consistent SEO work pays off; shortcuts and 'instant ranking' services rarely do.",
+      },
+    ],
+    conclusion: "If even a few of these apply to your website, you're leaving valuable traffic — and customers — on the table. The good news is that every one of these issues is fixable. Start with our [free SEO audit](/free-seo-audit) to see exactly where your website stands, or explore our [SEO services](/services/seo-services) for ongoing support that gets you ranking and stays there.",
+    metaTitle: "Why Isn't Your Website Showing Up on Google? 10 Reasons & Fixes | Digital Marmat",
+    metaDescription: "Your website isn't ranking on Google? Discover the 10 most common reasons Nepali business websites fail to rank — and exactly how to fix each one.",
+    keywords: [
+      'website not ranking on google', 'why is my website not showing on google', 'SEO problems Nepal',
+      'improve google ranking Nepal', 'local SEO Nepal', 'website SEO audit',
+      'google search console Nepal', 'SEO mistakes Nepal business',
+    ],
+    faqs: [
+      {
+        question: 'How long does it take for a new website to start ranking on Google?',
+        answer: 'It typically takes 3-6 months for a new website to start ranking for competitive keywords, though some local, low-competition terms can appear within weeks. Consistent SEO work — content, technical fixes, and backlinks — significantly speeds this up. Our [SEO services](/services/seo-services) are built around this timeline.',
+      },
+      {
+        question: "Can I check why my website isn't ranking for free?",
+        answer: 'Yes — our [free SEO audit](/free-seo-audit) scans your website and highlights the technical and content issues holding back your rankings, with a clear action plan to fix them.',
+      },
+      {
+        question: 'Does having a Facebook page help my website rank on Google?',
+        answer: "Not directly — Facebook content generally doesn't get indexed the same way websites do. However, social signals and the traffic they drive to your website can indirectly support your overall online presence. A website remains essential for ranking on Google itself.",
+      },
+      {
+        question: 'Is it possible to rank #1 without spending money on ads?',
+        answer: 'Yes — this is exactly what organic SEO is for. With the right on-page optimization, content strategy, and local SEO setup, businesses can rank highly without paying per click. It takes more time than ads but delivers compounding, long-term results.',
+      },
+      {
+        question: "My competitor has a worse website than mine but ranks higher — why?",
+        answer: "Rankings depend on far more than visual design — including site speed, content depth, backlinks, Google Business Profile activity, and technical SEO. A less polished site that's been optimized correctly will often outrank a beautiful site that hasn't.",
+      },
+    ],
+  },
+
+  // ── 18. Website Development ───────────────────────────────────────────────
+  {
+    slug: 'why-is-your-website-loading-slowly',
+    title: "Why Is Your Website Loading So Slowly? (And What It's Costing Your Business)",
+    excerpt: "A slow website doesn't just frustrate visitors — it costs you sales, leads, and search rankings. Here's why your site is slow and exactly how to fix it.",
+    coverImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    category: 'Development',
+    tags: ['Website Speed', 'Page Speed', 'Web Performance', 'Web Development'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Web Development Experts',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '8 min',
+    intro: "Every extra second your website takes to load pushes visitors away — and tells Google your site offers a poor experience. If your pages feel sluggish on mobile data, you're not imagining it, and you're definitely not alone. Slow websites are one of the most common — and most fixable — problems we find when auditing Nepali business websites. Here's what's likely causing it, and what it's quietly costing you.",
+    sections: [
+      {
+        heading: 'The Real Cost of a Slow Website',
+        body: "Studies consistently show that a 1-second delay in load time can reduce conversions by around 7%, and over half of mobile visitors abandon a page that takes longer than 3 seconds to load. On top of lost sales and enquiries, Google uses page speed (Core Web Vitals) as a direct ranking factor — so a slow site can hurt you twice: fewer visitors stay, and fewer visitors arrive in the first place.",
+      },
+      {
+        heading: 'Unoptimized Images Are Usually the #1 Culprit',
+        body: 'A single photo straight from a phone camera can be 5-10MB. Multiply that across a homepage with a hero banner, gallery, and team photos, and you have a page that has to download tens of megabytes before it even renders. Properly compressed and resized images (using formats like WebP) can cut page weight by 80% or more with no visible quality loss.',
+      },
+      {
+        heading: 'Too Many Plugins, Widgets, and Scripts',
+        body: "WordPress sites are especially prone to this: every plugin, chat widget, popup, slider, and tracking script adds its own JavaScript and CSS files that must load before the page is usable. We regularly find sites running 30+ plugins, many of which are unused, outdated, or doing the same job as another plugin already installed.",
+      },
+      {
+        heading: 'Cheap or Overloaded Hosting',
+        body: "Shared hosting plans pack hundreds of websites onto a single server. When other sites on that server get traffic spikes, your site slows down too — even if nothing on your end changed. Budget hosting is fine for a brand-new site with little traffic, but it quickly becomes a bottleneck as your business grows.",
+      },
+      {
+        heading: 'No Caching Configured',
+        body: "Without caching, your server rebuilds each page from scratch on every single visit — running database queries and processing code that could have been saved and reused. Proper caching (page caching, browser caching, and database query caching) can reduce load times dramatically, often turning a 4-second page into a sub-1-second one.",
+      },
+      {
+        heading: 'Bloated Themes and Unused Code',
+        body: "Many off-the-shelf themes are built to support dozens of layout variations and features most businesses never use — but all that code still ships to every visitor's browser. A lean, purpose-built site loads only what it actually needs.",
+      },
+      {
+        heading: 'No Content Delivery Network (CDN)',
+        body: "If your server is located far from your visitors (e.g. hosted in the US while most of your visitors are in Nepal), every request has to travel that distance. A CDN stores copies of your site closer to your visitors around the world, cutting latency significantly — especially important for mobile users on slower connections.",
+      },
+      {
+        heading: "How to Check Your Website's Speed",
+        body: 'You don\'t need to guess — free tools give you an exact breakdown of what\'s slowing your site down and by how much.',
+        items: [
+          'Google PageSpeed Insights — scores your site and lists specific fixes',
+          'GTmetrix — shows a waterfall of every file your page loads, in order',
+          'Google Search Console — flags Core Web Vitals issues across your whole site',
+        ],
+      },
+      {
+        heading: 'How Digital Marmat Fixes Slow Websites',
+        body: 'Our [website development](/services/website-development) process includes image optimization, code minification, caching, and CDN setup as standard — not as an upsell. For existing websites, we offer performance audits that pinpoint exactly what to fix first for the biggest speed gains.',
+      },
+    ],
+    conclusion: "A fast website isn't a luxury — it's the difference between a visitor becoming a customer or bouncing to your competitor's site. If you're not sure how your site stacks up, run it through [PageSpeed Insights](https://pagespeed.web.dev) or get in touch for a full performance review. You might also want to check what a new, optimized website would cost using our [website cost calculator](/website-cost-calculator), or read about [why your website isn't ranking on Google](/blog/why-website-not-ranking-on-google-nepal) — speed and rankings go hand in hand.",
+    metaTitle: "Why Is Your Website Loading So Slowly? Causes & Fixes | Digital Marmat",
+    metaDescription: "Find out why your website is loading slowly and what it's costing your business — plus practical fixes for images, hosting, caching, and more.",
+    keywords: [
+      'website loading slow', 'why is my website slow', 'website speed optimization Nepal',
+      'improve website speed', 'page speed Nepal', 'slow website fix',
+      'website performance Nepal', 'core web vitals Nepal',
+    ],
+    faqs: [
+      {
+        question: 'How fast should my website load?',
+        answer: 'Aim for under 2-3 seconds for your homepage to fully load on mobile. Anything beyond that and you start losing a meaningful percentage of visitors before they even see your content.',
+      },
+      {
+        question: 'Will switching hosting alone fix a slow website?',
+        answer: 'Better hosting helps, but it rarely solves everything on its own. Unoptimized images, bloated themes, and missing caching are usually bigger factors — addressing all of them together gives the best results.',
+      },
+      {
+        question: 'Is WordPress always slower than a custom website?',
+        answer: "Not inherently — a well-optimized WordPress site can be very fast. But WordPress sites accumulate plugins and bloat over time more easily. We compare the two in detail in [WordPress vs Custom Website Development](/blog/wordpress-vs-custom-website-development-nepal).",
+      },
+      {
+        question: 'Can I fix my website speed myself?',
+        answer: 'Some basics — like compressing images before uploading and removing unused plugins — can be done without technical help. But caching, code-level optimization, and CDN setup typically require a developer to implement safely.',
+      },
+      {
+        question: 'How often should I check my website speed?',
+        answer: "It's good practice to check after any major update — new theme, new plugin, redesign, or large content addition — since these are the most common points where sites slow down unnoticed.",
+      },
+    ],
+  },
+
+  // ── 19. Website Development ───────────────────────────────────────────────
+  {
+    slug: 'wordpress-vs-custom-website-development-nepal',
+    title: 'WordPress vs Custom Website Development: Which Is Right for Your Nepal Business?',
+    excerpt: "WordPress or a custom-built website? We break down cost, speed, security, and flexibility to help you choose the right foundation for your business website.",
+    coverImage: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80',
+    category: 'Development',
+    tags: ['WordPress', 'Custom Website', 'Website Comparison', 'Web Development Nepal'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Web Development Experts',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '8 min',
+    intro: "One of the first decisions every business faces when building a website is the platform it's built on. WordPress powers a huge share of the web and is often the default recommendation — but is it the right choice for your business, or would a custom-built website serve you better long-term? Here's an honest, side-by-side comparison based on what we see working (and failing) for businesses in Nepal.",
+    sections: [
+      {
+        heading: 'What Is WordPress? What Is a Custom Website?',
+        body: "WordPress is a content management system (CMS) — pre-built software with themes and plugins that let you assemble a website without writing code from scratch. A custom website, on the other hand, is built specifically for your business using code (or a modern framework) tailored to exactly what you need, with no unnecessary features bolted on.",
+      },
+      {
+        heading: 'Cost: Upfront vs Long-Term',
+        body: "WordPress is often cheaper to launch — themes and plugins reduce initial development time. But many of those plugins carry recurring license fees, and as your site grows, you may need developers to fix conflicts between plugins. Custom websites typically cost more upfront, but have lower ongoing costs since there's less third-party software to maintain or pay for.",
+      },
+      {
+        heading: 'Speed & Performance',
+        body: "A custom website is built to load only the code it actually needs, which generally makes it faster out of the box. WordPress sites can be fast too, but require ongoing discipline — every plugin and feature you add is extra weight that can slow the site down if not managed carefully. We cover this in more depth in [why your website is loading so slowly](/blog/why-is-your-website-loading-slowly).",
+      },
+      {
+        heading: 'Design Flexibility & Uniqueness',
+        body: "WordPress themes, even heavily customized ones, often share underlying structures with thousands of other sites — making it harder to create a truly distinctive look. A custom website gives complete creative freedom: every layout, animation, and interaction is designed specifically for your brand, with nothing constrained by a theme's limitations.",
+      },
+      {
+        heading: 'Security',
+        body: "WordPress's popularity makes it a frequent target for automated attacks, and security depends heavily on keeping the core software, theme, and every plugin updated. A custom website has a much smaller attack surface — there's no plugin ecosystem to exploit, though it still requires proper security practices during development.",
+      },
+      {
+        heading: 'Maintenance & Updates',
+        body: "WordPress requires regular updates to core, theme, and plugins — skipping these creates both security risks and compatibility issues, and updates can sometimes break the site if not tested first. Custom websites need maintenance too, but updates are far less frequent and entirely within your developer's control.",
+      },
+      {
+        heading: 'Scalability for Growth',
+        body: "WordPress can scale reasonably well with the right hosting and caching setup, and works fine for many small-to-medium businesses. But if you're planning advanced features — custom booking systems, integrations with other software, or high-traffic e-commerce — a custom build (or a hybrid approach) often scales more predictably without hitting plugin limitations.",
+      },
+      {
+        heading: 'SEO Capabilities',
+        body: "Both platforms can rank well on Google — SEO success depends far more on content, technical setup, and ongoing optimization than the platform itself. WordPress has excellent SEO plugins that simplify on-page SEO; custom websites can achieve the same (and sometimes finer control) but require it to be built in deliberately.",
+      },
+      {
+        heading: 'Which Should You Choose?',
+        body: 'There\'s no universal "better" — it depends on your goals.',
+        items: [
+          'Choose WordPress if: you need a content-heavy site (blog, news), want to manage content yourself easily, and have a moderate budget',
+          'Choose Custom if: you need unique functionality, top performance, tighter security, or a design that stands apart from every other site in your industry',
+          'Many businesses start with WordPress and move to custom as they grow — we help with both paths',
+        ],
+      },
+    ],
+    conclusion: "There's no one-size-fits-all answer — the right choice depends on your business goals, budget, and growth plans. Our [website development](/services/website-development) team builds both WordPress and fully custom websites, and we'll recommend the approach that genuinely fits your needs rather than the one that's easiest for us. Use our [website cost calculator](/website-cost-calculator) to get a rough estimate, or [contact us](/contact) for a free consultation.",
+    metaTitle: 'WordPress vs Custom Website Development: Which Is Right for You? | Digital Marmat',
+    metaDescription: 'WordPress or custom website development? Compare cost, speed, security, flexibility, and scalability to choose the right platform for your Nepal business.',
+    keywords: [
+      'WordPress vs custom website', 'custom website development Nepal', 'WordPress development Nepal',
+      'best platform for business website', 'website development comparison', 'WordPress vs custom code',
+      'website development Nepal', 'custom CMS Nepal',
+    ],
+    faqs: [
+      {
+        question: 'Is WordPress good enough for a small business website?',
+        answer: 'For many small businesses, yes — WordPress offers a good balance of cost, ease of management, and functionality, especially for content-driven sites like blogs, restaurants, or service businesses with straightforward needs.',
+      },
+      {
+        question: 'Can a WordPress website later be converted to a custom website?',
+        answer: "Yes, though it's effectively a rebuild rather than a conversion. Many businesses start with WordPress to launch quickly and move to a custom platform once their requirements become more specific and budgets allow.",
+      },
+      {
+        question: 'Is custom website development always more expensive?',
+        answer: "Usually higher upfront, but not always more expensive over time — fewer plugin subscriptions, less troubleshooting, and lower long-term maintenance can offset the initial cost difference, especially over 3-5 years.",
+      },
+      {
+        question: 'Which option is better for e-commerce?',
+        answer: "It depends on scale. WooCommerce (built on WordPress) works well for many small-to-medium online stores. For larger or more specialized stores, a custom build or platforms like Shopify may be a better fit — we compare options in [Shopify vs WooCommerce](/blog/shopify-vs-woocommerce-nepal).",
+      },
+      {
+        question: 'Do custom websites rank better on Google than WordPress sites?',
+        answer: "Not inherently. SEO performance depends on content quality, technical setup, and ongoing optimization far more than the underlying platform — both can rank #1 when built and maintained correctly.",
+      },
+    ],
+  },
+
+  // ── 20. E-Commerce ─────────────────────────────────────────────────────────
+  {
+    slug: 'shopify-vs-woocommerce-nepal',
+    title: 'Shopify vs WooCommerce: Which E-Commerce Platform Is Best for Your Nepal Online Store?',
+    excerpt: 'Planning to sell online in Nepal? Compare Shopify and WooCommerce on cost, ease of use, local payment gateways like eSewa and Khalti, and long-term scalability.',
+    coverImage: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80',
+    category: 'E-Commerce',
+    tags: ['Shopify', 'WooCommerce', 'E-Commerce', 'Online Store Nepal'],
+    author: 'Digital Marmat Team',
+    authorRole: 'E-Commerce Specialists',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '8 min',
+    intro: "Starting an online store in Nepal? Two platforms dominate the conversation: Shopify and WooCommerce. Both can power a successful e-commerce business, but they work very differently — especially when it comes to cost, control, and local payment gateways like eSewa, Khalti, and Fonepay. Here's how they compare for businesses selling in Nepal.",
+    sections: [
+      {
+        heading: "What's the Difference?",
+        body: 'Shopify is a fully hosted, all-in-one platform — you pay a monthly fee and Shopify handles hosting, security, and updates for you. WooCommerce is a free plugin that turns a WordPress website into an online store, but you (or your developer) are responsible for hosting, security, and updates yourself.',
+      },
+      {
+        heading: 'Cost & Pricing',
+        body: "Shopify has predictable monthly subscription costs (plus transaction fees if you don't use Shopify Payments, which isn't available in Nepal — more on that below). WooCommerce itself is free, but you'll pay for hosting, a theme, and any premium plugins or extensions — costs that vary but can be lower overall, especially for stores with modest catalogs.",
+      },
+      {
+        heading: 'Ease of Setup & Use',
+        body: "Shopify is designed to get a store online quickly with minimal technical knowledge — most settings are point-and-click. WooCommerce requires more setup (WordPress, hosting, plugins) but gives store owners who are comfortable with WordPress a familiar, flexible dashboard once it's configured.",
+      },
+      {
+        heading: 'Payment Gateways in Nepal',
+        body: "This is often the deciding factor for Nepali businesses. Shopify Payments is not available in Nepal, so Shopify stores typically rely on manual payment methods, bank transfer, or third-party integrations — direct eSewa, Khalti, or Fonepay integration can be limited or require workarounds. WooCommerce, being self-hosted, integrates much more easily with local payment gateways through widely available plugins, alongside cash-on-delivery — which remains extremely popular for online orders in Nepal.",
+      },
+      {
+        heading: 'Customization & Flexibility',
+        body: "Shopify offers strong customization within its ecosystem (themes and apps), but deeper changes to checkout flow or core functionality can be restricted or require higher-tier plans. WooCommerce, being open-source and self-hosted, can be customized at every level — checkout, product pages, shipping logic, and more — without platform restrictions.",
+      },
+      {
+        heading: 'Scalability',
+        body: "Shopify scales seamlessly from a hosting perspective — it handles traffic spikes automatically, which suits fast-growing or high-volume stores. WooCommerce can scale well too, but performance depends on your hosting and optimization — a poorly configured WooCommerce store can slow down significantly under heavy traffic.",
+      },
+      {
+        heading: 'Maintenance & Security',
+        body: 'Shopify handles security patches, backups, and platform updates automatically as part of your subscription. With WooCommerce, you (or your developer) are responsible for keeping WordPress, the theme, and all plugins updated and secure — more control, but more responsibility.',
+      },
+      {
+        heading: 'SEO & Marketing',
+        body: 'Both platforms support strong SEO fundamentals. WooCommerce, built on WordPress, often has an edge for content marketing — blogs, landing pages, and SEO plugins integrate natively. Shopify\'s SEO has improved significantly but historically offered less flexibility over URL structures and technical SEO elements.',
+      },
+      {
+        heading: 'Which Should You Choose?',
+        body: "For most Nepal-based businesses, the payment gateway situation tips the decision.",
+        items: [
+          'Choose WooCommerce if: local payment gateways (eSewa, Khalti, Fonepay) and cash-on-delivery are important, you want full control and lower long-term costs, or you already have a WordPress site',
+          'Choose Shopify if: you primarily sell internationally, want a fully managed platform with zero server maintenance, or value Shopify\'s polished app ecosystem',
+          'Many Nepali businesses choose WooCommerce specifically for easier local payment integration',
+        ],
+      },
+    ],
+    conclusion: "Both Shopify and WooCommerce can power a successful online store — the right choice comes down to your target market, payment needs, and how much control you want over your store. Our [e-commerce development](/services/ecommerce-development) team builds and configures both platforms, with experience integrating eSewa, Khalti, and Fonepay for Nepali businesses. [Contact us](/contact) to discuss which fits your business best.",
+    metaTitle: 'Shopify vs WooCommerce: Best E-Commerce Platform for Nepal | Digital Marmat',
+    metaDescription: 'Shopify or WooCommerce for your Nepal online store? Compare cost, ease of use, eSewa/Khalti payment integration, customization, and scalability.',
+    keywords: [
+      'Shopify vs WooCommerce Nepal', 'online store Nepal', 'e-commerce platform Nepal',
+      'WooCommerce eSewa Khalti', 'Shopify Nepal payment', 'best e-commerce platform Nepal',
+      'online shop development Nepal', 'WooCommerce vs Shopify comparison',
+    ],
+    faqs: [
+      {
+        question: 'Can I use Shopify Payments in Nepal?',
+        answer: 'No, Shopify Payments is not currently available in Nepal. Shopify stores in Nepal typically rely on manual payment options, bank transfer, or third-party payment integrations instead.',
+      },
+      {
+        question: 'Is WooCommerce really free?',
+        answer: "The WooCommerce plugin itself is free, but you'll need to pay for hosting, a domain, and likely some premium plugins or extensions — so while cheaper than Shopify for many stores, it isn't entirely cost-free.",
+      },
+      {
+        question: 'Which platform is easier for a beginner to manage?',
+        answer: "Shopify generally has a gentler learning curve since everything is managed in one place. WooCommerce requires more initial setup but is very manageable day-to-day once configured, especially if you're already familiar with WordPress.",
+      },
+      {
+        question: 'Can I integrate eSewa and Khalti with WooCommerce?',
+        answer: 'Yes — WooCommerce has well-supported plugins for integrating eSewa, Khalti, Fonepay, and other Nepali payment gateways, which is one of the main reasons many Nepali online stores choose it.',
+      },
+      {
+        question: 'Can I switch from WooCommerce to Shopify (or vice versa) later?',
+        answer: "Yes, though it involves migrating products, orders, and customer data, plus rebuilding the storefront design — it's a significant project but very doable with the right planning.",
+      },
+    ],
+  },
 ]
 
 export const getAllPosts = () => blogPosts
