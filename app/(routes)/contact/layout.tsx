@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Digital Marmat IT Services — Kathmandu, Nepal',
+  title: { absolute: 'Contact Us | Digital Marmat IT Services — Kathmandu, Nepal' },
   description: 'Contact Digital Marmat in Kathmandu, Nepal. Call, WhatsApp or email us for website development, SEO, digital marketing, and IT service inquiries. Free consultation, reply within 24 hours.',
   keywords: [
     'contact digital marmat', 'IT company contact Nepal',

@@ -72,7 +72,7 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center gap-3 mb-5">
               <Image
                 src="/logo.png"
-                alt="Digital Marmat IT Service"
+                alt="Digital Marmat IT Services"
                 width={44}
                 height={44}
                 className="h-11 w-11 object-contain shrink-0"

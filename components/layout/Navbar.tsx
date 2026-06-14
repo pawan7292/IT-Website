@@ -46,7 +46,7 @@ function Logo() {
       {!imgError && (
         <Image
           src="/logo.png"
-          alt="Digital Marmat IT Service"
+          alt="Digital Marmat IT Services"
           width={44}
           height={44}
           className="h-10 w-10 md:h-11 md:w-11 object-contain shrink-0"

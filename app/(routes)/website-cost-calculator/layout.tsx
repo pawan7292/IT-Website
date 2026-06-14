@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Website Cost Calculator Nepal | Estimate Your Project Price — Digital Marmat',
+  title: { absolute: 'Website Cost Calculator Nepal | Digital Marmat' },
   description: 'Use our free website cost calculator to get an instant price estimate for your web project in Nepal. Transparent NPR pricing — no hidden fees, no commitment required.',
   keywords: [
     'website cost calculator Nepal', 'website price Nepal',

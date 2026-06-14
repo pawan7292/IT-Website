@@ -17,12 +17,13 @@ export async function generateMetadata(
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    keywords: service.keywords.join(', '),
     alternates: { canonical: `https://www.digitalmarmat.com.np/services/${slug}` },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
       url: `https://www.digitalmarmat.com.np/services/${slug}`,
-      images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: service.metaTitle }],
     },
     twitter: {
       card: 'summary_large_image',

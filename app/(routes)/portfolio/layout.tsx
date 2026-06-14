@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio | 50+ Websites & Projects — Digital Marmat Nepal',
+  title: { absolute: 'Portfolio | 50+ Websites & Projects — Digital Marmat Nepal' },
   description: 'Browse 50+ completed projects by Digital Marmat — websites, e-commerce stores, mobile apps, branding campaigns, and digital marketing results for businesses across Nepal and globally.',
   keywords: [
     'digital marmat portfolio', 'web design portfolio Nepal',

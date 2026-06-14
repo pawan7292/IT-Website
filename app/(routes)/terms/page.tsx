@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Digital Marmat IT Services',
+  title: { absolute: 'Terms of Service | Digital Marmat IT Services' },
   description: 'Read the Terms of Service for Digital Marmat IT Services. Understand the terms governing use of our website and professional IT services in Nepal.',
   alternates: { canonical: 'https://www.digitalmarmat.com.np/terms' },
   openGraph: {

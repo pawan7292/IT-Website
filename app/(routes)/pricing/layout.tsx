@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing | Website, SEO & Digital Marketing Packages Nepal — Digital Marmat',
+  title: { absolute: 'Pricing | Web, SEO & Marketing Packages — Digital Marmat' },
   description: 'Transparent, affordable pricing for website development, SEO, digital marketing, and branding in Nepal. Starter, Business & Enterprise plans. No hidden costs. NPR & USD pricing.',
   keywords: [
     'website development cost Nepal', 'website price Nepal',

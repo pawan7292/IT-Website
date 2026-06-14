@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Digital Marmat IT Services',
+  title: { absolute: 'Privacy Policy | Digital Marmat IT Services' },
   description: 'Read the Privacy Policy of Digital Marmat IT Services. Learn how we collect, use, and protect your personal data in accordance with applicable laws.',
   alternates: { canonical: 'https://www.digitalmarmat.com.np/privacy-policy' },
   openGraph: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog | Digital Marketing, SEO & Web Dev Insights Nepal — Digital Marmat',
+  title: { absolute: 'Blog | SEO, Marketing & Web Dev Insights — Digital Marmat' },
   description: 'Expert tips, guides and insights on web development, SEO, digital marketing, social media, e-commerce and AI automation for Nepal businesses. Updated regularly by the Digital Marmat team.',
   keywords: [
     'digital marketing blog Nepal', 'SEO tips Nepal',

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers | IT Jobs in Nepal — Join Digital Marmat Kathmandu',
+  title: { absolute: 'Careers | IT Jobs in Nepal — Join Digital Marmat Kathmandu' },
   description: 'Join Digital Marmat\'s growing team in Kathmandu, Nepal. Open roles in web development, SEO, digital marketing, UI/UX design, mobile apps, and AI automation. Competitive salary, learning culture.',
   keywords: [
     'IT jobs Nepal', 'web developer jobs Kathmandu',

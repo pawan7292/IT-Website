@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Industries We Serve | Web Development & Marketing for Nepal Businesses — Digital Marmat',
+  title: { absolute: 'Industries We Serve | Digital Marmat Nepal' },
   description: 'Specialized website development and digital marketing for hospitals, schools, restaurants, hotels, real estate, NGOs, and travel agencies in Nepal.',
   keywords: [
     'industry specific websites Nepal', 'website for hospitals Nepal', 'website for schools Nepal',

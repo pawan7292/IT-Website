@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free SEO Audit',
+  title: { absolute: 'Free SEO Audit Tool Nepal | Digital Marmat' },
   description: 'Get a completely free SEO audit for your Nepal business website. We identify every SEO problem and give you a clear action plan. Limited spots available.',
   openGraph: {
     title: 'Free SEO Audit Tool — Digital Marmat Nepal',

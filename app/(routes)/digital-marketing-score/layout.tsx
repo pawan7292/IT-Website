@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free Digital Marketing Score Checker for Nepal Businesses',
+  title: { absolute: 'Free Digital Marketing Score Checker | Digital Marmat' },
   description: 'Take our free 2-minute quiz to see how your website, SEO, social media, and digital marketing strategy stack up — and get personalised recommendations instantly.',
   openGraph: {
     title: 'Digital Marketing Score Checker — Digital Marmat Nepal',
