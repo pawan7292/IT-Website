@@ -24,6 +24,15 @@ const nextConfig = {
   },
   reactStrictMode: true,
   trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: '/blog/social-media-marketing-grow-business-nepal',
+        destination: '/blog/social-media-marketing-business-growth-nepal',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

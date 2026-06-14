@@ -314,64 +314,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 
-  // ── 4. Social Media Marketing ─────────────────────────────────────────────
-  {
-    slug: 'social-media-marketing-grow-business-nepal',
-    title: 'How Social Media Marketing Can Grow Your Business in Nepal (2025 Guide)',
-    excerpt: 'With 10+ million Facebook users in Nepal, social media is where your customers already are. Here\'s how to turn followers into paying customers.',
-    coverImage: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80',
-    category: 'Social Media',
-    tags: ['Social Media Marketing', 'Facebook Marketing', 'Instagram Nepal', 'Content Strategy'],
-    author: 'Digital Marmat Team',
-    authorRole: 'Social Media Strategists',
-    date: '2025-04-28',
-    dateFormatted: 'April 28, 2025',
-    readTime: '8 min',
-    intro: 'Nepal is a social media-first country. Many Nepalis experience the internet primarily through Facebook, and a growing number discover businesses, research products, and make purchase decisions entirely within social platforms. For businesses, this is both a massive opportunity and — if ignored — a serious competitive disadvantage. Here\'s how to build a social media presence that actually grows your business.',
-    sections: [
-      {
-        heading: 'Which Platforms Should Your Nepal Business Be On?',
-        body: 'Not every platform is right for every business. Understanding where your audience spends time is step one.',
-        items: [
-          'Facebook: Best for 25–50 age group, community groups, local businesses, B2C',
-          'Instagram: Ideal for visual products — fashion, food, travel, beauty',
-          'TikTok: Fastest growing in Nepal; powerful for reaching under-30s',
-          'YouTube: Best for educational content, tutorials, and brand storytelling',
-          'LinkedIn: Right for B2B services, recruitment, and professional services',
-        ],
-      },
-      {
-        heading: 'Build a Content Strategy That Converts',
-        body: 'Posting randomly gets you nowhere. A content strategy defines what you post, how often, and why. The 80/20 rule works well — 80% valuable, educational, or entertaining content, and 20% promotional. Consistency matters more than frequency. Posting 4 times a week reliably outperforms posting 20 times in one week and then going silent.',
-      },
-      {
-        heading: 'The Power of Video in Nepal\'s Social Market',
-        body: 'Facebook Reels and TikTok videos get 3–10x more organic reach than static image posts on Nepal\'s platforms. Short-form video (15–60 seconds) showing behind-the-scenes, product demos, customer testimonials, or quick tips consistently outperforms. You don\'t need professional equipment — a smartphone in good light is enough to start.',
-      },
-      {
-        heading: 'Running Paid Social Ads in Nepal',
-        body: 'Organic reach is declining across all platforms. To reliably reach new customers, paid advertising is essential. Facebook and Instagram ads in Nepal are still remarkably affordable — you can reach 10,000 targeted people for as little as NPR 1,500. Start with boosting your best-performing organic posts, then graduate to dedicated lead generation campaigns.',
-      },
-      {
-        heading: 'Community Management Is Not Optional',
-        body: 'Responding to comments, DMs, and mentions within 2–4 hours signals professionalism and builds trust. Brands that engage their audience see 6x more organic reach than those that don\'t. Designate someone — or hire a social media manager — specifically to manage community interactions.',
-      },
-      {
-        heading: 'Measuring Social Media Success',
-        body: 'Vanity metrics like likes and followers feel good but don\'t pay bills. Track metrics that connect to business outcomes: website clicks from social, leads generated through social, and revenue from social-referred customers. Meta Business Suite provides these analytics for free.',
-      },
-    ],
-    conclusion: 'Social media marketing in Nepal is not about being everywhere — it\'s about being strategic on the right platforms with the right content. Start with one platform, master it, then expand. The businesses building genuine communities on social media today are the ones customers call first tomorrow. Digital Marmat manages social media for Nepal businesses — from strategy to daily execution.',
-    metaTitle: 'Social Media Marketing Nepal Guide 2025 | Grow Your Business | Digital Marmat',
-    metaDescription: 'Learn how social media marketing can grow your Nepal business in 2025. Facebook, Instagram, TikTok strategies with paid ads and content planning tips.',
-    keywords: [
-      'social media marketing Nepal', 'Facebook marketing Nepal 2025',
-      'Instagram marketing Nepal', 'TikTok Nepal business',
-      'grow business social media Nepal', 'social media tips Nepal',
-      'Nepal social media strategy', 'paid social ads Nepal',
-    ],
-  },
-
   // ── 5. Software Development ───────────────────────────────────────────────
   {
     slug: 'custom-software-vs-off-the-shelf-nepal',
@@ -1155,17 +1097,17 @@ export const blogPosts: BlogPost[] = [
   // ── 14. Social Media Marketing for Business Growth ───────────────────────
   {
     slug: 'social-media-marketing-business-growth-nepal',
-    title: 'How Social Media Marketing Helps Businesses Grow in Nepal',
-    excerpt: 'What is social media marketing, and how can it actually grow your business? A complete look at the platforms, strategies, common mistakes, and professional services that turn followers into paying customers in Nepal.',
+    title: 'How Social Media Marketing Helps Businesses Grow in Nepal: The Complete Guide',
+    excerpt: 'From choosing the right platforms to content strategy, video, paid ads, and community management — the complete guide to social media marketing for businesses in Nepal, with the strategies and services that turn followers into paying customers.',
     coverImage: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=1200&q=80',
     category: 'Social Media',
-    tags: ['Social Media Marketing', 'Facebook Marketing Nepal', 'Instagram Marketing', 'LinkedIn Marketing', 'TikTok Marketing'],
+    tags: ['Social Media Marketing', 'Facebook Marketing Nepal', 'Instagram Marketing', 'TikTok Marketing', 'Content Strategy'],
     author: 'Digital Marmat Team',
     authorRole: 'Social Media Strategists',
     date: '2026-06-14',
     dateFormatted: 'June 14, 2026',
-    readTime: '9 min',
-    intro: "Social media marketing is the practice of using platforms such as Facebook, Instagram, TikTok, LinkedIn, and YouTube to promote a business, connect with customers, and increase brand awareness. In today's digital world, people spend a significant amount of their time on social media — making it one of the most effective ways for businesses in Nepal to reach potential customers, build trust, and generate sales. Whether you run a small local business or a growing company, social media marketing can help you establish a strong online presence and stay connected with your audience.",
+    readTime: '12 min',
+    intro: "Social media marketing is the practice of using platforms such as Facebook, Instagram, TikTok, LinkedIn, and YouTube to promote a business, connect with customers, and increase brand awareness. Nepal is a social-media-first country — many Nepalis experience the internet primarily through Facebook, and a growing number discover businesses, research products, and make purchase decisions entirely within social platforms. For businesses, this is both a massive opportunity and — if ignored — a serious competitive disadvantage. In this complete guide, we cover why social media marketing matters in Nepal, the platforms and strategies that actually work, common mistakes to avoid, and how professional management can turn your social presence into a genuine growth engine.",
     sections: [
       {
         heading: 'Why Social Media Marketing Matters for Businesses in Nepal',
@@ -1181,13 +1123,14 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'Popular Social Media Platforms for Business Growth',
-        body: 'Different social media platforms serve different purposes. Understanding where your audience spends their time can help you choose the right platform.',
+        heading: 'Choosing the Right Platforms for Your Business',
+        body: 'Different social media platforms serve different purposes — and not every platform is right for every business. Understanding where your audience spends their time is the first step:',
         items: [
-          'Facebook Marketing — share updates and promotions, run targeted advertisements, communicate with customers, build online communities, and generate leads and inquiries',
-          'Instagram Marketing — higher engagement rates, brand storytelling through photos and videos, Reels and Stories for increased reach, and influencer collaboration opportunities',
-          'LinkedIn Marketing — build professional credibility, connect with industry leaders, generate business partnerships, and share industry insights',
-          'TikTok Marketing — create engaging short-form videos, increase brand visibility, reach new audiences organically, and showcase products creatively',
+          'Facebook — best for the 25–50 age group, community groups, and local B2C businesses; share updates and promotions, run targeted ads, and generate leads and inquiries',
+          'Instagram — ideal for visually-driven brands like fashion, food, beauty, and travel; higher engagement through Reels, Stories, and influencer collaborations',
+          "TikTok — Nepal's fastest-growing platform, powerful for reaching under-30 audiences with short-form video and strong organic reach",
+          'LinkedIn — essential for B2B services, professional branding, recruitment, and industry partnerships',
+          'YouTube — best for tutorials, brand storytelling, and long-form content that builds authority',
         ],
       },
       {
@@ -1200,6 +1143,22 @@ export const blogPosts: BlogPost[] = [
           'Targeted Advertising — platforms like Facebook and Instagram let you target audiences by location, age, interests, behavior, and demographics, reaching the right people at the right time',
           'Improved Website Traffic — social media can drive visitors to your website, helping you generate leads, inquiries, and sales',
         ],
+      },
+      {
+        heading: 'Build a Content Strategy That Converts',
+        body: 'Posting randomly gets you nowhere. A content strategy defines what you post, how often, and why. The 80/20 rule works well — 80% valuable, educational, or entertaining content, and 20% promotional. Consistency matters more than frequency: posting 4 times a week reliably outperforms posting 20 times in one week and then going silent.',
+      },
+      {
+        heading: "The Power of Video on Nepal's Social Platforms",
+        body: "Facebook Reels and TikTok videos get 3–10x more organic reach than static image posts on Nepal's platforms. Short-form video (15–60 seconds) showing behind-the-scenes content, product demos, customer testimonials, or quick tips consistently outperforms static posts. You don't need professional equipment — a smartphone in good light is enough to start.",
+      },
+      {
+        heading: 'Running Paid Social Ads in Nepal',
+        body: 'Organic reach is declining across all platforms, so paid advertising is essential to reliably reach new customers. Facebook and Instagram ads in Nepal are still remarkably affordable — you can reach 10,000 targeted people for as little as NPR 1,500. Start by boosting your best-performing organic posts, then graduate to dedicated lead generation campaigns.',
+      },
+      {
+        heading: 'Community Management Builds Trust',
+        body: "Responding to comments, DMs, and mentions within 2–4 hours signals professionalism and builds trust. Brands that engage their audience see up to 6x more organic reach than those that don't. Designate someone — or hire a social media manager — specifically to manage community interactions.",
       },
       {
         heading: 'Common Social Media Marketing Mistakes Businesses Make',
@@ -1215,7 +1174,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'How to Create an Effective Social Media Marketing Strategy',
-        body: 'A successful social media strategy typically includes a few key building blocks. For a deeper, platform-by-platform breakdown, see our [complete social media marketing guide for Nepal businesses](/blog/social-media-marketing-grow-business-nepal).',
+        body: 'A successful social media strategy typically includes a few key building blocks:',
         items: [
           'Defining clear goals — increasing brand awareness, generating leads, driving website traffic, or increasing sales',
           'Understanding your target audience so your content resonates with the right people',
@@ -1223,6 +1182,10 @@ export const blogPosts: BlogPost[] = [
           'Maintaining consistency — regular posting keeps your brand visible and relevant',
           'Monitoring results — tracking engagement, reach, clicks, and conversions to improve future campaigns',
         ],
+      },
+      {
+        heading: 'Measuring What Matters: Tracking Real Results',
+        body: "Vanity metrics like likes and followers feel good but don't pay the bills. Track metrics that connect to business outcomes — website clicks from social, leads generated through social, and revenue from social-referred customers. Meta Business Suite provides these analytics for free.",
       },
       {
         heading: 'Social Media Marketing Services by Digital Marmat',
@@ -1251,15 +1214,16 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    conclusion: "Social media marketing has become an essential part of business growth in Nepal. From increasing brand awareness to generating leads and building customer relationships, social media offers opportunities that traditional marketing cannot match. Whether you're a startup, local business, or established company, Digital Marmat can help you create and manage effective [social media marketing](/services/social-media-marketing) campaigns tailored to your business goals. [Contact us](/contact) for a customized strategy designed to increase engagement, leads, and business growth.",
-    metaTitle: 'How Social Media Marketing Helps Businesses Grow in Nepal | Digital Marmat',
-    metaDescription: 'Discover how social media marketing helps Nepali businesses build brand awareness, engage customers, and increase sales across Facebook, Instagram, LinkedIn, and TikTok.',
+    conclusion: "Social media marketing in Nepal isn't about being everywhere — it's about showing up consistently, with the right content, on the platforms where your customers already are. Start with one platform, master it, then expand: the businesses building genuine communities on social media today are the ones customers call first tomorrow. Whether you're a startup, local business, or established company, Digital Marmat can help you create and manage effective [social media marketing](/services/social-media-marketing) campaigns tailored to your business goals. [Contact us](/contact) for a customized strategy designed to increase engagement, leads, and business growth.",
+    metaTitle: 'Social Media Marketing in Nepal: The Complete Guide to Business Growth | Digital Marmat',
+    metaDescription: 'The complete guide to social media marketing in Nepal — platform selection, content strategy, video, paid ads, and community management that help businesses build brand awareness and increase sales.',
     keywords: [
       'social media marketing Nepal', 'social media marketing services Nepal',
       'Facebook marketing Nepal', 'Instagram marketing Nepal',
-      'LinkedIn marketing Nepal', 'TikTok marketing Nepal',
-      'social media marketing strategy Nepal', 'online branding Nepal',
-      'social media advertising Nepal', 'social media marketing agency Nepal',
+      'TikTok marketing Nepal', 'social media marketing strategy Nepal',
+      'online branding Nepal', 'social media advertising Nepal',
+      'social media marketing agency Nepal', 'paid social ads Nepal',
+      'grow business social media Nepal',
     ],
     faqs: [
       {
