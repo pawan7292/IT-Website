@@ -315,6 +315,56 @@ export const industriesData: IndustryData[] = [
       'itinerary website design Nepal', 'travel agency marketing Nepal',
     ],
   },
+
+  // ── 7. Startups ──────────────────────────────────────────────────────────
+  {
+    slug: 'startups',
+    name: 'Startups',
+    industryLabel: 'Startups & New Businesses',
+    title: 'Website & App Development for Startups in Nepal',
+    heroDescription: 'Launching a startup means moving fast on a tight budget while still looking credible to investors and customers. We build MVP websites, apps, and brand identities that help Nepali startups launch quickly, look professional, and scale as they grow.',
+    challenges: [
+      { title: 'No Budget for a Full Tech Team',          description: 'Hiring in-house developers, designers, and marketers isn\'t realistic in the early stage — but you still need all three to launch properly.' },
+      { title: 'Need to Launch Fast',                     description: 'Investors and early customers expect a working product quickly. Long development timelines kill momentum and burn runway.' },
+      { title: 'Looking Credible to Investors & Customers', description: 'A weak, template-looking website or app undermines trust during fundraising pitches and first sales conversations.' },
+      { title: 'Uncertain Future Requirements',           description: 'Startups pivot. Building something too rigid or over-engineered early on wastes money when the direction changes.' },
+      { title: 'No In-House Marketing or SEO Knowledge',  description: 'Founders are busy building the product — there\'s rarely time to figure out SEO, social media, or analytics from scratch.' },
+    ],
+    solutions: [
+      { title: 'MVP-Focused Website & App Development', description: 'Lean, fast-to-build websites and apps that cover your core value proposition first, so you can launch and start getting feedback sooner.' },
+      { title: 'Scalable Architecture From Day One',     description: 'Built on modern frameworks (Next.js, React Native) that can grow with your business without needing a costly rebuild later.' },
+      { title: 'Investor-Ready Branding & Design',       description: 'A professional logo, brand identity, and polished website that builds instant credibility in pitch decks and first impressions.' },
+      { title: 'Affordable Phased Development',          description: 'Launch with core features now, and add advanced functionality in later phases as your budget and user base grow.' },
+      { title: 'SEO & Social Media Setup From Launch',   description: 'Get discovered on Google and social platforms from day one, instead of playing catch-up months after launch.' },
+      { title: 'Ongoing Support as You Grow',            description: 'Flexible maintenance and feature additions on demand — pay for development only when you need it.' },
+    ],
+    features: [
+      'MVP website or web app built for fast launch',
+      'Scalable Next.js / React architecture ready to grow',
+      'Investor-ready branding, logo, and pitch-deck-matching design',
+      'Mobile app development (iOS & Android) for startups ready to scale',
+      'SEO foundation set up from day one',
+      'Social media presence setup & content templates',
+      'Lead capture forms & analytics integrated from launch',
+      'Flexible, phased development to match your runway',
+    ],
+    faqs: [
+      { question: 'We have a very limited budget — can you still help us?',          answer: 'Yes. We work with startups to scope an MVP that covers your core functionality within your budget, then add features in phases as you raise funding or generate revenue.' },
+      { question: 'Can you build just an MVP first and add features later?',         answer: 'Absolutely — this is how we recommend most startups approach development. We design the architecture to support future features from the start, so later additions don\'t require a rebuild.' },
+      { question: 'Do you build mobile apps for startups, or only websites?',        answer: 'Both. Our [mobile app development](/services/mobile-app-development) team builds iOS and Android apps, and many startups start with a web app or website before investing in native apps.' },
+      { question: 'Can you help with branding too, not just the website or app?',    answer: 'Yes — our [branding & design](/services/branding-design) service covers logo design, brand guidelines, and visual identity, often bundled with your MVP build for a consistent launch.' },
+      { question: 'How fast can you launch a startup website or MVP?',               answer: 'A focused MVP website typically takes 2–4 weeks. Web or mobile app MVPs depend on feature scope, but we always prioritize getting a usable version live as quickly as possible.' },
+    ],
+    relatedServiceSlugs: ['website-development', 'software-development', 'mobile-app-development'],
+    metaTitle: 'Website & App Development for Startups in Nepal | Digital Marmat',
+    metaDescription: 'MVP websites, apps, and branding for Nepali startups — launch fast, look credible to investors and customers, and scale with affordable, phased development. Free consultation.',
+    keywords: [
+      'startup website development Nepal', 'MVP development Nepal', 'website for startups Nepal',
+      'app development for startups Nepal', 'startup branding Nepal', 'IT solutions for startups Nepal',
+      'startup web design Nepal', 'tech for startups Nepal', 'startup digital marketing Nepal',
+      'build MVP Nepal',
+    ],
+  },
 ]
 
 export const getAllIndustries = () => industriesData

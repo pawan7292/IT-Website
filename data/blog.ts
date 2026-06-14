@@ -1803,6 +1803,288 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ── 21. Software Development ──────────────────────────────────────────────
+  {
+    slug: 'erp-systems-nepal-guide',
+    title: 'How ERP Systems Work — and Does Your Nepal Business Actually Need One?',
+    excerpt: "Spreadsheets, separate billing software, and manual stock counts start to break down as you grow. Here's what an ERP system actually does, and how to know if your business needs one.",
+    coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+    category: 'Development',
+    tags: ['ERP', 'Business Software', 'Software Development Nepal', 'Inventory Management'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Software Development Experts',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '9 min',
+    intro: "If you've ever heard the term \"ERP\" and assumed it was only for huge corporations, you're not alone. But as Nepali businesses grow — adding branches, staff, inventory, and customers — the spreadsheets and disconnected apps that worked fine at the start start to cause real problems. Here's what an ERP system actually is, what it does, and how to know if your business has outgrown its current setup.",
+    sections: [
+      {
+        heading: 'What Is an ERP System?',
+        body: 'ERP stands for Enterprise Resource Planning — software that brings the core functions of your business (inventory, sales, accounting, HR, purchasing) into one connected system instead of separate spreadsheets, apps, and notebooks. When a sale happens, stock updates automatically, accounting records the transaction, and reports reflect it instantly — no manual re-entry across multiple tools.',
+      },
+      {
+        heading: 'The Core Modules of an ERP System',
+        body: 'Most ERP systems are built from a set of connected modules, and businesses typically start with the ones most relevant to their operations.',
+        items: [
+          'Inventory & Stock Management — track stock levels across one or multiple locations in real time',
+          'Accounting & Finance — invoicing, expenses, VAT records, and financial reports in one place',
+          'Sales & CRM — track customers, orders, and follow-ups',
+          'Procurement & Purchasing — manage suppliers, purchase orders, and incoming stock',
+          'HR & Payroll — staff records, attendance, and salary processing',
+        ],
+      },
+      {
+        heading: 'Signs Your Business Needs an ERP System',
+        body: 'ERP isn\'t something every business needs from day one — but there are clear signals that it\'s time to consider one.',
+        items: [
+          'You\'re tracking stock, sales, or finances in multiple disconnected spreadsheets that often don\'t match',
+          'Staff spend hours each week re-entering the same data into different systems',
+          'You have multiple branches or warehouses and can\'t see combined stock or sales in real time',
+          'Month-end reporting takes days because data has to be manually compiled from different sources',
+          'You\'re scaling up and worried that manual processes won\'t keep up with growth',
+        ],
+      },
+      {
+        heading: 'Off-the-Shelf vs Custom ERP for Nepal',
+        body: "Pre-built ERP platforms (like Odoo or Zoho) offer a wide range of modules out of the box and can be a cost-effective starting point. A custom-built system, on the other hand, is designed specifically around your workflows — useful when your business has processes that don't fit a generic template. We cover this trade-off in more depth in [Custom Software vs Off-the-Shelf](/blog/custom-software-vs-off-the-shelf-nepal).",
+      },
+      {
+        heading: 'Common ERP Challenges for Nepali Businesses',
+        body: 'A few considerations come up repeatedly when implementing ERP systems for businesses in Nepal.',
+        items: [
+          'Local tax compliance — VAT calculation and reporting that matches Nepal\'s requirements',
+          'Local payment integration — connecting eSewa, Khalti, or bank systems for accounting reconciliation',
+          'Multi-branch and multi-warehouse support for businesses operating across cities',
+          'Working reliably even with inconsistent internet — offline-capable or lightweight interfaces matter',
+        ],
+      },
+      {
+        heading: 'How Much Does an ERP System Cost in Nepal?',
+        body: 'Costs vary widely depending on scope. A lightweight system covering inventory and basic accounting for a single location can be a relatively modest investment, while a multi-branch system with HR, payroll, CRM, and custom reporting represents a larger project. The right approach is usually to start with the 1-2 modules causing the most pain, then expand — rather than building everything at once.',
+      },
+      {
+        heading: 'How to Get Started',
+        body: 'Start by mapping your current processes: what data do you track, where does it live, and where does it break down? From there, prioritize the module that would save the most time or prevent the most errors — usually inventory or accounting — and build or implement that first. A phased rollout reduces risk and lets your team adjust gradually instead of switching everything overnight.',
+      },
+    ],
+    conclusion: "An ERP system isn't an all-or-nothing decision — it's a way of connecting the tools you already rely on so your data tells one consistent story. If spreadsheets and disconnected apps are starting to slow your business down, our [software development](/services/software-development) team can help you figure out exactly what to build first. [Contact us](/contact) for a free consultation.",
+    metaTitle: 'How ERP Systems Work — Does Your Nepal Business Need One? | Digital Marmat',
+    metaDescription: 'A plain-language guide to ERP systems for Nepal businesses — what they do, the signs you need one, costs, and how to get started with the right modules first.',
+    keywords: [
+      'ERP system Nepal', 'ERP software Nepal', 'business management software Nepal',
+      'inventory management software Nepal', 'ERP for small business Nepal',
+      'custom ERP development Nepal', 'enterprise software Nepal', 'accounting software Nepal',
+    ],
+    faqs: [
+      {
+        question: 'Is ERP only for large companies?',
+        answer: 'No — modern ERP systems can be scaled to fit small and medium businesses too. The key is starting with only the modules you actually need rather than implementing a large enterprise system all at once.',
+      },
+      {
+        question: 'Can an ERP system integrate with eSewa and Khalti?',
+        answer: 'Yes, a custom-built ERP system can be integrated with local payment gateways so that online and in-person payments are reflected automatically in your accounting records.',
+      },
+      {
+        question: 'How long does it take to implement an ERP system?',
+        answer: 'A focused implementation covering one or two modules (e.g. inventory and basic accounting) can take a few weeks. Larger, multi-module systems with multiple branches typically take a few months, often rolled out in phases.',
+      },
+      {
+        question: 'What happens to our existing data when we move to an ERP system?',
+        answer: 'Existing data — customer lists, stock records, past invoices — can typically be migrated into the new system as part of the implementation, so you don\'t lose your historical records.',
+      },
+      {
+        question: 'Should we buy an off-the-shelf ERP or build a custom one?',
+        answer: 'It depends on how closely your processes match standard workflows. If an existing platform covers 80%+ of your needs, off-the-shelf with some customization is often faster and cheaper. If your operations are unusual, a custom build avoids forcing your business to adapt to someone else\'s software.',
+      },
+    ],
+  },
+
+  // ── 22. Website Development ───────────────────────────────────────────────
+  {
+    slug: 'website-cost-in-nepal-2026-guide',
+    title: 'How Much Does a Website Cost in Nepal? The Complete 2026 Pricing Guide',
+    excerpt: "\"How much for a website?\" is one of the most common questions we get — and the honest answer is \"it depends.\" Here's a transparent breakdown of what affects website pricing in Nepal.",
+    coverImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+    category: 'Development',
+    tags: ['Website Cost', 'Pricing Guide', 'Web Development Nepal', 'Budgeting'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Web Development Experts',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '8 min',
+    intro: '"How much does a website cost?" is almost always one of the first questions a business asks — and one of the hardest to answer with a single number, because the honest answer genuinely depends on what you need. This guide breaks down what drives website pricing in Nepal in 2026, so you know what to expect and what questions to ask any agency or freelancer you talk to.',
+    sections: [
+      {
+        heading: 'Why Website Prices Vary So Much',
+        body: 'A "website" can mean a single-page brochure site or a full e-commerce platform with hundreds of products — the scope difference is enormous, and so is the price difference. Beyond scope, price also reflects design quality, whether content is ready to go, how many revisions are included, and what happens after launch (hosting, maintenance, support).',
+      },
+      {
+        heading: 'Basic Business Website',
+        body: 'A small business website — typically 4-6 pages covering home, about, services, and contact — is the most common starting point. This category usually includes a clean, mobile-responsive design, a contact form, and basic on-page SEO setup. It\'s the right fit for service businesses, clinics, restaurants, and consultants who mainly need an online presence and a way for customers to reach them.',
+      },
+      {
+        heading: 'E-Commerce Website',
+        body: 'Online stores cost more than basic websites because they involve product catalogues, shopping carts, payment gateway integration (eSewa, Khalti, COD), and order management. Pricing depends heavily on the number of products, whether you need custom features (subscriptions, multi-vendor, advanced filtering), and whether you choose a platform like Shopify/WooCommerce or a fully custom build — see our [Shopify vs WooCommerce](/blog/shopify-vs-woocommerce-nepal) comparison for platform-specific considerations.',
+      },
+      {
+        heading: 'Custom Web Applications & Software',
+        body: 'If you need something beyond a website — a booking system, a customer portal, an internal management tool — you\'re in custom software territory. These projects are scoped individually based on features, user roles, integrations, and complexity, and typically represent a larger investment than a standard website because they involve custom development rather than templated components.',
+      },
+      {
+        heading: 'What Affects the Final Price?',
+        body: 'Within any category, several factors push the price up or down.',
+        items: [
+          'Number of unique page designs (a 5-page site with 5 unique layouts costs more than 10 pages using 2-3 templates)',
+          'Custom design vs. template-based design',
+          'Whether content (text, photos) is ready to go, or needs to be written/sourced',
+          'Number of revision rounds included',
+          'Special features — booking systems, multi-language support, animations, integrations',
+          'Timeline — rush projects often cost more',
+        ],
+      },
+      {
+        heading: 'Hidden Costs to Watch For',
+        body: 'The build cost is rarely the only cost. Make sure any quote clarifies what\'s included beyond the initial build.',
+        items: [
+          'Domain registration (annual renewal)',
+          'Hosting (monthly or annual, varies by traffic and platform)',
+          'SSL certificate (often included with modern hosting, but confirm)',
+          'Ongoing maintenance — updates, backups, and security monitoring',
+          'Third-party costs — payment gateway fees, email service, premium plugins/themes',
+        ],
+      },
+      {
+        heading: 'One-Time vs Ongoing Costs',
+        body: 'It helps to separate your budget into two categories: the one-time build cost (design and development) and the recurring costs (hosting, domain renewal, and any maintenance plan). A website with a low build cost but no maintenance plan can become expensive to fix later if something breaks — factor in at least a basic maintenance arrangement when comparing quotes.',
+      },
+      {
+        heading: 'How to Get an Accurate Quote',
+        body: 'The fastest way to get a realistic estimate is to describe your specific needs — number of pages, whether you need e-commerce, any special features — rather than just asking "how much for a website?" Our [website cost calculator](/website-cost-calculator) gives you an instant estimate based on your requirements, and our team can refine that into an accurate quote during a free consultation.',
+      },
+    ],
+    conclusion: "There's no single \"normal price\" for a website — but there is a transparent way to think about it: scope, design quality, content readiness, and what happens after launch. Try our [website cost calculator](/website-cost-calculator) for an instant estimate, explore our [website development](/services/website-development) service for what's included, or [contact us](/contact) for a free, no-obligation quote based on your specific needs.",
+    metaTitle: 'Website Cost in Nepal: The Complete 2026 Pricing Guide | Digital Marmat',
+    metaDescription: 'How much does a website cost in Nepal in 2026? A transparent breakdown of pricing for business websites, e-commerce stores, and custom web apps — plus hidden costs to watch for.',
+    keywords: [
+      'website cost Nepal', 'website price Nepal', 'how much does a website cost',
+      'website development cost Nepal 2026', 'ecommerce website cost Nepal',
+      'website pricing guide Nepal', 'cheap website Nepal', 'business website cost Nepal',
+    ],
+    faqs: [
+      {
+        question: "What's the cheapest way to get a website in Nepal?",
+        answer: "A basic, template-based business website with a handful of pages is the most affordable starting point. Just be sure any low-cost option still includes mobile-responsiveness, basic SEO, and a plan for hosting and maintenance — these are easy to overlook but expensive to add later.",
+      },
+      {
+        question: 'Is it cheaper to use WordPress than a custom-built website?',
+        answer: "Often yes for simpler sites, since themes and plugins reduce development time. We compare the trade-offs in [WordPress vs Custom Website Development](/blog/wordpress-vs-custom-website-development-nepal).",
+      },
+      {
+        question: 'Do prices include hosting and domain?',
+        answer: "This varies by provider — always ask explicitly. Some packages bundle the first year of hosting and domain, while others price these separately as ongoing costs.",
+      },
+      {
+        question: 'How much should I budget for ongoing maintenance?',
+        answer: "A reasonable starting point is a basic monthly or annual maintenance plan covering updates, backups, and minor changes. The exact amount depends on the size and complexity of your site — we discuss this during the quoting process.",
+      },
+      {
+        question: 'Can I start small and add features later?',
+        answer: "Yes — this is a common and sensible approach. Launching with core pages and adding features (a blog, online store, booking system) as your business grows spreads out the investment and lets you prioritize based on real usage.",
+      },
+    ],
+  },
+
+  // ── 23. Marketing ──────────────────────────────────────────────────────────
+  {
+    slug: 'lead-generation-performance-marketing-nepal',
+    title: 'Lead Generation & Performance Marketing: How to Get More Paying Customers Online in Nepal',
+    excerpt: 'Likes and followers don\'t pay the bills — leads and sales do. Here\'s how lead generation and performance marketing work together to turn your marketing budget into paying customers.',
+    coverImage: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80',
+    category: 'Marketing',
+    tags: ['Lead Generation', 'Performance Marketing', 'Digital Marketing Nepal', 'Paid Advertising'],
+    author: 'Digital Marmat Team',
+    authorRole: 'Digital Marketing Specialists',
+    date: '2026-06-14',
+    dateFormatted: 'June 14, 2026',
+    readTime: '8 min',
+    intro: "A Facebook page with thousands of likes can still produce zero sales. If your marketing is generating attention but not enquiries or orders, it's time to think in terms of lead generation and performance marketing — approaches built specifically to turn ad spend into measurable business results, not just impressions.",
+    sections: [
+      {
+        heading: 'What Is Lead Generation?',
+        body: 'Lead generation is the process of attracting potential customers and capturing their contact information (phone number, email, or a form submission) so your sales team can follow up. A "lead" is someone who has shown real interest — not just someone who scrolled past your post.',
+      },
+      {
+        heading: 'What Is Performance Marketing?',
+        body: 'Performance marketing is an approach to advertising where you pay based on measurable actions — clicks, leads, sales — rather than just for visibility. Every rupee spent is tracked back to a result, which means you can clearly see what\'s working and reallocate budget toward what performs best.',
+      },
+      {
+        heading: 'How They Work Together',
+        body: 'Performance marketing is the engine — running targeted ads on Facebook, Instagram, or Google. Lead generation is the goal — capturing the contact details of people who click those ads. Together, they create a system: ads bring qualified visitors to a landing page, the landing page captures their details, and your team follows up to convert them into customers.',
+      },
+      {
+        heading: 'Lead Generation Channels That Work in Nepal',
+        body: 'A few channels consistently perform well for lead generation among Nepali businesses.',
+        items: [
+          'Facebook & Instagram Lead Ads — capture contact details directly within the platform, ideal for mobile users',
+          'Google Search Ads — capture high-intent searches (e.g. "website development company Kathmandu")',
+          'Dedicated landing pages — focused, single-offer pages that convert better than sending traffic to a general homepage',
+          'WhatsApp click-to-chat ads — lower the barrier to enquiry for users already comfortable messaging on WhatsApp',
+        ],
+      },
+      {
+        heading: 'Setting Up a Performance Marketing Funnel',
+        body: 'A basic, effective funnel follows a simple structure: a targeted ad reaches the right audience, clicks lead to a focused landing page (not your full homepage) with one clear offer, the page captures contact details through a short form, and your team follows up quickly — ideally within hours, not days, since lead interest fades fast.',
+      },
+      {
+        heading: 'Tracking What Actually Matters',
+        body: 'Vanity metrics like reach and likes don\'t tell you whether marketing is working. Focus on metrics that connect to revenue.',
+        items: [
+          'Cost Per Lead (CPL) — how much you spend, on average, to generate one lead',
+          'Lead-to-Customer Conversion Rate — what percentage of leads actually become paying customers',
+          'Return on Ad Spend (ROAS) — revenue generated for every rupee spent on ads',
+        ],
+      },
+      {
+        heading: 'Common Mistakes That Waste Ad Budget',
+        body: 'We frequently see the same issues draining ad budgets without results: sending ad traffic to a generic homepage instead of a focused landing page, targeting audiences too broad to be relevant, having no follow-up process for leads (so they go cold), and stopping campaigns too early before there\'s enough data to judge performance.',
+      },
+      {
+        heading: 'Getting Started With a Small Budget',
+        body: 'You don\'t need a large budget to start — even a modest daily ad spend on Facebook or Google can generate meaningful leads if the targeting, landing page, and follow-up process are set up correctly. The key is starting with one focused offer, one audience, and one landing page — then expanding what works rather than spreading a small budget across too many campaigns at once.',
+      },
+    ],
+    conclusion: "Likes and impressions feel good, but leads and sales pay the bills. If your current marketing isn't producing measurable enquiries, our [digital marketing](/services/digital-marketing) team can build a lead generation funnel — ads, landing pages, and tracking — designed around your business goals. Check your current marketing setup with our [digital marketing score checker](/digital-marketing-score), or [contact us](/contact) for a free consultation.",
+    metaTitle: 'Lead Generation & Performance Marketing in Nepal: Complete Guide | Digital Marmat',
+    metaDescription: 'How lead generation and performance marketing work together to turn ad spend into paying customers — channels, funnels, and metrics that matter for Nepal businesses.',
+    keywords: [
+      'lead generation Nepal', 'performance marketing Nepal', 'digital marketing leads Nepal',
+      'Facebook lead ads Nepal', 'Google ads Nepal', 'paid marketing Nepal',
+      'lead generation strategy Nepal', 'online lead generation Nepal',
+    ],
+    faqs: [
+      {
+        question: 'How much should I spend on ads to start generating leads?',
+        answer: 'Even a modest daily budget can produce results if targeting and landing pages are set up correctly. We typically recommend starting small, measuring cost per lead, and scaling up the budget once you see which campaigns perform best.',
+      },
+      {
+        question: "What's the difference between boosting a post and performance marketing?",
+        answer: "Boosting a post increases visibility but is rarely optimized for a specific outcome like leads or sales. Performance marketing campaigns are built around a clear goal — lead form fills, purchases, calls — with tracking set up to measure exactly that.",
+      },
+      {
+        question: 'Do I need a separate landing page for every ad?',
+        answer: "Not every ad, but every distinct offer should have its own focused landing page. Sending different ads to the same generic homepage significantly reduces conversion rates.",
+      },
+      {
+        question: 'How quickly should we follow up with leads?',
+        answer: 'As fast as possible — ideally within an hour. Studies consistently show that the chance of converting a lead drops sharply the longer the follow-up takes, especially for leads generated through ads.',
+      },
+      {
+        question: 'Can lead generation work for B2B businesses in Nepal, not just retail?',
+        answer: "Yes. B2B lead generation often relies more on Google Search Ads and LinkedIn, with longer follow-up cycles, but the same core principles — targeted traffic, focused landing pages, fast follow-up — apply.",
+      },
+    ],
+  },
 ]
 
 export const getAllPosts = () => blogPosts

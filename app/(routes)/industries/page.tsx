@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import {
-  FiActivity, FiBookOpen, FiCoffee, FiHome, FiHeart, FiMap, FiArrowRight,
+  FiActivity, FiBookOpen, FiCoffee, FiHome, FiHeart, FiMap, FiArrowRight, FiTrendingUp,
 } from 'react-icons/fi'
 import { Container } from '@/components/ui/Container'
 import { SectionHeader } from '@/components/ui/SectionHeader'
@@ -16,6 +16,7 @@ const ICONS: Record<string, React.ElementType> = {
   'real-estate':       FiHome,
   'ngo-nonprofit':     FiHeart,
   'travel-trekking':   FiMap,
+  'startups':          FiTrendingUp,
 }
 
 export default function IndustriesListPage() {
